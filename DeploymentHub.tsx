@@ -110,7 +110,7 @@ export const DeploymentHub: React.FC = () => {
             <div className="space-y-4 text-xs text-white/70 leading-relaxed">
               <div>
                 <strong className="text-white block mb-1">1. Global Code</strong>
-                Paste this into <span className="text-brand-accent italic">Page Settings > Header Code</span>. This loads Tailwind and resets body margins.
+                Paste this into <span className="text-brand-accent italic">Page Settings &gt; Header Code</span>. This loads Tailwind and resets body margins.
               </div>
               <div>
                 <strong className="text-white block mb-1">2. Red Bar Issue?</strong>

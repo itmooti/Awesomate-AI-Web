@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesomate.ai | Managed n8n Hosting Builder</title>
+    <title>Awesomate.ai | Business Technology Partner</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/Logos/Favicon/32x32/1-01.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Logos/Favicon/16x16/1-01.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;700&family=Karla:wght@300;400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -18,19 +20,79 @@
                 navy: '#0f1128',
                 accent: '#e9484d',
                 orange: '#ef9563',
-                blue: '#1e63e9', 
+                blue: '#1e63e9',
+              },
+              buddzee: {
+                navy: '#09142B',
+                blue: '#5284FF',
+                'blue-light': '#ABC1FF',
+                cloud: '#EDEFF7',
               },
             },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
+              heading: ['Bricolage Grotesque', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+              buddzee: ['Manrope', 'sans-serif'],
             },
           }
         }
       }
     </script>
     <style>
-      body { scroll-behavior: smooth; }
-      /* Hide utility icons during actual prints/screenshots if needed */
+      /* ===== ONTRAPORT SIMULATION LAYER =====
+         Replicates the default styles Ontraport applies so the local
+         preview matches the live site at awesomate.ai              */
+
+      :root {
+        /* Awesomate brand (matches GlobalCode in Footer.tsx) */
+        --color-1: #0f1128;
+        --color-2: #e9484d;
+        --color-3: #ef9563;
+        --color-4: #1e63e9;
+        --color-5: #ffffff;
+        --color-bg-alt: #f8f9fb;
+        --color-bg-dark: #0a0e1a;
+        --font-main: 'Inter', sans-serif;
+        --font-heading: 'Bricolage Grotesque', sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+        --font-buddzee: 'Manrope', sans-serif;
+
+        /* Ontraport theme defaults */
+        --primary-color: #ff6b58;
+        --complementary-color: #2b3a67;
+        --dark-color: #1a2332;
+        --light-color: #f7f9fc;
+        --white-color: #fff;
+      }
+
+      /* Ontraport base resets */
+      * { box-sizing: border-box !important; -webkit-tap-highlight-color: transparent !important; }
+      *:focus-visible { outline: 2px solid var(--color-2) !important; outline-offset: 4px !important; }
+      html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; overflow-x: hidden !important; scroll-behavior: smooth; }
+
+      /* Ontraport default typography (what our GlobalCode overrides) */
+      .h1.h1.h1.h1 { font-family: 'Poppins', sans-serif; font-size: 56px; font-weight: 700; line-height: 60px; }
+      .h2.h2.h2.h2 { font-family: 'Poppins', sans-serif; font-size: 36px; font-weight: 500; line-height: 48px; }
+      .h3.h3.h3.h3 { font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 500; line-height: 32px; }
+      .body-text.body-text.body-text.body-text { font-family: 'Karla', sans-serif; font-size: 16px; font-weight: 300; line-height: 24px; }
+      .button.button.button.button { font-family: 'Work Sans', sans-serif; font-size: 16px; font-weight: 500; }
+      .label.label.label.label { font-family: 'Work Sans', sans-serif; font-size: 12px; font-weight: 500; }
+
+      /* Awesomate overrides (applied AFTER Ontraport defaults, just like GlobalCode) */
+      .h1.h1.h1.h1 { font-family: var(--font-heading) !important; font-weight: 800 !important; color: var(--color-1); line-height: 1.1; }
+      .h2.h2.h2.h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; color: var(--color-1); line-height: 1.2; }
+      .h3.h3.h3.h3 { font-family: var(--font-heading) !important; font-weight: 700 !important; color: var(--color-1); }
+      .body-text.body-text.body-text.body-text { font-family: var(--font-main) !important; font-size: 16px; color: #4b5563; line-height: 1.6; }
+      .button.button.button.button { font-family: var(--font-main) !important; font-weight: 800 !important; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 8px; }
+      .label.label.label.label { font-family: var(--font-main) !important; font-weight: 700 !important; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+      .accent-gradient-text {
+        background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      }
+
+      /* Hide utility icons during prints/screenshots */
       @media print { .dev-copy-utility { display: none !important; } }
     </style>
 <script type="importmap">
