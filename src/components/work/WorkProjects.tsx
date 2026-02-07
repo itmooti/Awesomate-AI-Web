@@ -4,6 +4,7 @@ import { CopyWrapper } from '../shared/CopyWrapper';
 const workProjects = [
   {
     name: 'SEED NORTHERN RIVERS',
+    logo: 'seednorthernrivers.png',
     color: '#289A47',
     gradient: 'linear-gradient(135deg, #289A47, #50A5DF)',
     tagline: 'Empowering a Network of Changemakers',
@@ -13,6 +14,7 @@ const workProjects = [
   },
   {
     name: 'PHYX',
+    logo: 'phyx.png',
     color: '#27BAA6',
     gradient: 'linear-gradient(135deg, #176A7A, #27BAA6)',
     tagline: 'The Home of Longevity, Built to Scale',
@@ -22,6 +24,7 @@ const workProjects = [
   },
   {
     name: 'AWARDEE',
+    logo: 'awardee.png',
     color: '#0079FE',
     gradient: 'linear-gradient(135deg, #212b45, #0079FE)',
     tagline: 'From Startup Idea to Live Platform',
@@ -31,6 +34,7 @@ const workProjects = [
   },
   {
     name: 'AUSTRALIAN WRITERS\u2019 CENTRE',
+    logo: 'awc.png',
     color: '#E31B23',
     gradient: 'linear-gradient(135deg, #E31B23, #FF6B6B)',
     tagline: 'Australia\u2019s Leading Writing Community, Connected',
@@ -40,6 +44,7 @@ const workProjects = [
   },
   {
     name: 'MCG',
+    logo: 'mcgqs.png',
     color: '#E9484D',
     gradient: 'linear-gradient(135deg, #1a1a1a, #444444)',
     tagline: 'Scaling Australia\u2019s Fastest-Growing QS Firm',
@@ -49,6 +54,7 @@ const workProjects = [
   },
   {
     name: 'REAL ESTATE GYM',
+    logo: 'realestategym.png',
     color: '#19ffb4',
     gradient: 'linear-gradient(135deg, #1d1d20, #2a2a30)',
     tagline: 'Train Like an Athlete, Scale Like a Business',
@@ -58,6 +64,7 @@ const workProjects = [
   },
   {
     name: 'FILTERMAX',
+    logo: 'filtermax.png',
     color: '#fd5b2a',
     gradient: 'linear-gradient(135deg, #232323, #fd5b2a)',
     tagline: 'Custom-Built to Supply Australia\u2019s Hardest Workers',
@@ -67,12 +74,23 @@ const workProjects = [
   },
   {
     name: 'RESICERT',
+    logo: 'resicert.png',
     color: '#4CAF50',
     gradient: 'linear-gradient(135deg, #2E7D32, #4CAF50)',
     tagline: 'From Solo Operator to National Franchise',
     description: 'Resicert\u2019s growth story is remarkable: from a single property inspector to an ISO 9001-certified national franchise with 50+ businesses across every state and territory. We built the CRM automation engine that made it possible \u2014 automating the inspection lifecycle from online booking through report delivery, managing franchisee operations, coordinating inspector dispatch across Perth to Sydney, and maintaining the 9.4/10 customer rating and 48-hour turnaround guarantee at scale. Over 141,000 inspections processed through the system since 2009. Their "Don\u2019t Expect, Inspect!" promise, delivered by technology.',
     tags: ['CRM', 'Automation', 'Franchise Scale'],
     stats: ['141,000+ Inspections', '50+ Franchises', '9.4/10 Rating'],
+  },
+  {
+    name: 'THE HAPPY CLINIC',
+    logo: 'thehappyclinic.png',
+    color: '#00BCD4',
+    gradient: 'linear-gradient(135deg, #0097A7, #00BCD4)',
+    tagline: 'Modern Wellness, Fully Automated',
+    description: 'The Happy Clinic takes a holistic approach to health and wellness — combining naturopathy, nutrition, and integrative medicine to help patients thrive. We built their complete digital ecosystem: an Ontraport-powered customer portal streamlining patient engagement from first contact through ongoing care, a custom online shop handling supplements and wellness products with automated fulfilment, AI chatbots trained on clinic protocols to answer common questions 24/7, and n8n automation workflows connecting appointments, inventory, patient communications, and billing. The result: a wellness practice that scales personalised care without scaling admin overhead.',
+    tags: ['Customer Portal', 'AI Chatbots', 'Automation', 'E-commerce'],
+    stats: ['Holistic Health', 'Full Automation', 'Patient-First'],
   },
 ];
 
@@ -85,9 +103,9 @@ const generateProjectCards = () => {
         <div class="wk-proj-card-inner${isEven ? '' : ' wk-proj-reverse'}">
           <div class="wk-proj-img" style="background: ${p.gradient};">
             <div class="wk-proj-img-overlay"></div>
-            <div class="wk-proj-img-logo" ${p.name === 'REAL ESTATE GYM' ? 'style="color: #19ffb4 !important;"' : ''}>${p.name}</div>
           </div>
           <div class="wk-proj-content">
+            <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo">
             <div class="wk-proj-tagline">${p.tagline}</div>
             <div class="wk-proj-desc">${p.description}</div>
             <div class="wk-proj-stats">
@@ -148,15 +166,9 @@ const WorkProjectsCode = `
     position: absolute !important; inset: 0 !important;
     background: rgba(0,0,0,0.15) !important; pointer-events: none !important;
   }
-  .wk-proj-img-logo {
-    font-family: var(--font-main) !important; font-size: 22px !important;
-    font-weight: 900 !important; letter-spacing: 0.06em !important;
-    color: white !important; text-shadow: 0 2px 12px rgba(0,0,0,0.3) !important;
-    position: relative !important; z-index: 1 !important;
-    text-align: center !important; padding: 0 32px !important;
-  }
-  @media (min-width: 768px) {
-    .wk-proj-img-logo { font-size: 26px !important; }
+  .wk-proj-logo {
+    height: 48px !important; width: auto !important;
+    object-fit: contain !important; margin-bottom: 16px !important;
   }
   .wk-proj-content {
     padding: 32px !important; display: flex !important;
@@ -224,16 +236,15 @@ export const WorkProjects: React.FC = () => {
                     style={{ background: project.gradient }}
                   >
                     <div className="absolute inset-0 bg-black/15" />
-                    <div
-                      className="relative z-10 text-[22px] md:text-[26px] font-900 tracking-wider text-center px-8"
-                      style={{ color: project.name === 'REAL ESTATE GYM' ? '#19ffb4' : 'white', textShadow: '0 2px 12px rgba(0,0,0,0.3)' }}
-                    >
-                      {project.name}
-                    </div>
                   </div>
 
                   {/* Content */}
                   <div className="p-8 md:p-10 lg:px-12 flex flex-col justify-center flex-1">
+                    <img
+                      src={`/src/assets/project-logos/${project.logo}`}
+                      alt={project.name}
+                      className="h-12 w-auto object-contain mb-4"
+                    />
                     <h3 className="font-heading font-800 text-[22px] md:text-[26px] text-brand-navy mb-4 leading-tight tracking-tight">
                       {project.tagline}
                     </h3>

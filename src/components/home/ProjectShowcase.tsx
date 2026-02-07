@@ -164,14 +164,12 @@ const ProjectShowcaseCode = `
     inset: 0 !important; background: rgba(0,0,0,0.15) !important;
     pointer-events: none !important;
   }
-  .hm-proj-img-logo {
-    max-width: 70% !important; height: auto !important;
-    max-height: 80px !important; object-fit: contain !important;
-    position: relative !important; z-index: 1 !important;
-    filter: brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.3)) !important;
-  }
   .hm-proj-body {
     padding: 24px !important;
+  }
+  .hm-proj-logo {
+    height: 48px !important; width: auto !important;
+    object-fit: contain !important; margin-bottom: 16px !important;
   }
   .hm-proj-tagline {
     font-family: var(--font-heading) !important; font-weight: 700 !important;
@@ -211,10 +209,9 @@ const ProjectShowcaseCode = `
 
     <div class="hm-proj-track" id="hm-proj-track">
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #289A47, #50A5DF);">
-          <div class="hm-proj-img-logo">SEED NORTHERN RIVERS</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #289A47, #50A5DF);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/seednorthernrivers.png" alt="SEED NORTHERN RIVERS" class="hm-proj-logo">
           <div class="hm-proj-tagline">Empowering a Network of Changemakers</div>
           <div class="hm-proj-desc">Website, CRM and custom Giving Circle app for a grassroots environmental organisation.</div>
           <div class="hm-proj-tags">
@@ -226,10 +223,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #176A7A, #27BAA6);">
-          <div class="hm-proj-img-logo">PHYX</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #176A7A, #27BAA6);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/phyx.png" alt="PHYX" class="hm-proj-logo">
           <div class="hm-proj-tagline">The Home of Longevity, Built to Scale</div>
           <div class="hm-proj-desc">Magento storefront, CRM, admin interface and mobile app for personalised telehealth.</div>
           <div class="hm-proj-tags">
@@ -242,10 +238,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #212b45, #0079FE);">
-          <div class="hm-proj-img-logo">AWARDEE</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #212b45, #0079FE);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/awardee.png" alt="AWARDEE" class="hm-proj-logo">
           <div class="hm-proj-tagline">From Startup Idea to Live Platform</div>
           <div class="hm-proj-desc">End-to-end SaaS build with QR-powered support, AI chatbots and smart badge tech.</div>
           <div class="hm-proj-tags">
@@ -257,10 +252,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #E31B23, #FF6B6B);">
-          <div class="hm-proj-img-logo">AUSTRALIAN WRITERS\u2019 CENTRE</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #E31B23, #FF6B6B);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/awc.png" alt="AUSTRALIAN WRITERS\u2019 CENTRE" class="hm-proj-logo">
           <div class="hm-proj-tagline">Australia\u2019s Leading Writing Community, Connected</div>
           <div class="hm-proj-desc">CRM and LMS powering tens of thousands of student enrolments and alumni engagement.</div>
           <div class="hm-proj-tags">
@@ -271,10 +265,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #1a1a1a, #444444);">
-          <div class="hm-proj-img-logo">MCG</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #1a1a1a, #444444);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/mcgqs.png" alt="MCG" class="hm-proj-logo">
           <div class="hm-proj-tagline">Scaling Australia\u2019s Fastest-Growing QS Firm</div>
           <div class="hm-proj-desc">BI dashboards, customer app, referrer portal and Tax Depreciation Calculator API.</div>
           <div class="hm-proj-tags">
@@ -287,10 +280,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #1d1d20, #2a2a30);">
-          <div class="hm-proj-img-logo" style="color: #19ffb4 !important;">REAL ESTATE GYM</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #1d1d20, #2a2a30);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/realestategym.png" alt="REAL ESTATE GYM" class="hm-proj-logo">
           <div class="hm-proj-tagline">Train Like an Athlete, Scale Like a Business</div>
           <div class="hm-proj-desc">Flutter app, CRM and automation platform for Australia\u2019s top real estate coach.</div>
           <div class="hm-proj-tags">
@@ -302,10 +294,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #232323, #fd5b2a);">
-          <div class="hm-proj-img-logo">FILTERMAX</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #232323, #fd5b2a);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/filtermax.png" alt="FILTERMAX" class="hm-proj-logo">
           <div class="hm-proj-tagline">Custom-Built to Supply Australia\u2019s Hardest Workers</div>
           <div class="hm-proj-desc">Bespoke platform powering industrial filter distribution across mining, agriculture and transport.</div>
           <div class="hm-proj-tags">
@@ -316,10 +307,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #2E7D32, #4CAF50);">
-          <div class="hm-proj-img-logo">RESICERT</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #2E7D32, #4CAF50);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/resicert.png" alt="RESICERT" class="hm-proj-logo">
           <div class="hm-proj-tagline">From Solo Operator to National Franchise</div>
           <div class="hm-proj-desc">CRM automation that scaled from one inspector to 50+ businesses Australia-wide.</div>
           <div class="hm-proj-tags">
@@ -331,10 +321,9 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img" style="background: linear-gradient(135deg, #0097A7, #00BCD4);">
-          <div class="hm-proj-img-logo">THE HAPPY CLINIC</div>
-        </div>
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #0097A7, #00BCD4);"></div>
         <div class="hm-proj-body">
+          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/thehappyclinic.png" alt="THE HAPPY CLINIC" class="hm-proj-logo">
           <div class="hm-proj-tagline">Modern Wellness, Fully Automated</div>
           <div class="hm-proj-desc">Ontraport customer portal, custom shop, AI chatbots and n8n automations for a holistic health clinic.</div>
           <div class="hm-proj-tags">
@@ -406,14 +395,13 @@ export const ProjectShowcase: React.FC = () => {
                   style={{ background: project.gradient }}
                 >
                   <div className="absolute inset-0 bg-black/15" />
+                </div>
+                <div className="p-6">
                   <img
                     src={`/src/assets/project-logos/${project.logo}`}
                     alt={project.name}
-                    className="relative z-10 max-w-[70%] h-auto max-h-20 object-contain"
-                    style={{ filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.3))' }}
+                    className="h-12 w-auto object-contain mb-4"
                   />
-                </div>
-                <div className="p-6">
                   <div className="font-heading font-700 text-[17px] text-brand-navy mb-2 leading-snug">{project.tagline}</div>
                   <div className="text-sm text-gray-500 leading-relaxed mb-4">{project.description}</div>
                   <div className="flex flex-wrap gap-1.5">
