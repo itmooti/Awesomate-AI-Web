@@ -4,6 +4,7 @@ import { CopyWrapper } from '../shared/CopyWrapper';
 const projects = [
   {
     name: 'SEED NORTHERN RIVERS',
+    logo: 'seednorthernrivers.png',
     color: '#289A47',
     gradient: 'linear-gradient(135deg, #289A47, #50A5DF)',
     tagline: 'Empowering a Network of Changemakers',
@@ -12,6 +13,7 @@ const projects = [
   },
   {
     name: 'PHYX',
+    logo: 'phyx.png',
     color: '#27BAA6',
     gradient: 'linear-gradient(135deg, #176A7A, #27BAA6)',
     tagline: 'The Home of Longevity, Built to Scale',
@@ -20,6 +22,7 @@ const projects = [
   },
   {
     name: 'AWARDEE',
+    logo: 'awardee.png',
     color: '#0079FE',
     gradient: 'linear-gradient(135deg, #212b45, #0079FE)',
     tagline: 'From Startup Idea to Live Platform',
@@ -28,6 +31,7 @@ const projects = [
   },
   {
     name: 'AUSTRALIAN WRITERS\u2019 CENTRE',
+    logo: 'awc.png',
     color: '#E31B23',
     gradient: 'linear-gradient(135deg, #E31B23, #FF6B6B)',
     tagline: 'Australia\u2019s Leading Writing Community, Connected',
@@ -36,6 +40,7 @@ const projects = [
   },
   {
     name: 'MCG',
+    logo: 'mcgqs.png',
     color: '#E9484D',
     gradient: 'linear-gradient(135deg, #1a1a1a, #444444)',
     tagline: 'Scaling Australia\u2019s Fastest-Growing QS Firm',
@@ -44,6 +49,7 @@ const projects = [
   },
   {
     name: 'REAL ESTATE GYM',
+    logo: 'realestategym.png',
     color: '#19ffb4',
     gradient: 'linear-gradient(135deg, #1d1d20, #2a2a30)',
     tagline: 'Train Like an Athlete, Scale Like a Business',
@@ -52,6 +58,7 @@ const projects = [
   },
   {
     name: 'FILTERMAX',
+    logo: 'filtermax.png',
     color: '#fd5b2a',
     gradient: 'linear-gradient(135deg, #232323, #fd5b2a)',
     tagline: 'Custom-Built to Supply Australia\u2019s Hardest Workers',
@@ -60,6 +67,7 @@ const projects = [
   },
   {
     name: 'RESICERT',
+    logo: 'resicert.png',
     color: '#4CAF50',
     gradient: 'linear-gradient(135deg, #2E7D32, #4CAF50)',
     tagline: 'From Solo Operator to National Franchise',
@@ -68,6 +76,7 @@ const projects = [
   },
   {
     name: 'THE HAPPY CLINIC',
+    logo: 'thehappyclinic.png',
     color: '#00BCD4',
     gradient: 'linear-gradient(135deg, #0097A7, #00BCD4)',
     tagline: 'Modern Wellness, Fully Automated',
@@ -156,11 +165,10 @@ const ProjectShowcaseCode = `
     pointer-events: none !important;
   }
   .hm-proj-img-logo {
-    font-family: var(--font-main) !important; font-size: 18px !important;
-    font-weight: 900 !important; letter-spacing: 0.05em !important;
-    color: white !important; text-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+    max-width: 70% !important; height: auto !important;
+    max-height: 80px !important; object-fit: contain !important;
     position: relative !important; z-index: 1 !important;
-    text-align: center !important; padding: 0 24px !important;
+    filter: brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.3)) !important;
   }
   .hm-proj-body {
     padding: 24px !important;
@@ -398,12 +406,12 @@ export const ProjectShowcase: React.FC = () => {
                   style={{ background: project.gradient }}
                 >
                   <div className="absolute inset-0 bg-black/15" />
-                  <div
-                    className="relative z-10 text-lg font-900 tracking-wider text-center px-6"
-                    style={{ color: project.name === 'REAL ESTATE GYM' ? '#19ffb4' : 'white', textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}
-                  >
-                    {project.name}
-                  </div>
+                  <img
+                    src={`/src/assets/project-logos/${project.logo}`}
+                    alt={project.name}
+                    className="relative z-10 max-w-[70%] h-auto max-h-20 object-contain"
+                    style={{ filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.3))' }}
+                  />
                 </div>
                 <div className="p-6">
                   <div className="font-heading font-700 text-[17px] text-brand-navy mb-2 leading-snug">{project.tagline}</div>
