@@ -49,12 +49,11 @@ const SocialProofCode = `
   .hm-trust-logos {
     display: flex !important; flex-wrap: wrap !important;
     justify-content: center !important; align-items: center !important;
-    gap: 32px !important; margin-bottom: 64px !important; opacity: 0.4 !important;
+    gap: 40px !important; margin-bottom: 64px !important;
   }
-  .hm-trust-logo-item {
-    font-family: var(--font-main) !important; font-size: 18px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
-    letter-spacing: -0.01em !important;
+  .hm-trust-logo-img {
+    height: 40px !important; width: auto !important;
+    object-fit: contain !important; filter: grayscale(100%) !important;
   }
 
   /* Testimonials */
@@ -112,11 +111,13 @@ const SocialProofCode = `
     </div>
 
     <div class="hm-trust-logos">
-      <div class="hm-trust-logo-item">ClientCo</div>
-      <div class="hm-trust-logo-item">TechStartup</div>
-      <div class="hm-trust-logo-item">GrowthHQ</div>
-      <div class="hm-trust-logo-item">ScaleUp</div>
-      <div class="hm-trust-logo-item">AutomatePro</div>
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awc.png" alt="Australian Writers' Centre" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/filtermax.png" alt="Filtermax" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/mcgqs.png" alt="MCG Quantity Surveyors" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/phyx.png" alt="PHYX" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/resicert.png" alt="Resicert" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awardee.png" alt="Awardee" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/seednorthernrivers.png" alt="SEED Northern Rivers" class="hm-trust-logo-img">
     </div>
 
     <div class="hm-trust-cards">
@@ -167,7 +168,15 @@ export const SocialProof: React.FC = () => {
     { num: '50+', label: 'Businesses served' },
   ];
 
-  const logos = ['ClientCo', 'TechStartup', 'GrowthHQ', 'ScaleUp', 'AutomatePro'];
+  const logos = [
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awc.png', alt: 'Australian Writers\' Centre' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/filtermax.png', alt: 'Filtermax' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/mcgqs.png', alt: 'MCG Quantity Surveyors' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/phyx.png', alt: 'PHYX' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/resicert.png', alt: 'Resicert' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awardee.png', alt: 'Awardee' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/seednorthernrivers.png', alt: 'SEED Northern Rivers' },
+  ];
 
   const testimonials = [
     {
@@ -209,10 +218,15 @@ export const SocialProof: React.FC = () => {
             ))}
           </div>
 
-          {/* Logo strip placeholder */}
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-16 opacity-40">
-            {logos.map((l) => (
-              <div key={l} className="text-lg font-800 text-brand-navy tracking-tight">{l}</div>
+          {/* Logo strip */}
+          <div className="flex flex-wrap justify-center items-center gap-10 mb-16">
+            {logos.map((logo) => (
+              <img
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-10 w-auto object-contain grayscale"
+              />
             ))}
           </div>
 
