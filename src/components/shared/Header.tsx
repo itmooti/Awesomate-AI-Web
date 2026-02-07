@@ -12,27 +12,38 @@ const HeaderCode = `
       border-bottom: 1px solid rgba(243,244,246,0.8) !important; width: 100% !important;
       margin: 0 !important; padding: 0 !important; box-sizing: border-box !important;
       border-top: none !important; border-left: none !important; border-right: none !important;
+      box-shadow: none !important; outline: none !important;
     }
     .hdr-inner.hdr-inner.hdr-inner.hdr-inner {
       max-width: 1440px !important; margin: 0 auto !important;
       padding: 0 24px !important; display: flex !important;
-      justify-content: space-between !important; align-items: center !important;
+      flex-direction: row !important; justify-content: space-between !important; align-items: center !important;
       height: 72px !important; box-sizing: border-box !important;
-      background: transparent !important;
+      background: transparent !important; border: none !important;
+      box-shadow: none !important; outline: none !important;
     }
     .hdr-logo.hdr-logo.hdr-logo.hdr-logo {
       display: inline-flex !important; align-items: center !important;
       text-decoration: none !important; background: transparent !important;
       border: none !important; padding: 0 !important; margin: 0 !important;
+      box-shadow: none !important; outline: none !important;
+      flex-shrink: 0 !important;
     }
-    .hdr-logo svg { height: 26px !important; width: auto !important; display: block !important; }
+    .hdr-logo svg {
+      height: 26px !important; width: auto !important; display: block !important;
+      border: none !important; box-shadow: none !important;
+    }
 
     .hdr-nav.hdr-nav.hdr-nav.hdr-nav {
       display: none !important; align-items: center !important; gap: 8px !important;
       background: transparent !important; margin: 0 !important; padding: 0 !important;
-      list-style: none !important;
+      list-style: none !important; flex-direction: row !important;
+      border: none !important; box-shadow: none !important; outline: none !important;
+      margin-left: auto !important;
     }
-    @media (min-width: 1024px) { .hdr-nav.hdr-nav.hdr-nav.hdr-nav { display: flex !important; } }
+    @media (min-width: 1024px) {
+      .hdr-nav.hdr-nav.hdr-nav.hdr-nav { display: flex !important; }
+    }
 
     .hdr-link.hdr-link.hdr-link.hdr-link {
       font-family: var(--font-main) !important; font-size: 13px !important; font-weight: 600 !important;
