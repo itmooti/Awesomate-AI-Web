@@ -66,6 +66,14 @@ const projects = [
     description: 'CRM automation that scaled from one inspector to 50+ businesses Australia-wide.',
     tags: ['CRM', 'Automation', 'Franchise Scale'],
   },
+  {
+    name: 'THE HAPPY CLINIC',
+    color: '#00BCD4',
+    gradient: 'linear-gradient(135deg, #0097A7, #00BCD4)',
+    tagline: 'Modern Wellness, Fully Automated',
+    description: 'Ontraport customer portal, custom shop, AI chatbots and n8n automations for a holistic health clinic.',
+    tags: ['Customer Portal', 'AI Chatbots', 'Automation', 'E-commerce'],
+  },
 ];
 
 const ProjectShowcaseCode = `
@@ -119,6 +127,9 @@ const ProjectShowcaseCode = `
     overflow-x: auto !important; scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
     scrollbar-width: none !important; padding-bottom: 8px !important;
+    margin-left: calc(-1 * max(24px, calc((100vw - 1440px) / 2 + 24px))) !important;
+    margin-right: calc(-1 * max(24px, calc((100vw - 1440px) / 2 + 24px))) !important;
+    padding-left: max(24px, calc((100vw - 1440px) / 2 + 24px)) !important;
   }
   .hm-proj-track::-webkit-scrollbar { display: none !important; }
   .hm-proj-card {
@@ -310,6 +321,22 @@ const ProjectShowcaseCode = `
           </div>
         </div>
       </div>
+
+      <div class="hm-proj-card">
+        <div class="hm-proj-img" style="background: linear-gradient(135deg, #0097A7, #00BCD4);">
+          <div class="hm-proj-img-logo">THE HAPPY CLINIC</div>
+        </div>
+        <div class="hm-proj-body">
+          <div class="hm-proj-tagline">Modern Wellness, Fully Automated</div>
+          <div class="hm-proj-desc">Ontraport customer portal, custom shop, AI chatbots and n8n automations for a holistic health clinic.</div>
+          <div class="hm-proj-tags">
+            <span class="hm-proj-tag">Customer Portal</span>
+            <span class="hm-proj-tag">AI Chatbots</span>
+            <span class="hm-proj-tag">Automation</span>
+            <span class="hm-proj-tag">E-commerce</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -353,7 +380,13 @@ export const ProjectShowcase: React.FC = () => {
           <div
             ref={trackRef}
             className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2"
-            style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}
+            style={{
+              scrollbarWidth: 'none',
+              WebkitOverflowScrolling: 'touch',
+              marginLeft: 'calc(-1 * max(24px, calc((100vw - 1440px) / 2 + 24px)))',
+              marginRight: 'calc(-1 * max(24px, calc((100vw - 1440px) / 2 + 24px)))',
+              paddingLeft: 'max(24px, calc((100vw - 1440px) / 2 + 24px))'
+            }}
           >
             {projects.map((project) => (
               <div

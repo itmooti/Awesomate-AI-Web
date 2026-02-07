@@ -118,6 +118,8 @@ const SocialProofCode = `
       <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/resicert.png" alt="Resicert" class="hm-trust-logo-img">
       <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awardee.png" alt="Awardee" class="hm-trust-logo-img">
       <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/seednorthernrivers.png" alt="SEED Northern Rivers" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/realestategym.png" alt="Real Estate Gym" class="hm-trust-logo-img">
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/thehappyclinic.png" alt="The Happy Clinic" class="hm-trust-logo-img">
     </div>
 
     <div class="hm-trust-cards">
@@ -176,6 +178,8 @@ export const SocialProof: React.FC = () => {
     { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/resicert.png', alt: 'Resicert' },
     { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awardee.png', alt: 'Awardee' },
     { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/seednorthernrivers.png', alt: 'SEED Northern Rivers' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/realestategym.png', alt: 'Real Estate Gym' },
+    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/thehappyclinic.png', alt: 'The Happy Clinic' },
   ];
 
   const testimonials = [
