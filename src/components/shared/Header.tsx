@@ -30,13 +30,13 @@ const HeaderCode = `
       flex-shrink: 0 !important;
     }
     .hdr-logo svg {
-      height: 32px !important; width: auto !important; display: block !important;
+      height: 36px !important; width: auto !important; display: block !important;
       border: none !important; box-shadow: none !important;
     }
 
     .hdr-nav.hdr-nav.hdr-nav.hdr-nav {
       display: none !important; align-items: center !important; gap: 8px !important;
-      background: transparent !important; margin: 0 0 0 auto !important; padding: 0 !important;
+      background: transparent !important; margin: 0 8px 0 auto !important; padding: 0 !important;
       list-style: none !important; flex-direction: row !important;
       border: none !important; box-shadow: none !important; outline: none !important;
       justify-content: flex-end !important; flex-shrink: 0 !important;
