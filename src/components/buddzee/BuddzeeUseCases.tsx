@@ -13,8 +13,7 @@ const BuddzeeUseCasesCode = `
   .bzu-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   @media (min-width: 768px) { .bzu-grid { grid-template-columns: repeat(3, 1fr) !important; } }
   .bzu-card { background: white !important; border: 1px solid #f3f4f6 !important; border-radius: 20px !important; overflow: hidden !important; }
-  .bzu-card-img { width: 100% !important; height: 200px !important; background: linear-gradient(135deg, rgba(82,132,255,0.05), rgba(82,132,255,0.1)) !important; display: flex !important; align-items: center !important; justify-content: center !important; }
-  .bzu-card-img-text { font-family: 'JetBrains Mono', monospace !important; font-size: 14px !important; color: var(--bz-blue) !important; opacity: 0.5 !important; }
+  .bzu-card-img { width: 100% !important; height: 200px !important; background: #f8f9fb !important; object-fit: cover !important; }
   .bzu-card-body { padding: 24px !important; }
   .bzu-card-title { font-family: var(--font-buddzee) !important; font-size: 18px !important; font-weight: 800 !important; color: var(--bz-navy) !important; margin-bottom: 8px !important; }
   .bzu-card-desc { font-family: var(--font-buddzee) !important; font-size: 14px !important; color: #6b7280 !important; line-height: 1.6 !important; }
@@ -27,21 +26,21 @@ const BuddzeeUseCasesCode = `
     <p class="bzu-intro">Here\u2019s what it looks like when your data actually works for you.</p>
     <div class="bzu-grid">
       <div class="bzu-card">
-        <div class="bzu-card-img"><div class="bzu-card-img-text">[Insight Preview]</div></div>
+        <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/buddzee/use-case-dashboard.jpg" alt="Buddzee Dashboard" class="bzu-card-img">
         <div class="bzu-card-body">
           <div class="bzu-card-title">Ask Anything, Get Instant Answers</div>
           <div class="bzu-card-desc">\u2018How did we go last month?\u2019 \u2018Who are our top customers?\u2019 \u2018What\u2019s our pipeline looking like?\u2019 Buddzee tells you in seconds \u2014 no spreadsheets, no digging.</div>
         </div>
       </div>
       <div class="bzu-card">
-        <div class="bzu-card-img"><div class="bzu-card-img-text">[Automation Preview]</div></div>
+        <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/buddzee/use-case-sync.jpg" alt="Buddzee Automation" class="bzu-card-img">
         <div class="bzu-card-body">
           <div class="bzu-card-title">Automate the Boring Stuff</div>
           <div class="bzu-card-desc">Buddzee spots repetitive patterns and handles them in the background. Invoice reminders, status updates, report generation \u2014 less admin, fewer mistakes.</div>
         </div>
       </div>
       <div class="bzu-card">
-        <div class="bzu-card-img"><div class="bzu-card-img-text">[Dashboard Preview]</div></div>
+        <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/buddzee/use-case-report.jpg" alt="Buddzee Reports" class="bzu-card-img">
         <div class="bzu-card-body">
           <div class="bzu-card-title">Reclaim Your Time</div>
           <div class="bzu-card-desc">Stop juggling tools and spreadsheets. Buddzee gives you the clarity to focus on what matters \u2014 or finally start that hobby you\u2019ve been putting off.</div>
@@ -57,17 +56,20 @@ export const BuddzeeUseCases: React.FC = () => {
     {
       title: 'Ask Anything, Get Instant Answers',
       desc: '\u2018How did we go last month?\u2019 \u2018Who are our top customers?\u2019 \u2018What\u2019s our pipeline looking like?\u2019 Buddzee tells you in seconds \u2014 no spreadsheets, no digging.',
-      placeholder: '[Insight Preview]',
+      image: '/src/assets/images/buddzee/use-case-dashboard.jpg',
+      alt: 'Buddzee Dashboard',
     },
     {
       title: 'Automate the Boring Stuff',
       desc: 'Buddzee spots repetitive patterns and handles them in the background. Invoice reminders, status updates, report generation \u2014 less admin, fewer mistakes.',
-      placeholder: '[Automation Preview]',
+      image: '/src/assets/images/buddzee/use-case-sync.jpg',
+      alt: 'Buddzee Automation',
     },
     {
       title: 'Reclaim Your Time',
       desc: 'Stop juggling tools and spreadsheets. Buddzee gives you the clarity to focus on what matters \u2014 or finally start that hobby you\u2019ve been putting off.',
-      placeholder: '[Dashboard Preview]',
+      image: '/src/assets/images/buddzee/use-case-report.jpg',
+      alt: 'Buddzee Reports',
     },
   ];
 
@@ -85,12 +87,12 @@ export const BuddzeeUseCases: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cases.map((c) => (
               <div key={c.title} className="bg-white border border-gray-100 rounded-[20px] overflow-hidden">
-                <div
-                  className="w-full h-[200px] flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, rgba(82,132,255,0.05), rgba(82,132,255,0.1))' }}
-                >
-                  <span className="font-mono text-sm" style={{ color: '#5284FF', opacity: 0.5 }}>{c.placeholder}</span>
-                </div>
+                <img
+                  src={c.image}
+                  alt={c.alt}
+                  className="w-full h-[200px] object-cover"
+                  style={{ background: '#f8f9fb' }}
+                />
                 <div className="p-6">
                   <div className="text-lg font-800 mb-2" style={{ color: '#09142B', fontFamily: "'Manrope', sans-serif" }}>{c.title}</div>
                   <div className="text-sm text-gray-500 leading-relaxed" style={{ fontFamily: "'Manrope', sans-serif" }}>{c.desc}</div>

@@ -14,7 +14,7 @@ const ContactInfoCode = `
   .ct-info-icon svg { width: 18px !important; height: 18px !important; color: var(--color-3) !important; }
   .ct-info-item-title { font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 700 !important; color: var(--color-1) !important; margin-bottom: 2px !important; }
   .ct-info-item-text { font-family: var(--font-main) !important; font-size: 14px !important; color: #6b7280 !important; line-height: 1.5 !important; }
-  .ct-info-map { border-radius: 24px !important; background: var(--color-bg-alt, #f8f9fb) !important; height: 320px !important; display: flex !important; align-items: center !important; justify-content: center !important; font-family: var(--font-main) !important; font-size: 14px !important; color: #d1d5db !important; border: 2px dashed #e5e7eb !important; }
+  .ct-info-map { border-radius: 24px !important; width: 100% !important; height: 320px !important; object-fit: cover !important; box-shadow: 0 10px 40px rgba(0,0,0,0.06) !important; }
 </style>
 
 <section id="ct-info">
@@ -52,7 +52,7 @@ const ContactInfoCode = `
           </div>
         </div>
       </div>
-      <div class="ct-info-map">Map illustration placeholder</div>
+      <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/contact/contact-map.jpg" alt="Australia Map" class="ct-info-map">
     </div>
   </div>
 </section>
@@ -86,9 +86,11 @@ export const ContactInfo: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div className="rounded-3xl bg-[#f8f9fb] h-[320px] flex items-center justify-center text-sm text-gray-300 border-2 border-dashed border-gray-200">
-              Map illustration placeholder
-            </div>
+            <img
+              src="/src/assets/images/contact/contact-map.jpg"
+              alt="Australia Map"
+              className="rounded-3xl w-full h-[320px] object-cover shadow-[0_10px_40px_rgba(0,0,0,0.06)]"
+            />
           </div>
         </div>
       </section>

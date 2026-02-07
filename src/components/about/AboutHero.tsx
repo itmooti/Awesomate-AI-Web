@@ -52,10 +52,8 @@ const AboutHeroCode = `
   @media (min-width: 768px) { .ab-hero-sub { font-size: 20px !important; } }
   .ab-hero-img {
     max-width: 800px !important; margin: 0 auto !important; border-radius: 24px !important;
-    background: var(--color-bg-alt, #f8f9fb) !important; height: 320px !important;
-    display: flex !important; align-items: center !important; justify-content: center !important;
-    font-family: var(--font-main) !important; font-size: 14px !important; color: #d1d5db !important;
-    border: 2px dashed #e5e7eb !important;
+    width: 100% !important; height: 320px !important; object-fit: cover !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08) !important;
   }
 </style>
 
@@ -66,7 +64,7 @@ const AboutHeroCode = `
     <div class="ab-hero-breadcrumb"><a href="/">Home</a> / <span>About</span></div>
     <h1 class="ab-hero-h1">We're Awesomate.<br><span class="ab-hero-gradient">Nice to Meet You.</span></h1>
     <p class="ab-hero-sub">A small Australian tech company passionate about making business technology accessible, affordable, and genuinely useful.</p>
-    <div class="ab-hero-img">Team photo placeholder</div>
+    <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/about/about-hero.jpg" alt="Awesomate Team" class="ab-hero-img">
   </div>
 </section>
 `;
@@ -90,9 +88,11 @@ export const AboutHero: React.FC = () => {
           <p className="text-lg md:text-xl text-gray-500 font-medium leading-relaxed max-w-[640px] mx-auto mb-10">
             A small Australian tech company passionate about making business technology accessible, affordable, and genuinely useful.
           </p>
-          <div className="max-w-[800px] mx-auto rounded-3xl bg-[#f8f9fb] h-[320px] flex items-center justify-center text-sm text-gray-300 border-2 border-dashed border-gray-200">
-            Team photo placeholder
-          </div>
+          <img
+            src="/src/assets/images/about/about-hero.jpg"
+            alt="Awesomate Team"
+            className="max-w-[800px] w-full mx-auto rounded-3xl h-[320px] object-cover shadow-[0_20px_60px_rgba(0,0,0,0.08)]"
+          />
         </div>
       </section>
     </CopyWrapper>
