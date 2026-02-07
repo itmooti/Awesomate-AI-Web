@@ -170,16 +170,17 @@ export const SocialProof: React.FC = () => {
     { num: '50+', label: 'Businesses served' },
   ];
 
+  // Use local paths for dev preview (Vite will handle these)
   const logos = [
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awc.png', alt: 'Australian Writers\' Centre' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/filtermax.png', alt: 'Filtermax' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/mcgqs.png', alt: 'MCG Quantity Surveyors' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/phyx.png', alt: 'PHYX' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/resicert.png', alt: 'Resicert' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/awardee.png', alt: 'Awardee' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/seednorthernrivers.png', alt: 'SEED Northern Rivers' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/realestategym.png', alt: 'Real Estate Gym' },
-    { src: 'https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/client-logos/thehappyclinic.png', alt: 'The Happy Clinic' },
+    { src: '/src/assets/client-logos/awc.png', alt: 'Australian Writers\' Centre' },
+    { src: '/src/assets/client-logos/filtermax.png', alt: 'Filtermax' },
+    { src: '/src/assets/client-logos/mcgqs.png', alt: 'MCG Quantity Surveyors' },
+    { src: '/src/assets/client-logos/phyx.png', alt: 'PHYX' },
+    { src: '/src/assets/client-logos/resicert.png', alt: 'Resicert' },
+    { src: '/src/assets/client-logos/awardee.png', alt: 'Awardee' },
+    { src: '/src/assets/client-logos/seednorthernrivers.png', alt: 'SEED Northern Rivers' },
+    { src: '/src/assets/client-logos/realestategym.png', alt: 'Real Estate Gym' },
+    { src: '/src/assets/client-logos/thehappyclinic.png', alt: 'The Happy Clinic' },
   ];
 
   const testimonials = [
