@@ -35,23 +35,26 @@ const HeaderCode = `
     }
 
     .hdr-nav.hdr-nav.hdr-nav.hdr-nav {
-      display: none !important; align-items: center !important; gap: 8px !important;
+      display: none !important; align-items: center !important; gap: 6px !important;
       background: transparent !important; margin: 0 8px 0 auto !important; padding: 0 !important;
       list-style: none !important; flex-direction: row !important;
       border: none !important; box-shadow: none !important; outline: none !important;
-      justify-content: flex-end !important; flex-shrink: 0 !important;
+      justify-content: flex-end !important; flex-shrink: 1 !important;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       .hdr-nav.hdr-nav.hdr-nav.hdr-nav { display: flex !important; }
     }
 
     .hdr-link.hdr-link.hdr-link.hdr-link {
       font-family: var(--font-main) !important; font-size: 13px !important; font-weight: 600 !important;
       color: #6b7280 !important; text-decoration: none !important;
-      transition: all 0.2s !important; padding: 8px 14px !important;
+      transition: all 0.2s !important; padding: 8px 10px !important;
       border-radius: 8px !important; background: transparent !important;
       border: none !important; margin: 0 !important; display: inline-block !important;
-      box-sizing: border-box !important;
+      box-sizing: border-box !important; white-space: nowrap !important;
+    }
+    @media (min-width: 1300px) {
+      .hdr-link.hdr-link.hdr-link.hdr-link { padding: 8px 14px !important; }
     }
     .hdr-link.hdr-link.hdr-link.hdr-link:hover {
       color: var(--color-2) !important; background: rgba(233,72,77,0.04) !important;
@@ -62,12 +65,15 @@ const HeaderCode = `
     }
     .hdr-services-btn.hdr-services-btn.hdr-services-btn.hdr-services-btn {
       font-family: var(--font-main) !important; font-size: 13px !important; font-weight: 600 !important;
-      color: #6b7280 !important; padding: 8px 14px !important;
+      color: #6b7280 !important; padding: 8px 10px !important;
       border-radius: 8px !important; border: none !important;
       background: transparent !important; cursor: pointer !important;
       display: flex !important; align-items: center !important; gap: 4px !important;
       transition: all 0.2s !important; margin: 0 !important; box-sizing: border-box !important;
-      outline: none !important;
+      outline: none !important; white-space: nowrap !important;
+    }
+    @media (min-width: 1300px) {
+      .hdr-services-btn.hdr-services-btn.hdr-services-btn.hdr-services-btn { padding: 8px 14px !important; }
     }
     .hdr-services-btn.hdr-services-btn.hdr-services-btn.hdr-services-btn:hover {
       color: var(--color-2) !important; background: rgba(233,72,77,0.04) !important;
@@ -118,13 +124,16 @@ const HeaderCode = `
 
     .hdr-cta.hdr-cta.hdr-cta.hdr-cta {
       background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
-      color: white !important; padding: 10px 20px !important;
+      color: white !important; padding: 10px 14px !important;
       border-radius: 8px !important; font-family: var(--font-main) !important; font-size: 13px !important;
       font-weight: 800 !important; text-decoration: none !important;
       transition: all 0.2s !important; display: inline-block !important;
       text-transform: uppercase !important; letter-spacing: 0.05em !important;
       border: none !important; margin: 0 !important; box-sizing: border-box !important;
-      cursor: pointer !important;
+      cursor: pointer !important; white-space: nowrap !important;
+    }
+    @media (min-width: 1300px) {
+      .hdr-cta.hdr-cta.hdr-cta.hdr-cta { padding: 10px 20px !important; }
     }
     .hdr-cta.hdr-cta.hdr-cta.hdr-cta:hover {
       transform: translateY(-1px) !important;
@@ -136,7 +145,7 @@ const HeaderCode = `
       display: flex !important; background: transparent !important;
       margin: 0 !important; padding: 0 !important;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       .hdr-mobile-toggle.hdr-mobile-toggle.hdr-mobile-toggle.hdr-mobile-toggle { display: none !important; }
     }
 </style>
