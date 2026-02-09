@@ -59,47 +59,47 @@ const WhyAwesomateCode = `
 
 <section id="hm-why">
   <div class="hm-why-container">
-    <div class="hm-why-label">Why Awesomate?</div>
-    <h2 class="hm-why-h2">We Don't Just Build Things. We Build Things That Last.</h2>
+    <div class="hm-why-label">Built to Last</div>
+    <h2 class="hm-why-h2">Enterprise-Grade Security. Without the Enterprise Price Tag.</h2>
 
     <div class="hm-why-grid">
       <div class="hm-why-item">
         <div class="hm-why-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/><line x1="12" y1="16" x2="12" y2="19"/></svg>
         </div>
         <div>
-          <div class="hm-why-title">Australian-Based, Australian-Run</div>
-          <div class="hm-why-desc">No offshore support tickets. Real humans, your timezone. We're based in Australia and we understand Australian business.</div>
+          <div class="hm-why-title">HIPAA-Compliant. Enterprise-Grade Security.</div>
+          <div class="hm-why-desc">Your data is encrypted, access-controlled, and processed to HIPAA standards — the same level of compliance required by healthcare and finance. Need local hosting? We can deploy to Australian data centres or your own servers.</div>
         </div>
       </div>
 
       <div class="hm-why-item">
         <div class="hm-why-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m3-4.803a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
         <div>
-          <div class="hm-why-title">Built for Business Owners</div>
-          <div class="hm-why-desc">We speak business, not jargon. Every solution is designed for people who run companies, not write code.</div>
+          <div class="hm-why-title">3x Redundancy. Zero Downtime.</div>
+          <div class="hm-why-desc">We run three identical live copies of everything at all times. If one has a problem, the others take over instantly. Your business never goes offline.</div>
         </div>
       </div>
 
       <div class="hm-why-item">
         <div class="hm-why-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         </div>
         <div>
-          <div class="hm-why-title">End-to-End Technology Partner</div>
-          <div class="hm-why-desc">Hosting, data, apps — one team that understands your whole stack. No more juggling five different vendors.</div>
+          <div class="hm-why-title">Real-Time Data. Instant Decisions.</div>
+          <div class="hm-why-desc">Most platforms take seconds to retrieve data. Ours pushes and receives it instantly. When you're working with AI, less latency means faster, smarter decisions across every query.</div>
         </div>
       </div>
 
       <div class="hm-why-item">
         <div class="hm-why-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <div>
-          <div class="hm-why-title">Empowerment, Not Dependency</div>
-          <div class="hm-why-desc">We train you to maintain what we build. Your business, your tools, your independence. No lock-in, ever.</div>
+          <div class="hm-why-title">24/7 Monitoring. 30-Minute Backups.</div>
+          <div class="hm-why-desc">Round-the-clock monitoring catches issues before they affect you. Automatic backups every 30 minutes mean nothing gets lost. We manage it all — you never have to think about it.</div>
         </div>
       </div>
     </div>
@@ -112,39 +112,42 @@ export const WhyAwesomate: React.FC = () => {
     {
       icon: (
         <svg className="w-[22px] h-[22px] text-brand-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+          <path d="M7 11V7a5 5 0 0110 0v4" />
+          <line x1="12" y1="16" x2="12" y2="19" />
         </svg>
       ),
-      title: 'Australian-Based, Australian-Run',
-      desc: 'No offshore support tickets. Real humans, your timezone. We\u2019re based in Australia and we understand Australian business.',
+      title: 'HIPAA-Compliant. Enterprise-Grade Security.',
+      desc: 'Your data is encrypted, access-controlled, and processed to HIPAA standards \u2014 the same level of compliance required by healthcare and finance. Need local hosting? We can deploy to Australian data centres or your own servers.',
     },
     {
       icon: (
         <svg className="w-[22px] h-[22px] text-brand-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m3-4.803a4 4 0 11-8 0 4 4 0 018 0z" />
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <path d="M9 12l2 2 4-4" />
         </svg>
       ),
-      title: 'Built for Business Owners',
-      desc: 'We speak business, not jargon. Every solution is designed for people who run companies, not write code.',
+      title: '3x Redundancy. Zero Downtime.',
+      desc: 'We run three identical live copies of everything at all times. If one has a problem, the others take over instantly. Your business never goes offline.',
     },
     {
       icon: (
         <svg className="w-[22px] h-[22px] text-brand-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
         </svg>
       ),
-      title: 'End-to-End Technology Partner',
-      desc: 'Hosting, data, apps \u2014 one team that understands your whole stack. No more juggling five different vendors.',
+      title: 'Real-Time Data. Instant Decisions.',
+      desc: 'Most platforms take seconds to retrieve data. Ours pushes and receives it instantly. When you\u2019re working with AI, less latency means faster, smarter decisions across every query.',
     },
     {
       icon: (
         <svg className="w-[22px] h-[22px] text-brand-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 14" />
         </svg>
       ),
-      title: 'Empowerment, Not Dependency',
-      desc: 'We train you to maintain what we build. Your business, your tools, your independence. No lock-in, ever.',
+      title: '24/7 Monitoring. 30-Minute Backups.',
+      desc: 'Round-the-clock monitoring catches issues before they affect you. Automatic backups every 30 minutes mean nothing gets lost. We manage it all \u2014 you never have to think about it.',
     },
   ];
 
@@ -155,9 +158,9 @@ export const WhyAwesomate: React.FC = () => {
         style={{ backgroundImage: 'radial-gradient(circle, rgba(15,17,40,0.03) 1px, transparent 1px)', backgroundSize: '24px 24px' }}
       >
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-          <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Why Awesomate?</div>
+          <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Built to Last</div>
           <h2 className="text-4xl md:text-[44px] font-heading font-800 text-brand-navy leading-[1.15] tracking-tight mb-14 max-w-[600px]">
-            We Don't Just Build Things. We Build Things That Last.
+            Enterprise-Grade Security. Without the Enterprise Price Tag.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

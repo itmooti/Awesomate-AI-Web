@@ -83,52 +83,36 @@ const FAQCode = `
     </div>
     <div class="n8f-list">
       <div class="n8f-item">
-        <button class="n8f-question">WHAT IS N8N SELF HOSTING ON A SELF-MANAGED VPS? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">It\u2019s a virtual private server where you control everything \u2014 OS, software stack, middleware, and automation workflows. With n8n VPS hosting, you can deploy and manage your own n8n environment easily. You get root access, full flexibility, and complete control over your n8n self-hosted setup.</div>
+        <button class="n8f-question">WHAT DOES MANAGED AUTOMATION HOSTING ACTUALLY MEAN? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">We set everything up, keep it running, and fix problems before you even notice them. You don\u2019t touch anything technical.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">HOW IS SELF-MANAGED N8N SELF HOSTING DIFFERENT FROM MANAGED VPS HOSTING? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">With self-managed VPS, you handle updates, security hardening, runtime installations, and tuning \u2014 giving you full control over your n8n self-hosted environment. Managed VPS offers more support but limits customisation. Self-managed n8n self hosting is best suited for users who want maximum control and lower n8n self-hosting costs.</div>
+        <button class="n8f-question">HOW IS THIS DIFFERENT FROM ZAPIER OR MAKE? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">You own your automations instead of renting them. No per-task fees, no limits, and way more powerful.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">IS THIS RIGHT FOR RUNNING N8N? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Yes, especially if you require custom workflows, integrations, or control over network and security settings that a managed platform might restrict. Self-managed VPS hosting is ideal for running n8n, giving you flexibility and performance for your automation workflows.</div>
+        <button class="n8f-question">WHAT HAPPENS IF SOMETHING GOES WRONG? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">We run three copies of everything. If one has a problem, the others take over instantly. Plus our team monitors 24/7.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">WHICH OS AND CONTROL PANELS ARE SUPPORTED FOR SELF-HOSTED N8N? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Most Linux distributions are supported, and you can layer in a control panel (such as cPanel) later if desired \u2014 without losing root access.</div>
+        <button class="n8f-question">DO I NEED TECHNICAL SKILLS? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">No. We handle all the technical setup and maintenance. You tell us what you want automated, we make it happen.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">WHAT SUPPORT IS INCLUDED IN N8N VPS HOSTING? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">You\u2019ll get infrastructure-level support (hardware, network, and availability), while you manage software, containers, workflow logic, and maintenance for your self-hosted n8n environment. This setup is ideal for developers who prefer hands-on n8n self hosting.</div>
+        <button class="n8f-question">CAN I MOVE MY EXISTING AUTOMATIONS ACROSS? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Yes. We handle the migration for you.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">HOW DO I CHOOSE THE RIGHT N8N VPS HOSTING PLAN? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Evaluate your memory, CPU, storage and bandwidth needs based on your n8n usage patterns (number of workflows, triggers, data processing). If you expect growth, you can easily scale up your services.</div>
+        <button class="n8f-question">WHAT DOES IT COST? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Plans start from AU$75/month. See pricing above for full details.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">DO I GET UNLIMITED WORKFLOWS WITH N8N SELF HOSTING? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Yes. You can use unlimited workflows with self-managed VPS hosting for self-hosted n8n. This allows you to set up multiple instances and use compatible AI products \u2014 making it a powerful and cost-efficient n8n self-hosting option.</div>
+        <button class="n8f-question">IS MY DATA SECURE? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Your data runs on dedicated Australian infrastructure. It\u2019s encrypted, backed up, and never shared.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">HOW DOES SELF-HOSTED N8N SETUP WORK? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">After you purchase your plan, you\u2019ll receive an email with a step-by-step guide to help you get started with n8n self hosting. Consult the n8n community if you need further assistance with workflows or automation setup.</div>
-      </div>
-      <div class="n8f-item">
-        <button class="n8f-question">WHAT IS THE COST OF N8N SELF HOSTING? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Your n8n self-hosting cost depends on the VPS plan you choose \u2014 based on CPU, RAM, and storage requirements. Since you manage the server yourself, there\u2019s no additional n8n hosting fee, making it one of the most cost-effective ways to deploy n8n.</div>
-      </div>
-      <div class="n8f-item">
-        <button class="n8f-question">CAN I MIGRATE MY EXISTING N8N WORKFLOWS TO SELF-HOSTED N8N? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Yes. You can easily export and import workflows from any n8n setup to your VPS-based environment.</div>
-      </div>
-      <div class="n8f-item">
-        <button class="n8f-question">IS SELF-HOSTED N8N VPS HOSTING SECURE? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">With self-managed VPS hosting, you control all security configurations \u2014 including firewall rules, SSL certificates, and data backups \u2014 ensuring a secure n8n self-hosted environment.</div>
-      </div>
-      <div class="n8f-item">
-        <button class="n8f-question">WHAT ARE THE BENEFITS OF SELF-HOSTED N8N VPS HOSTING OVER CLOUD PLATFORMS? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Compared to cloud or shared hosting, self-hosted n8n VPS hosting offers dedicated resources, better performance, lower long-term hosting costs, and full data control.</div>
+        <button class="n8f-question">CAN I CANCEL ANYTIME? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Yes. No lock-in contracts.</div>
       </div>
     </div>
   </div>
@@ -151,18 +135,14 @@ export const FAQ: React.FC = () => {
   const [active, setActive] = useState<number | null>(null);
 
   const items = [
-    { q: "WHAT IS N8N SELF HOSTING ON A SELF-MANAGED VPS?", a: "It\u2019s a virtual private server where you control everything \u2014 OS, software stack, middleware, and automation workflows. With n8n VPS hosting, you can deploy and manage your own n8n environment easily. You get root access, full flexibility, and complete control over your n8n self-hosted setup." },
-    { q: "HOW IS SELF-MANAGED N8N SELF HOSTING DIFFERENT FROM MANAGED VPS HOSTING?", a: "With self-managed VPS, you handle updates, security hardening, runtime installations, and tuning \u2014 giving you full control over your n8n self-hosted environment. Managed VPS offers more support but limits customisation. Self-managed n8n self hosting is best suited for users who want maximum control and lower n8n self-hosting costs." },
-    { q: "IS THIS RIGHT FOR RUNNING N8N?", a: "Yes, especially if you require custom workflows, integrations, or control over network and security settings that a managed platform might restrict. Self-managed VPS hosting is ideal for running n8n, giving you flexibility and performance for your automation workflows." },
-    { q: "WHICH OS AND CONTROL PANELS ARE SUPPORTED FOR SELF-HOSTED N8N?", a: "Most Linux distributions are supported, and you can layer in a control panel (such as cPanel) later if desired \u2014 without losing root access." },
-    { q: "WHAT SUPPORT IS INCLUDED IN N8N VPS HOSTING?", a: "You\u2019ll get infrastructure-level support (hardware, network, and availability), while you manage software, containers, workflow logic, and maintenance for your self-hosted n8n environment. This setup is ideal for developers who prefer hands-on n8n self hosting." },
-    { q: "HOW DO I CHOOSE THE RIGHT N8N VPS HOSTING PLAN?", a: "Evaluate your memory, CPU, storage and bandwidth needs based on your n8n usage patterns (number of workflows, triggers, data processing). If you expect growth, you can easily scale up your services." },
-    { q: "DO I GET UNLIMITED WORKFLOWS WITH N8N SELF HOSTING?", a: "Yes. You can use unlimited workflows with self-managed VPS hosting for self-hosted n8n. This allows you to set up multiple instances and use compatible AI products \u2014 making it a powerful and cost-efficient n8n self-hosting option." },
-    { q: "HOW DOES SELF-HOSTED N8N SETUP WORK?", a: "After you purchase your plan, you\u2019ll receive an email with a step-by-step guide to help you get started with n8n self hosting. Consult the n8n community if you need further assistance with workflows or automation setup." },
-    { q: "WHAT IS THE COST OF N8N SELF HOSTING?", a: "Your n8n self-hosting cost depends on the VPS plan you choose \u2014 based on CPU, RAM, and storage requirements. Since you manage the server yourself, there\u2019s no additional n8n hosting fee, making it one of the most cost-effective ways to deploy n8n." },
-    { q: "CAN I MIGRATE MY EXISTING N8N WORKFLOWS TO SELF-HOSTED N8N?", a: "Yes. You can easily export and import workflows from any n8n setup to your VPS-based environment." },
-    { q: "IS SELF-HOSTED N8N VPS HOSTING SECURE?", a: "With self-managed VPS hosting, you control all security configurations \u2014 including firewall rules, SSL certificates, and data backups \u2014 ensuring a secure n8n self-hosted environment." },
-    { q: "WHAT ARE THE BENEFITS OF SELF-HOSTED N8N VPS HOSTING OVER CLOUD PLATFORMS?", a: "Compared to cloud or shared hosting, self-hosted n8n VPS hosting offers dedicated resources, better performance, lower long-term hosting costs, and full data control." }
+    { q: "WHAT DOES MANAGED AUTOMATION HOSTING ACTUALLY MEAN?", a: "We set everything up, keep it running, and fix problems before you even notice them. You don\u2019t touch anything technical." },
+    { q: "HOW IS THIS DIFFERENT FROM ZAPIER OR MAKE?", a: "You own your automations instead of renting them. No per-task fees, no limits, and way more powerful." },
+    { q: "WHAT HAPPENS IF SOMETHING GOES WRONG?", a: "We run three copies of everything. If one has a problem, the others take over instantly. Plus our team monitors 24/7." },
+    { q: "DO I NEED TECHNICAL SKILLS?", a: "No. We handle all the technical setup and maintenance. You tell us what you want automated, we make it happen." },
+    { q: "CAN I MOVE MY EXISTING AUTOMATIONS ACROSS?", a: "Yes. We handle the migration for you." },
+    { q: "WHAT DOES IT COST?", a: "Plans start from AU$75/month. See pricing above for full details." },
+    { q: "IS MY DATA SECURE?", a: "Your data runs on dedicated Australian infrastructure. It\u2019s encrypted, backed up, and never shared." },
+    { q: "CAN I CANCEL ANYTIME?", a: "Yes. No lock-in contracts." }
   ];
 
   return (

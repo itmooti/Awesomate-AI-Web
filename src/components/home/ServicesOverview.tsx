@@ -102,35 +102,35 @@ const ServicesOverviewCode = `
   <div class="hm-svc-container">
     <div class="hm-svc-label">What We Do</div>
     <h2 class="hm-svc-h2">Three Pillars.<br>One Partner.</h2>
-    <p class="hm-svc-intro">From keeping your automations running to building you custom tools — we handle the tech so you can focus on growing your business.</p>
+    <p class="hm-svc-intro">Most businesses juggle half a dozen tools, three different vendors, and still can't get a straight answer from their own data. We fix that.</p>
 
     <div class="hm-svc-grid">
       <a href="/n8n-hosting" class="hm-svc-card hm-svc-card-red">
         <div class="hm-svc-icon hm-svc-icon-red">n8</div>
-        <div class="hm-svc-card-title">Automation That Never Stops</div>
-        <div class="hm-svc-card-desc">Triple-redundant managed n8n hosting. 1-second failover. Backups every 30 minutes. Your automations, always on.</div>
+        <div class="hm-svc-card-title">Automations That Run Themselves</div>
+        <div class="hm-svc-card-desc">We connect your CRM, accounting, email, team chat, docs, and everything in between — so data flows automatically. No more manual entry, no missed follow-ups. Managed and monitored by us, 24/7.</div>
         <span class="hm-svc-card-link hm-svc-card-link-red">
-          Learn More
+          Explore Automations
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
         </span>
       </a>
 
       <a href="/buddzee" class="hm-svc-card hm-svc-card-blue">
         <div class="hm-svc-icon hm-svc-icon-blue">Bz</div>
-        <div class="hm-svc-card-title">Your Business Data Buddy</div>
-        <div class="hm-svc-card-desc">Connect your tools, get instant AI answers about your business, and automate the boring stuff — all in plain English.</div>
+        <div class="hm-svc-card-title">Buddzee — Your AI Data Platform</div>
+        <div class="hm-svc-card-desc">Our proprietary platform puts all your business data in one place — queryable by AI in plain English. Ask a question, get an instant answer. Then go further: build custom apps on top of your unified data using the Buddzee SDK.</div>
         <span class="hm-svc-card-link hm-svc-card-link-blue">
-          Learn More
+          Discover Buddzee
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
         </span>
       </a>
 
       <a href="/vibe-coding" class="hm-svc-card hm-svc-card-orange">
         <div class="hm-svc-icon hm-svc-icon-orange">Vc</div>
-        <div class="hm-svc-card-title">Your App. A Fraction of the Cost.</div>
-        <div class="hm-svc-card-desc">AI-assisted development that gets your business app built fast — and teaches you to maintain it yourself.</div>
+        <div class="hm-svc-card-title">Custom Apps. Built by Experts.</div>
+        <div class="hm-svc-card-desc">Anyone can drag-and-drop an app in an AI builder. But without expert guidance and direct access to your business data, you get a toy — not a tool. We build real apps connected to Buddzee, so your team and customers get something genuinely useful.</div>
         <span class="hm-svc-card-link hm-svc-card-link-orange">
-          Learn More
+          See Our Work
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
         </span>
       </a>
@@ -149,7 +149,7 @@ export const ServicesOverview: React.FC = () => {
             Three Pillars.<br />One Partner.
           </h2>
           <p className="text-[17px] text-gray-500 leading-relaxed max-w-[600px] mb-14">
-            From keeping your automations running to building you custom tools — we handle the tech so you can focus on growing your business.
+            Most businesses juggle half a dozen tools, three different vendors, and still can't get a straight answer from their own data. We fix that.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -158,10 +158,10 @@ export const ServicesOverview: React.FC = () => {
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-accent to-brand-orange" />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-accent to-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-14 h-14 rounded-2xl bg-brand-accent/[0.08] text-brand-accent flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110">n8</div>
-              <div className="text-[22px] font-800 text-brand-navy mb-3">Automation That Never Stops</div>
-              <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Triple-redundant managed n8n hosting. 1-second failover. Backups every 30 minutes. Your automations, always on.</div>
+              <div className="text-[22px] font-800 text-brand-navy mb-3">Automations That Run Themselves</div>
+              <div className="text-[15px] text-gray-500 leading-relaxed mb-6">We connect your CRM, accounting, email, team chat, docs, and everything in between — so data flows automatically. No more manual entry, no missed follow-ups. Managed and monitored by us, 24/7.</div>
               <span className="inline-flex items-center gap-1.5 text-sm font-700 text-brand-accent group-hover:gap-2.5 transition-all">
-                Learn More
+                Explore Automations
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14m-7-7l7 7-7 7" /></svg>
               </span>
             </a>
@@ -171,10 +171,10 @@ export const ServicesOverview: React.FC = () => {
               <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ background: 'linear-gradient(90deg, #5284FF, #ABC1FF)' }} />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: 'linear-gradient(90deg, #5284FF, #ABC1FF)' }} />
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110" style={{ background: 'rgba(82,132,255,0.08)', color: '#5284FF' }}>Bz</div>
-              <div className="text-[22px] font-800 text-brand-navy mb-3">Your Business Data Buddy</div>
-              <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Connect your tools, get instant AI answers about your business, and automate the boring stuff — all in plain English.</div>
+              <div className="text-[22px] font-800 text-brand-navy mb-3">Buddzee — Your AI Data Platform</div>
+              <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Our proprietary platform puts all your business data in one place — queryable by AI in plain English. Ask a question, get an instant answer. Then go further: build custom apps on top of your unified data using the Buddzee SDK.</div>
               <span className="inline-flex items-center gap-1.5 text-sm font-700 group-hover:gap-2.5 transition-all" style={{ color: '#5284FF' }}>
-                Learn More
+                Discover Buddzee
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14m-7-7l7 7-7 7" /></svg>
               </span>
             </a>
@@ -184,10 +184,10 @@ export const ServicesOverview: React.FC = () => {
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-orange to-yellow-400" />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-orange to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-14 h-14 rounded-2xl bg-brand-orange/[0.08] text-brand-orange flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110">Vc</div>
-              <div className="text-[22px] font-800 text-brand-navy mb-3">Your App. A Fraction of the Cost.</div>
-              <div className="text-[15px] text-gray-500 leading-relaxed mb-6">AI-assisted development that gets your business app built fast — and teaches you to maintain it yourself.</div>
+              <div className="text-[22px] font-800 text-brand-navy mb-3">Custom Apps. Built by Experts.</div>
+              <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Anyone can drag-and-drop an app in an AI builder. But without expert guidance and direct access to your business data, you get a toy — not a tool. We build real apps connected to Buddzee, so your team and customers get something genuinely useful.</div>
               <span className="inline-flex items-center gap-1.5 text-sm font-700 text-brand-orange group-hover:gap-2.5 transition-all">
-                Learn More
+                See Our Work
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14m-7-7l7 7-7 7" /></svg>
               </span>
             </a>

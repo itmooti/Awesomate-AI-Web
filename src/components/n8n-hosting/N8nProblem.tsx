@@ -74,23 +74,23 @@ const N8nProblemCode = `
   <div class="n8p-container">
     <div class="n8p-label">The Problem</div>
     <h2 class="n8p-h2">If Your Automation Stops, Your Business Stops.</h2>
-    <p class="n8p-body">You've built your workflows. Your team relies on them every day. But what happens when your hosting goes down at 2am on a Sunday?</p>
+    <p class="n8p-body">You've set up automations to save time. Your team depends on them. But what happens when something breaks at 2am on a Sunday?</p>
 
     <div class="n8p-grid">
       <div class="n8p-pain">
         <div class="n8p-pain-icon">\u26A0\uFE0F</div>
-        <div class="n8p-pain-title">Single Point of Failure</div>
-        <div class="n8p-pain-desc">Most hosts run one server. If it fails, everything stops until someone manually fixes it.</div>
+        <div class="n8p-pain-title">One Broken Link Stops Everything</div>
+        <div class="n8p-pain-desc">Most setups have a single weak point. If it fails, everything stops until someone manually fixes it.</div>
       </div>
       <div class="n8p-pain">
         <div class="n8p-pain-icon">\uD83D\uDD50</div>
         <div class="n8p-pain-title">Slow Recovery</div>
-        <div class="n8p-pain-desc">Restoring from backups can take hours. Every minute offline is money lost and clients frustrated.</div>
+        <div class="n8p-pain-desc">When things go wrong, getting back up can take hours. Every minute offline means lost revenue and frustrated customers.</div>
       </div>
       <div class="n8p-pain">
         <div class="n8p-pain-icon">\uD83E\uDD37</div>
         <div class="n8p-pain-title">You're On Your Own</div>
-        <div class="n8p-pain-desc">\u201CSelf-hosted\u201D often means \u201Cself-fixed.\u201D When things break, you\u2019re the one debugging at midnight.</div>
+        <div class="n8p-pain-desc">\u201CSelf-hosted\u201D often means \u201Cself-fixed.\u201D When things break, you\u2019re the one troubleshooting technical problems at midnight.</div>
       </div>
     </div>
   </div>
@@ -99,9 +99,9 @@ const N8nProblemCode = `
 
 export const N8nProblem: React.FC = () => {
   const pains = [
-    { icon: '\u26A0\uFE0F', title: 'Single Point of Failure', desc: 'Most hosts run one server. If it fails, everything stops until someone manually fixes it.' },
-    { icon: '\uD83D\uDD50', title: 'Slow Recovery', desc: 'Restoring from backups can take hours. Every minute offline is money lost and clients frustrated.' },
-    { icon: '\uD83E\uDD37', title: "You're On Your Own", desc: '\u201CSelf-hosted\u201D often means \u201Cself-fixed.\u201D When things break, you\u2019re the one debugging at midnight.' },
+    { icon: '\u26A0\uFE0F', title: 'One Broken Link Stops Everything', desc: 'Most setups have a single weak point. If it fails, everything stops until someone manually fixes it.' },
+    { icon: '\uD83D\uDD50', title: 'Slow Recovery', desc: 'When things go wrong, getting back up can take hours. Every minute offline means lost revenue and frustrated customers.' },
+    { icon: '\uD83E\uDD37', title: "You're On Your Own", desc: '\u201CSelf-hosted\u201D often means \u201Cself-fixed.\u201D When things break, you\u2019re the one troubleshooting technical problems at midnight.' },
   ];
 
   return (
@@ -114,7 +114,7 @@ export const N8nProblem: React.FC = () => {
             If Your Automation Stops, Your Business Stops.
           </h2>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 font-500">
-            You've built your workflows. Your team relies on them every day. But what happens when your hosting goes down at 2am on a Sunday?
+            You've set up automations to save time. Your team depends on them. But what happens when something breaks at 2am on a Sunday?
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">

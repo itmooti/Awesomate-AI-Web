@@ -24,23 +24,23 @@ const VibeProcessCode = `
     <div class="vcp-grid">
       <div class="vcp-step">
         <div class="vcp-num">01</div>
-        <div class="vcp-title">Brief</div>
-        <div class="vcp-desc">Tell us exactly what you need. We'll map it out together and agree on scope, timeline, and deliverables.</div>
+        <div class="vcp-title">Dream</div>
+        <div class="vcp-desc">Tell us everything you've imagined. The features you wish you had. The experience you want your clients to have. We'll map it out together and tell you exactly what it'll cost and how long it'll take.</div>
       </div>
       <div class="vcp-step">
         <div class="vcp-num">02</div>
         <div class="vcp-title">Build</div>
-        <div class="vcp-desc">Our team uses AI-powered tools to rapidly develop your app. You see progress in real-time, not after months of silence.</div>
+        <div class="vcp-desc">We build your app using the latest AI-powered tools. You see real progress every few days — not months of silence. Features that used to take weeks are added in hours.</div>
       </div>
       <div class="vcp-step">
         <div class="vcp-num">03</div>
         <div class="vcp-title">Deliver</div>
-        <div class="vcp-desc">You get a fully functional app, deployed and ready to use. Tested, documented, and built to last.</div>
+        <div class="vcp-desc">You get a real app — live on iOS, Android, or web. Push notifications, real-time data, the works. Tested, polished, and built to last.</div>
       </div>
       <div class="vcp-step">
         <div class="vcp-num">04</div>
-        <div class="vcp-title">Empower</div>
-        <div class="vcp-desc">We set you up with VS Code + Claude Code and train you to make changes yourself. Your app, your independence.</div>
+        <div class="vcp-title">Evolve</div>
+        <div class="vcp-desc">Need a change? Just tell us in plain English and it's done — fast. Your app grows with your business, and we're always here to make it happen.</div>
       </div>
     </div>
   </div>
@@ -49,10 +49,10 @@ const VibeProcessCode = `
 
 export const VibeProcess: React.FC = () => {
   const steps = [
-    { num: '01', title: 'Brief', desc: 'Tell us exactly what you need. We\u2019ll map it out together and agree on scope, timeline, and deliverables.' },
-    { num: '02', title: 'Build', desc: 'Our team uses AI-powered tools to rapidly develop your app. You see progress in real-time, not after months of silence.' },
-    { num: '03', title: 'Deliver', desc: 'You get a fully functional app, deployed and ready to use. Tested, documented, and built to last.' },
-    { num: '04', title: 'Empower', desc: 'We set you up with VS Code + Claude Code and train you to make changes yourself. Your app, your independence.' },
+    { num: '01', title: 'Dream', desc: 'Tell us everything you\u2019ve imagined. The features you wish you had. The experience you want your clients to have. We\u2019ll map it out together and tell you exactly what it\u2019ll cost and how long it\u2019ll take.' },
+    { num: '02', title: 'Build', desc: 'We build your app using the latest AI-powered tools. You see real progress every few days \u2014 not months of silence. Features that used to take weeks are added in hours.' },
+    { num: '03', title: 'Deliver', desc: 'You get a real app \u2014 live on iOS, Android, or web. Push notifications, real-time data, the works. Tested, polished, and built to last.' },
+    { num: '04', title: 'Evolve', desc: 'Need a change? Just tell us in plain English and it\u2019s done \u2014 fast. Your app grows with your business, and we\u2019re always here to make it happen.' },
   ];
 
   return (

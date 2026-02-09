@@ -147,8 +147,8 @@ const InfraCode = `
   <div class="n8i-container">
     <div class="n8i-layout">
       <div>
-        <div class="n8i-label"><span class="n8i-dot"></span> HIGH-AVAILABILITY ARCHITECTURE</div>
-        <h2 class="n8i-h2">If your automation stops, your business stops.</h2>
+        <div class="n8i-label"><span class="n8i-dot"></span> ALWAYS-ON INFRASTRUCTURE</div>
+        <h2 class="n8i-h2">Built So Your Business Never Goes Offline</h2>
         <p class="n8i-body">Most hosting is like a single lightbulb: when it pops, you're in the dark. We give you a massive generator that never blinks. We run <strong>three identical live copies</strong> of your data at all times.</p>
 
         <div class="n8i-callout">
@@ -158,18 +158,18 @@ const InfraCode = `
 
         <div class="n8i-checks">
           <div class="n8i-check"><span class="n8i-check-mark">&#10003;</span> 3 Live copies</div>
-          <div class="n8i-check"><span class="n8i-check-mark">&#10003;</span> 1-Sec Switch-over</div>
+          <div class="n8i-check"><span class="n8i-check-mark">&#10003;</span> Instant Switch-over</div>
           <div class="n8i-check"><span class="n8i-check-mark">&#10003;</span> No Offline Downtime</div>
-          <div class="n8i-check"><span class="n8i-check-mark">&#10003;</span> Self-Healing Tech</div>
+          <div class="n8i-check"><span class="n8i-check-mark">&#10003;</span> Fixes Itself Automatically</div>
         </div>
       </div>
 
       <div>
         <div class="n8i-cluster">
           <div class="n8i-nodes">
-            <div class="n8i-node"><div class="n8i-node-dot"></div><div class="n8i-node-label">MASTER 1</div></div>
-            <div class="n8i-node"><div class="n8i-node-dot"></div><div class="n8i-node-label">MASTER 2</div></div>
-            <div class="n8i-node"><div class="n8i-node-dot"></div><div class="n8i-node-label">MASTER 3</div></div>
+            <div class="n8i-node"><div class="n8i-node-dot"></div><div class="n8i-node-label">COPY 1</div></div>
+            <div class="n8i-node"><div class="n8i-node-dot"></div><div class="n8i-node-label">COPY 2</div></div>
+            <div class="n8i-node"><div class="n8i-node-dot"></div><div class="n8i-node-label">COPY 3</div></div>
           </div>
         </div>
       </div>
@@ -196,10 +196,10 @@ export const Infrastructure: React.FC = () => {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/[0.08] border border-brand-accent/20 text-brand-accent text-[11px] font-800 mb-6 tracking-[0.15em] uppercase">
                 <div className="w-1.5 h-1.5 bg-brand-accent rounded-full animate-pulse" />
-                HIGH-AVAILABILITY ARCHITECTURE
+                ALWAYS-ON INFRASTRUCTURE
               </div>
               <h2 className="text-4xl lg:text-[52px] font-heading font-800 text-white mb-6 leading-[1.1] tracking-tight">
-                If your automation stops, your business stops.
+                Built So Your Business Never Goes Offline
               </h2>
               <p className="text-lg text-white/60 font-500 mb-8 leading-relaxed max-w-2xl">
                 Most hosting is like a single lightbulb: when it pops, you're in the dark. We give you a massive generator that never blinks. We run <strong className="text-brand-accent">three identical live copies</strong> of your data at all times.
@@ -213,7 +213,7 @@ export const Infrastructure: React.FC = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                {['3 Live copies', '1-Sec Switch-over', 'No Offline Downtime', 'Self-Healing Tech'].map((item) => (
+                {['3 Live copies', 'Instant Switch-over', 'No Offline Downtime', 'Fixes Itself Automatically'].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-sm font-700 text-white bg-white/[0.03] border border-white/[0.06] p-3 rounded-lg hover:bg-brand-accent/[0.06] hover:border-brand-accent/15 transition-all cursor-default">
                     <span className="text-brand-accent">&#10003;</span> {item}
                   </div>
@@ -224,7 +224,7 @@ export const Infrastructure: React.FC = () => {
             <div className="relative">
               <div className="bg-slate-900/60 backdrop-blur-xl rounded-[32px] p-12 lg:p-16 relative overflow-hidden border border-white/[0.08]">
                 <div className="grid grid-cols-3 gap-6 relative z-10">
-                  {['MASTER 1', 'MASTER 2', 'MASTER 3'].map((label) => (
+                  {['COPY 1', 'COPY 2', 'COPY 3'].map((label) => (
                     <div key={label} className="bg-white/[0.03] border-2 border-brand-accent/20 rounded-2xl p-6 text-center hover:bg-brand-accent/[0.06] hover:border-brand-accent transition-all duration-500">
                       <div className="w-3 h-3 rounded-full bg-gradient-to-br from-brand-accent to-brand-orange mx-auto mb-4 shadow-[0_0_16px_rgba(233,72,77,0.4)]" />
                       <div className="text-[11px] font-mono font-800 text-white tracking-widest">{label}</div>

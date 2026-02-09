@@ -80,9 +80,9 @@ const PerformanceScaleCode = `
   <div class="n8s-glow"></div>
   <div class="n8s-container">
     <div class="n8s-header">
-      <div class="n8s-label">Infrastructure</div>
-      <h2 class="n8s-h2">A developer-first feature stack</h2>
-      <p class="n8s-sub">Everything you need to run resource-intensive applications on a virtual private server: fast performance, complete control, and rock-solid reliability.</p>
+      <div class="n8s-label">What You Get</div>
+      <h2 class="n8s-h2">Infrastructure That Just Works</h2>
+      <p class="n8s-sub">Powerful, reliable, and fully managed — so you can focus on your business instead of worrying about the tech behind it.</p>
     </div>
 
     <div class="n8s-layout">
@@ -94,40 +94,40 @@ const PerformanceScaleCode = `
         <div class="n8s-feat">
           <svg class="n8s-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
           <div>
-            <div class="n8s-feat-title">AMD EPYC processors</div>
-            <div class="n8s-feat-desc">Modern cores deliver low-latency compute for parallel jobs so your n8n VPS hosting stays responsive under load.</div>
+            <div class="n8s-feat-title">Lightning Fast</div>
+            <div class="n8s-feat-desc">Your automations run instantly, even when you're processing thousands of records.</div>
           </div>
         </div>
 
         <div class="n8s-feat">
           <svg class="n8s-feat-icon" style="color: var(--color-2);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
           <div>
-            <div class="n8s-feat-title">NVMe SSD storage</div>
-            <div class="n8s-feat-desc">Boost n8n self-hosted task execution with ultra-fast reads and writes.</div>
+            <div class="n8s-feat-title">Rock-Solid Storage</div>
+            <div class="n8s-feat-desc">Your data is stored securely and backed up every 30 minutes. Nothing gets lost.</div>
           </div>
         </div>
 
         <div class="n8s-feat">
           <svg class="n8s-feat-icon" style="color: var(--color-3);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
           <div>
-            <div class="n8s-feat-title">Unmetered bandwidth</div>
-            <div class="n8s-feat-desc">Your n8n webhooks, triggers and API calls aren't hindered by overage fees.</div>
+            <div class="n8s-feat-title">No Hidden Limits</div>
+            <div class="n8s-feat-desc">Run as many automations as you need. No caps, no throttling, no surprise fees.</div>
           </div>
         </div>
 
         <div class="n8s-feat">
           <svg class="n8s-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           <div>
-            <div class="n8s-feat-title">Add resources on demand</div>
-            <div class="n8s-feat-desc">Scale CPU/RAM and disk space as needs grow — no rebuild required.</div>
+            <div class="n8s-feat-title">Grows With Your Business</div>
+            <div class="n8s-feat-desc">Start small and scale up as you need. No disruptions, no migrations.</div>
           </div>
         </div>
 
         <div class="n8s-feat">
           <svg class="n8s-feat-icon" style="color: var(--color-2);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           <div>
-            <div class="n8s-feat-title">Handles traffic spikes</div>
-            <div class="n8s-feat-desc">Keep flows steady during launches; capacity scales to absorb concurrency.</div>
+            <div class="n8s-feat-title">Handles Busy Periods</div>
+            <div class="n8s-feat-desc">Black Friday, end-of-month processing, product launches — your automations keep running smoothly.</div>
           </div>
         </div>
       </div>
@@ -139,32 +139,32 @@ const PerformanceScaleCode = `
 export const PerformanceScale: React.FC = () => {
   const features = [
     {
-      title: 'AMD EPYC processors',
-      desc: 'Modern cores deliver low-latency compute for parallel jobs so your n8n VPS hosting stays responsive under load.',
+      title: 'Lightning Fast',
+      desc: "Your automations run instantly, even when you're processing thousands of records.",
       color: 'text-brand-blue',
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>,
     },
     {
-      title: 'NVMe SSD storage',
-      desc: 'Boost n8n self-hosted task execution with ultra-fast reads and writes.',
+      title: 'Rock-Solid Storage',
+      desc: 'Your data is stored securely and backed up every 30 minutes. Nothing gets lost.',
       color: 'text-brand-accent',
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>,
     },
     {
-      title: 'Unmetered bandwidth',
-      desc: "Your n8n webhooks, triggers and API calls aren't hindered by overage fees.",
+      title: 'No Hidden Limits',
+      desc: 'Run as many automations as you need. No caps, no throttling, no surprise fees.',
       color: 'text-brand-orange',
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>,
     },
     {
-      title: 'Add resources on demand',
-      desc: 'Scale CPU/RAM and disk space as needs grow — no rebuild required.',
+      title: 'Grows With Your Business',
+      desc: 'Start small and scale up as you need. No disruptions, no migrations.',
       color: 'text-brand-blue',
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>,
     },
     {
-      title: 'Handles traffic spikes',
-      desc: 'Keep flows steady during launches; capacity scales to absorb concurrency.',
+      title: 'Handles Busy Periods',
+      desc: 'Black Friday, end-of-month processing, product launches — your automations keep running smoothly.',
       color: 'text-brand-accent',
       icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>,
     },
@@ -176,12 +176,12 @@ export const PerformanceScale: React.FC = () => {
         <div className="absolute top-[-150px] left-[-100px] w-[600px] h-[600px] bg-[radial-gradient(circle,_rgba(30,99,233,0.04)_0%,_transparent_70%)] pointer-events-none" />
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
           <div className="text-center mb-20">
-            <div className="text-xs font-800 text-brand-blue uppercase tracking-[0.15em] mb-4">Infrastructure</div>
+            <div className="text-xs font-800 text-brand-blue uppercase tracking-[0.15em] mb-4">What You Get</div>
             <h2 className="text-4xl md:text-5xl font-heading font-800 text-brand-navy leading-[1.2] tracking-tight mb-6">
-              A developer-first feature stack
+              Infrastructure That Just Works
             </h2>
             <p className="text-lg text-gray-500 font-500 max-w-3xl mx-auto leading-relaxed">
-              Everything you need to run resource-intensive applications on a virtual private server: fast performance, complete control, and rock-solid reliability.
+              Powerful, reliable, and fully managed — so you can focus on your business instead of worrying about the tech behind it.
             </p>
           </div>
 

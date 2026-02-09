@@ -27,28 +27,28 @@ const VibeFeaturesCode = `
     <div class="vcf-grid">
       <div class="vcf-card">
         <div class="vcf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-        <div class="vcf-title">Rapid Development</div>
-        <div class="vcf-desc">Apps built in weeks, not months. AI-powered development means faster delivery without cutting corners.</div>
+        <div class="vcf-title">Built at the Speed of Thought</div>
+        <div class="vcf-desc">We built an entire client app in a single day. Features that used to take weeks now take hours. This isn't a promise — it's just how fast the technology has gotten.</div>
       </div>
       <div class="vcf-card">
         <div class="vcf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-        <div class="vcf-title">Your Own Dev Environment</div>
-        <div class="vcf-desc">VS Code + Claude Code setup, configured specifically for your app. Ready for you to use from day one.</div>
+        <div class="vcf-title">Real Apps, Not Workarounds</div>
+        <div class="vcf-desc">Push notifications. Real-time data. Native mobile experience. Everything your clients expect from a proper app — not a login page on a website.</div>
       </div>
       <div class="vcf-card">
         <div class="vcf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg></div>
-        <div class="vcf-title">Training & Workshops</div>
-        <div class="vcf-desc">Learn to talk to AI to make changes yourself. We don't just hand over code — we teach you how to use it.</div>
+        <div class="vcf-title">Changes in Plain English</div>
+        <div class="vcf-desc">Want something different? Just tell us. Describe the change in your own words and we'll have it done — usually within hours, not weeks. No tech skills needed.</div>
       </div>
       <div class="vcf-card">
         <div class="vcf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div class="vcf-title">Ongoing Support</div>
-        <div class="vcf-desc">We're here when you need us. Whether it's a quick question or a bigger feature request, we've got your back.</div>
+        <div class="vcf-title">We Handle Everything</div>
+        <div class="vcf-desc">From hosting to updates to new features — we manage it all. You focus on your business, we keep your app running and evolving.</div>
       </div>
       <div class="vcf-card">
         <div class="vcf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
-        <div class="vcf-title">Full Ownership</div>
-        <div class="vcf-desc">Your code, your app, your business. No licensing fees, no lock-in, no surprises. You own everything we build.</div>
+        <div class="vcf-title">Your App, Fully Managed</div>
+        <div class="vcf-desc">A real app for your business at a fraction of the old cost. Built fast, kept running, and always improving — with a team that actually understands your business.</div>
       </div>
     </div>
   </div>
@@ -57,11 +57,11 @@ const VibeFeaturesCode = `
 
 export const VibeFeatures: React.FC = () => {
   const features = [
-    { title: 'Rapid Development', desc: 'Apps built in weeks, not months. AI-powered development means faster delivery without cutting corners.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 10V3L4 14h7v7l9-11h-7z" /></svg> },
-    { title: 'Your Own Dev Environment', desc: 'VS Code + Claude Code setup, configured specifically for your app. Ready for you to use from day one.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg> },
-    { title: 'Training & Workshops', desc: 'Learn to talk to AI to make changes yourself. We don\u2019t just hand over code \u2014 we teach you how to use it.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg> },
-    { title: 'Ongoing Support', desc: 'We\u2019re here when you need us. Whether it\u2019s a quick question or a bigger feature request, we\u2019ve got your back.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg> },
-    { title: 'Full Ownership', desc: 'Your code, your app, your business. No licensing fees, no lock-in, no surprises. You own everything we build.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> },
+    { title: 'Built at the Speed of Thought', desc: 'We built an entire client app in a single day. Features that used to take weeks now take hours. This isn\u2019t a promise \u2014 it\u2019s just how fast the technology has gotten.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 10V3L4 14h7v7l9-11h-7z" /></svg> },
+    { title: 'Real Apps, Not Workarounds', desc: 'Push notifications. Real-time data. Native mobile experience. Everything your clients expect from a proper app \u2014 not a login page on a website.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg> },
+    { title: 'Changes in Plain English', desc: 'Want something different? Just tell us. Describe the change in your own words and we\u2019ll have it done \u2014 usually within hours, not weeks. No tech skills needed.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg> },
+    { title: 'We Handle Everything', desc: 'From hosting to updates to new features \u2014 we manage it all. You focus on your business, we keep your app running and evolving.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg> },
+    { title: 'Your App, Fully Managed', desc: 'A real app for your business at a fraction of the old cost. Built fast, kept running, and always improving \u2014 with a team that actually understands your business.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> },
   ];
 
   return (

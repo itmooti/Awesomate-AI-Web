@@ -3,7 +3,7 @@ import { CopyWrapper } from '../shared/CopyWrapper';
 
 const BuddzeeHowItWorksCode = `
 <style>
-  :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; --font-buddzee:'Manrope',sans-serif; }
+  :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; }
   #bz-how {
     padding: 100px 0 !important;
     background: #ffffff !important;
@@ -15,13 +15,13 @@ const BuddzeeHowItWorksCode = `
     .bzh-container { padding: 0 48px !important; }
   }
   .bzh-label {
-    display: inline-block !important; font-family: var(--font-buddzee) !important;
+    display: inline-block !important; font-family: var(--font-main) !important;
     font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .bzh-h2.bzh-h2.bzh-h2.bzh-h2 {
-    font-family: var(--font-buddzee) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important; font-weight: 800 !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--bz-navy) !important; margin: 0 0 16px !important;
     letter-spacing: -0.02em !important;
@@ -30,7 +30,7 @@ const BuddzeeHowItWorksCode = `
     .bzh-h2.bzh-h2.bzh-h2.bzh-h2 { font-size: 44px !important; }
   }
   .bzh-intro {
-    font-family: var(--font-buddzee) !important; font-size: 17px !important;
+    font-family: var(--font-main) !important; font-size: 17px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
     max-width: 560px !important; margin-bottom: 56px !important;
   }
@@ -51,7 +51,7 @@ const BuddzeeHowItWorksCode = `
     border-color: var(--bz-blue-light) !important;
   }
   .bzh-number {
-    font-family: var(--font-buddzee) !important; font-size: 48px !important;
+    font-family: var(--font-main) !important; font-size: 48px !important;
     font-weight: 800 !important; line-height: 1 !important;
     margin-bottom: 20px !important; display: inline-block !important;
     background: linear-gradient(135deg, var(--bz-blue-light) 0%, var(--bz-blue) 100%) !important;
@@ -59,12 +59,12 @@ const BuddzeeHowItWorksCode = `
     background-clip: text !important;
   }
   .bzh-step-title {
-    font-family: var(--font-buddzee) !important; font-size: 22px !important;
+    font-family: var(--font-main) !important; font-size: 22px !important;
     font-weight: 800 !important; color: var(--bz-navy) !important;
     margin-bottom: 12px !important;
   }
   .bzh-step-desc {
-    font-family: var(--font-buddzee) !important; font-size: 15px !important;
+    font-family: var(--font-main) !important; font-size: 15px !important;
     color: #6b7280 !important; line-height: 1.65 !important;
   }
 </style>
@@ -79,7 +79,7 @@ const BuddzeeHowItWorksCode = `
       <div class="bzh-card">
         <div class="bzh-number">01</div>
         <div class="bzh-step-title">Connect</div>
-        <div class="bzh-step-desc">We plug into all your business tools. CRM, accounting, project management, e-commerce \u2014 everything talks to Buddzee.</div>
+        <div class="bzh-step-desc">We connect all your business tools \u2014 accounting, customer management, project tracking, online store \u2014 everything talks to Buddzee.</div>
       </div>
 
       <div class="bzh-card">
@@ -103,7 +103,7 @@ export const BuddzeeHowItWorks: React.FC = () => {
     {
       number: '01',
       title: 'Connect',
-      desc: 'We plug into all your business tools. CRM, accounting, project management, e-commerce \u2014 everything talks to Buddzee.',
+      desc: 'We connect all your business tools \u2014 accounting, customer management, project tracking, online store \u2014 everything talks to Buddzee.',
     },
     {
       number: '02',
@@ -123,19 +123,18 @@ export const BuddzeeHowItWorks: React.FC = () => {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
           <div
             className="text-xs font-800 uppercase tracking-[0.15em] mb-4"
-            style={{ color: '#5284FF', fontFamily: "'Manrope', sans-serif" }}
+            style={{ color: '#5284FF' }}
           >
             How It Works
           </div>
           <h2
-            className="text-4xl md:text-[44px] font-800 leading-[1.15] tracking-tight mb-4"
-            style={{ color: '#09142B', fontFamily: "'Manrope', sans-serif" }}
+            className="text-4xl md:text-[44px] font-heading font-800 leading-[1.15] tracking-tight mb-4"
+            style={{ color: '#09142B' }}
           >
             From Chaos to Calm
           </h2>
           <p
             className="text-[17px] text-gray-500 leading-relaxed max-w-[560px] mb-14"
-            style={{ fontFamily: "'Manrope', sans-serif" }}
           >
             Three simple steps to transform how you run your business.
           </p>
@@ -145,7 +144,6 @@ export const BuddzeeHowItWorks: React.FC = () => {
               <div
                 key={step.number}
                 className="bg-white border border-gray-200 rounded-2xl p-10 transition-all duration-300 hover:-translate-y-1 hover:border-[#ABC1FF]"
-                style={{ fontFamily: "'Manrope', sans-serif" }}
                 onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 40px rgba(82,132,255,0.08)'}
                 onMouseLeave={(e) => e.currentTarget.style.boxShadow = ''}
               >

@@ -20,23 +20,23 @@ const VibeWhoItsForCode = `
 <section id="vc-who">
   <div class="vcw-container">
     <div class="vcw-label">Who It's For</div>
-    <h2 class="vcw-h2">Perfect For</h2>
+    <h2 class="vcw-h2">Now Possible For</h2>
     <div class="vcw-grid">
       <div class="vcw-card">
         <div class="vcw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <div><div class="vcw-title">Business Owners</div><div class="vcw-desc">Who need a custom tool but can't afford a full development team. Get exactly what you need, not a bloated off-the-shelf solution.</div></div>
+        <div><div class="vcw-title">Coaches, Consultants & Service Providers</div><div class="vcw-desc">You want your clients to have a proper app experience — not a clunky website login. Now they can. And you don't have to build a thing.</div></div>
       </div>
       <div class="vcw-card">
         <div class="vcw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <div><div class="vcw-title">Startups</div><div class="vcw-desc">Who need to move fast and iterate. Validate your idea with a working product in weeks, not quarters.</div></div>
+        <div><div class="vcw-title">Startups</div><div class="vcw-desc">Validate your idea with a working product in weeks, not quarters. Get to market before the opportunity passes.</div></div>
       </div>
       <div class="vcw-card">
         <div class="vcw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/></svg></div>
-        <div><div class="vcw-title">Teams</div><div class="vcw-desc">Who want internal tools purpose-built for their workflows. Stop forcing square pegs into round holes with generic software.</div></div>
+        <div><div class="vcw-title">Growing Businesses</div><div class="vcw-desc">Your team deserves tools built for how you actually work — not generic software you have to work around.</div></div>
       </div>
       <div class="vcw-card">
         <div class="vcw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-        <div><div class="vcw-title">Anyone Tired of $50k+ Quotes</div><div class="vcw-desc">For basic business software. There's a better way — and it doesn't involve mortgaging your house for a simple CRUD app.</div></div>
+        <div><div class="vcw-title">Anyone Told 'That's Too Expensive to Build'</div><div class="vcw-desc">You had the idea. You got the quote. You shelved it. Time to dust it off — because it's affordable now.</div></div>
       </div>
     </div>
   </div>
@@ -45,10 +45,10 @@ const VibeWhoItsForCode = `
 
 export const VibeWhoItsFor: React.FC = () => {
   const personas = [
-    { title: 'Business Owners', desc: 'Who need a custom tool but can\u2019t afford a full development team. Get exactly what you need, not a bloated off-the-shelf solution.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" /></svg> },
-    { title: 'Startups', desc: 'Who need to move fast and iterate. Validate your idea with a working product in weeks, not quarters.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg> },
-    { title: 'Teams', desc: 'Who want internal tools purpose-built for their workflows. Stop forcing square pegs into round holes with generic software.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" /></svg> },
-    { title: 'Anyone Tired of $50k+ Quotes', desc: 'For basic business software. There\u2019s a better way \u2014 and it doesn\u2019t involve mortgaging your house for a simple CRUD app.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l3 3" /></svg> },
+    { title: 'Coaches, Consultants & Service Providers', desc: 'You want your clients to have a proper app experience \u2014 not a clunky website login. Now they can. And you don\u2019t have to build a thing.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" /></svg> },
+    { title: 'Startups', desc: 'Validate your idea with a working product in weeks, not quarters. Get to market before the opportunity passes.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg> },
+    { title: 'Growing Businesses', desc: 'Your team deserves tools built for how you actually work \u2014 not generic software you have to work around.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" /></svg> },
+    { title: 'Anyone Told \u2018That\u2019s Too Expensive to Build\u2019', desc: 'You had the idea. You got the quote. You shelved it. Time to dust it off \u2014 because it\u2019s affordable now.', icon: <svg className="w-[22px] h-[22px] text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10" /><path d="M12 8v4l3 3" /></svg> },
   ];
 
   return (
@@ -57,7 +57,7 @@ export const VibeWhoItsFor: React.FC = () => {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
           <div className="text-xs font-800 text-brand-orange uppercase tracking-[0.15em] mb-4">Who It's For</div>
           <h2 className="text-4xl md:text-[44px] font-heading font-800 text-brand-navy leading-[1.15] tracking-tight mb-14">
-            Perfect For
+            Now Possible For
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {personas.map((p) => (

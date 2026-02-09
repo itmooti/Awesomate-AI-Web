@@ -3,7 +3,7 @@ import { CopyWrapper } from '../shared/CopyWrapper';
 
 const BuddzeeProblemCode = `
 <style>
-  :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; --font-buddzee:'Manrope',sans-serif; }
+  :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; }
   #bz-problem {
     padding: 80px 0 !important; background: var(--bz-cloud) !important;
   }
@@ -12,13 +12,13 @@ const BuddzeeProblemCode = `
     padding: 0 24px !important; text-align: center !important;
   }
   .bzp-label {
-    display: inline-block !important; font-family: var(--font-buddzee) !important;
+    display: inline-block !important; font-family: var(--font-main) !important;
     font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .bzp-h2.bzp-h2.bzp-h2.bzp-h2 {
-    font-family: var(--font-buddzee) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important; font-weight: 800 !important;
     font-size: 36px !important; line-height: 1.2 !important;
     color: var(--bz-navy) !important; margin: 0 0 16px !important;
     letter-spacing: -0.02em !important;
@@ -27,7 +27,7 @@ const BuddzeeProblemCode = `
     .bzp-h2.bzp-h2.bzp-h2.bzp-h2 { font-size: 44px !important; }
   }
   .bzp-intro {
-    font-family: var(--font-buddzee) !important; font-size: 18px !important;
+    font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
     margin: 0 0 40px !important; font-weight: 500 !important;
   }
@@ -59,12 +59,12 @@ const BuddzeeProblemCode = `
     stroke-linejoin: round !important;
   }
   .bzp-card-title {
-    font-family: var(--font-buddzee) !important; font-size: 16px !important;
+    font-family: var(--font-main) !important; font-size: 16px !important;
     font-weight: 700 !important; color: var(--bz-navy) !important;
     margin: 0 0 8px !important;
   }
   .bzp-card-desc {
-    font-family: var(--font-buddzee) !important; font-size: 14px !important;
+    font-family: var(--font-main) !important; font-size: 14px !important;
     color: #9ca3af !important; line-height: 1.65 !important; margin: 0 !important;
   }
 </style>
@@ -94,7 +94,7 @@ const BuddzeeProblemCode = `
           <svg viewBox="0 0 24 24"><path d="M4 7h3a1 1 0 0 1 1 1v0a1 1 0 0 1-1 1H5.5"/><path d="M16 7h3a1 1 0 0 1 1 1v0a1 1 0 0 1-1 1h-1.5"/><path d="M4 16h3a1 1 0 0 0 1-1v0a1 1 0 0 0-1-1H5.5"/><path d="M16 16h3a1 1 0 0 0 1-1v0a1 1 0 0 0-1-1h-1.5"/><circle cx="12" cy="12" r="3"/><line x1="9" y1="12" x2="4" y2="7"/><line x1="15" y1="12" x2="20" y2="7"/><line x1="9" y1="12" x2="4" y2="16"/><line x1="15" y1="12" x2="20" y2="16"/></svg>
         </div>
         <div class="bzp-card-title">Too Many Tools, Too Little Time</div>
-        <div class="bzp-card-desc">ChatGPT here, Zapier there, Make over there. Multiple subscriptions for something that still feels clunky and fragile. You deserve better.</div>
+        <div class="bzp-card-desc">One tool for this, another tool for that. Multiple subscriptions adding up for something that still feels clunky and disconnected.</div>
       </div>
     </div>
   </div>
@@ -132,7 +132,7 @@ export const BuddzeeProblem: React.FC = () => {
     },
     {
       title: 'Too Many Tools, Too Little Time',
-      desc: 'ChatGPT here, Zapier there, Make over there. Multiple subscriptions for something that still feels clunky and fragile. You deserve better.',
+      desc: 'One tool for this, another tool for that. Multiple subscriptions adding up for something that still feels clunky and disconnected.',
       icon: (
         <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" style={{ stroke: '#5284FF' }}>
           <path d="M4 7h3a1 1 0 0 1 1 1v0a1 1 0 0 1-1 1H5.5"/>
@@ -153,11 +153,11 @@ export const BuddzeeProblem: React.FC = () => {
     <CopyWrapper blockName="BuddzeeProblem" codeToCopy={BuddzeeProblemCode}>
       <section className="py-20" style={{ background: '#EDEFF7' }}>
         <div className="max-w-[900px] mx-auto px-6 lg:px-12 text-center">
-          <div className="text-xs font-extrabold uppercase tracking-[0.15em] mb-4 font-buddzee" style={{ color: '#5284FF' }}>The Problem</div>
-          <h2 className="text-4xl md:text-[44px] font-extrabold leading-[1.2] tracking-tight mb-4 font-buddzee" style={{ color: '#09142B' }}>
+          <div className="text-xs font-extrabold uppercase tracking-[0.15em] mb-4" style={{ color: '#5284FF' }}>The Problem</div>
+          <h2 className="text-4xl md:text-[44px] font-heading font-extrabold leading-[1.2] tracking-tight mb-4" style={{ color: '#09142B' }}>
             Sound Familiar?
           </h2>
-          <p className="text-lg text-gray-500 font-medium leading-relaxed mb-10 font-buddzee">
+          <p className="text-lg text-gray-500 font-medium leading-relaxed mb-10">
             You're not alone. Most business owners we talk to are dealing with the same frustrations.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
@@ -166,8 +166,8 @@ export const BuddzeeProblem: React.FC = () => {
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: '#EDEFF7' }}>
                   {p.icon}
                 </div>
-                <div className="text-base font-bold mb-2 font-buddzee" style={{ color: '#09142B' }}>{p.title}</div>
-                <div className="text-sm text-gray-400 leading-relaxed font-buddzee">{p.desc}</div>
+                <div className="text-base font-bold mb-2" style={{ color: '#09142B' }}>{p.title}</div>
+                <div className="text-sm text-gray-400 leading-relaxed">{p.desc}</div>
               </div>
             ))}
           </div>

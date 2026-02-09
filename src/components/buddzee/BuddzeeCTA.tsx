@@ -3,7 +3,7 @@ import { CopyWrapper } from '../shared/CopyWrapper';
 
 const BuddzeeCTACode = `
 <style>
-  :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; --font-buddzee:'Manrope',sans-serif; }
+  :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; }
   #bz-cta {
     padding: 100px 0 !important;
     background: var(--bz-navy) !important;
@@ -32,7 +32,7 @@ const BuddzeeCTACode = `
     text-align: center !important; position: relative !important; z-index: 1 !important;
   }
   .bzc-h2.bzc-h2.bzc-h2.bzc-h2 {
-    font-family: var(--font-buddzee) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important; font-weight: 800 !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: white !important; margin: 0 0 20px !important;
     letter-spacing: -0.02em !important;
@@ -41,7 +41,7 @@ const BuddzeeCTACode = `
     .bzc-h2.bzc-h2.bzc-h2.bzc-h2 { font-size: 48px !important; }
   }
   .bzc-sub {
-    font-family: var(--font-buddzee) !important; font-size: 17px !important;
+    font-family: var(--font-main) !important; font-size: 17px !important;
     color: rgba(255,255,255,0.5) !important; line-height: 1.7 !important;
     max-width: 520px !important; margin: 0 auto 36px !important;
   }
@@ -49,7 +49,7 @@ const BuddzeeCTACode = `
     display: inline-flex !important; align-items: center !important; gap: 8px !important;
     background: var(--bz-blue) !important; color: white !important;
     padding: 16px 36px !important; border-radius: 10px !important;
-    font-family: var(--font-buddzee) !important; font-size: 15px !important;
+    font-family: var(--font-main) !important; font-size: 15px !important;
     font-weight: 800 !important; text-decoration: none !important;
     text-transform: uppercase !important; letter-spacing: 0.05em !important;
     transition: all 0.2s !important; border: none !important; cursor: pointer !important;
@@ -59,7 +59,7 @@ const BuddzeeCTACode = `
     box-shadow: 0 16px 40px rgba(82,132,255,0.4) !important;
   }
   .bzc-note {
-    font-family: var(--font-buddzee) !important; font-size: 13px !important;
+    font-family: var(--font-main) !important; font-size: 13px !important;
     color: rgba(255,255,255,0.3) !important; margin-top: 20px !important;
   }
 </style>
@@ -100,15 +100,12 @@ export const BuddzeeCTA: React.FC = () => {
         </svg>
 
         <div className="max-w-[720px] mx-auto px-6 text-center relative z-10">
-          <h2
-            className="text-4xl md:text-5xl font-800 text-white leading-[1.15] tracking-tight mb-5"
-            style={{ fontFamily: "'Manrope', sans-serif" }}
-          >
+          <h2 className="text-4xl md:text-5xl font-heading font-800 text-white leading-[1.15] tracking-tight mb-5">
             Meet Buddzee. Your Business Data Buddy.
           </h2>
           <p
             className="text-[17px] leading-relaxed max-w-[520px] mx-auto mb-9"
-            style={{ color: 'rgba(255,255,255,0.5)', fontFamily: "'Manrope', sans-serif" }}
+            style={{ color: 'rgba(255,255,255,0.5)' }}
           >
             Book a demo and we'll connect your tools live. Ask Buddzee anything — and see the answers for yourself.
           </p>
@@ -117,7 +114,6 @@ export const BuddzeeCTA: React.FC = () => {
             className="inline-flex items-center gap-2 text-white px-9 py-4 rounded-[10px] text-[15px] font-800 uppercase tracking-wider transition-all no-underline hover:-translate-y-0.5"
             style={{
               background: '#5284FF',
-              fontFamily: "'Manrope', sans-serif",
               boxShadow: '0 8px 24px rgba(82,132,255,0.3)',
             }}
             onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 16px 40px rgba(82,132,255,0.4)'}
@@ -127,7 +123,7 @@ export const BuddzeeCTA: React.FC = () => {
           </a>
           <p
             className="text-[13px] mt-5"
-            style={{ color: 'rgba(255,255,255,0.3)', fontFamily: "'Manrope', sans-serif" }}
+            style={{ color: 'rgba(255,255,255,0.3)' }}
           >
             Free demo. No commitment. Your data stays private.
           </p>

@@ -92,7 +92,7 @@ const SocialProofCode = `
 
 <section id="hm-trust">
   <div class="hm-trust-container">
-    <div class="hm-trust-label">Trusted by Businesses</div>
+    <div class="hm-trust-label">Trusted by Businesses Across Australia</div>
     <h2 class="hm-trust-h2">Results That Speak for Themselves</h2>
 
     <div class="hm-trust-stats">
@@ -208,7 +208,7 @@ export const SocialProof: React.FC = () => {
     <CopyWrapper blockName="SocialProof" codeToCopy={SocialProofCode}>
       <section className="py-24 lg:py-28 bg-[#f8f9fb] text-center">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-          <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Trusted by Businesses</div>
+          <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Trusted by Businesses Across Australia</div>
           <h2 className="text-4xl md:text-[44px] font-heading font-800 text-brand-navy leading-[1.15] tracking-tight mb-14">
             Results That Speak for Themselves
           </h2>

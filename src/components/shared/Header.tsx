@@ -164,22 +164,22 @@ const HeaderCode = `
                     <a href="/n8n-hosting" class="hdr-drop-item">
                         <div class="hdr-drop-icon" style="background: rgba(233,72,77,0.08); color: var(--color-2);">n8</div>
                         <div>
-                            <div class="hdr-drop-title">n8n Hosting</div>
-                            <div class="hdr-drop-desc">Triple-redundant managed hosting that never goes down</div>
+                            <div class="hdr-drop-title">Automation</div>
+                            <div class="hdr-drop-desc">Connect your apps and automate your business — we keep it running 24/7</div>
                         </div>
                     </a>
                     <a href="/buddzee" class="hdr-drop-item">
                         <div class="hdr-drop-icon" style="background: rgba(82,132,255,0.08); color: #5284FF;">Bz</div>
                         <div>
                             <div class="hdr-drop-title">Buddzee</div>
-                            <div class="hdr-drop-desc">Your business data buddy — AI insights and automation</div>
+                            <div class="hdr-drop-desc">Ask your business a question and get an instant answer</div>
                         </div>
                     </a>
                     <a href="/vibe-coding" class="hdr-drop-item">
                         <div class="hdr-drop-icon" style="background: rgba(239,149,99,0.08); color: var(--color-3);">Vc</div>
                         <div>
-                            <div class="hdr-drop-title">Vibe Coding</div>
-                            <div class="hdr-drop-desc">AI-powered app development at a fraction of the cost</div>
+                            <div class="hdr-drop-title">Custom Apps</div>
+                            <div class="hdr-drop-desc">Real apps your clients will love — now affordable for any business</div>
                         </div>
                     </a>
                 </div>
@@ -236,22 +236,22 @@ export const Header: React.FC = () => {
                     <a href="#n8n-hosting" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">
                       <div className="w-9 h-9 rounded-[10px] bg-brand-accent/10 text-brand-accent flex items-center justify-center text-sm font-800 flex-shrink-0">n8</div>
                       <div>
-                        <div className="text-sm font-700 text-brand-navy">n8n Hosting</div>
-                        <div className="text-xs text-gray-400 leading-snug">Triple-redundant managed hosting that never goes down</div>
+                        <div className="text-sm font-700 text-brand-navy">Automation</div>
+                        <div className="text-xs text-gray-400 leading-snug">Connect your apps and automate your business — we keep it running 24/7</div>
                       </div>
                     </a>
                     <a href="#buddzee" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">
                       <div className="w-9 h-9 rounded-[10px] flex items-center justify-center text-sm font-800 flex-shrink-0" style={{ background: 'rgba(82,132,255,0.1)', color: '#5284FF' }}>Bz</div>
                       <div>
                         <div className="text-sm font-700 text-brand-navy">Buddzee</div>
-                        <div className="text-xs text-gray-400 leading-snug">Your business data buddy — AI insights and automation</div>
+                        <div className="text-xs text-gray-400 leading-snug">Ask your business a question and get an instant answer</div>
                       </div>
                     </a>
                     <a href="#vibe-coding" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">
                       <div className="w-9 h-9 rounded-[10px] bg-brand-orange/10 text-brand-orange flex items-center justify-center text-sm font-800 flex-shrink-0">Vc</div>
                       <div>
-                        <div className="text-sm font-700 text-brand-navy">Vibe Coding</div>
-                        <div className="text-xs text-gray-400 leading-snug">AI-powered app development at a fraction of the cost</div>
+                        <div className="text-sm font-700 text-brand-navy">Custom Apps</div>
+                        <div className="text-xs text-gray-400 leading-snug">Real apps your clients will love — now affordable for any business</div>
                       </div>
                     </a>
                   </div>

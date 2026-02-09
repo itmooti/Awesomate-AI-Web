@@ -144,8 +144,8 @@ const PricingCode = `
   <div class="n8pr-container">
     <div class="n8pr-header">
       <div class="n8pr-label">Pricing</div>
-      <h2 class="n8pr-h2">Scale your business, not your server stress</h2>
-      <p class="n8pr-sub">Choose the level of infrastructure and support your mission-critical automation needs.</p>
+      <h2 class="n8pr-h2">Simple Pricing. Serious Results.</h2>
+      <p class="n8pr-sub">Choose the plan that fits your business. Start small, scale when you're ready.</p>
       <div class="n8pr-toggle">
         <button id="n8pr-toggle-m" class="n8pr-tbtn active" onclick="document.getElementById('n8pr-toggle-y').classList.remove('active');this.classList.add('active');n8prUpdate('monthly')">MONTHLY</button>
         <button id="n8pr-toggle-y" class="n8pr-tbtn" onclick="document.getElementById('n8pr-toggle-m').classList.remove('active');this.classList.add('active');n8prUpdate('yearly')">YEARLY (2 MO FREE)</button>
@@ -161,7 +161,7 @@ const PricingCode = `
           <div class="n8pr-hint" id="n8pr-h1">Billed monthly</div>
         </div>
         <ul class="n8pr-features">
-          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Full Awesomate stack</li>
+          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Fully managed infrastructure</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Automated backups</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Maintenance &amp; Reliability</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Managed environment</li>
@@ -177,9 +177,9 @@ const PricingCode = `
         </div>
         <ul class="n8pr-features">
           <li class="n8pr-feat n8pr-bold">Everything in Essentials</li>
-          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> AI agentic support</li>
+          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> AI-powered support</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Ticketed troubleshooting</li>
-          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Design &amp; error diagnosis</li>
+          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Workflow design help</li>
         </ul>
         <a href="#" class="n8pr-cta">Choose Support Plus</a>
       </div>
@@ -194,8 +194,8 @@ const PricingCode = `
         <ul class="n8pr-features">
           <li class="n8pr-feat n8pr-bold">Everything in Support Plus</li>
           <li class="n8pr-feat n8pr-bold n8pr-highlight"><span class="n8pr-check">&#10003;</span> 1 Built Workflow / Mo</li>
-          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Proactive failure monitoring</li>
-          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Outcome dashboards</li>
+          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> We monitor everything 24/7</li>
+          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Performance reports</li>
         </ul>
         <a href="#" class="n8pr-cta">Choose Pro</a>
       </div>
@@ -209,7 +209,7 @@ const PricingCode = `
         <ul class="n8pr-features">
           <li class="n8pr-feat n8pr-bold"><span class="n8pr-check">&#10003;</span> Dedicated Architect</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Continuous Optimisation</li>
-          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Deep AI Integration</li>
+          <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Advanced AI features</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> No per-workflow costs</li>
         </ul>
         <a href="#" class="n8pr-cta">Inquire Now</a>
@@ -242,7 +242,7 @@ export const Pricing: React.FC = () => {
       desc: "Reliable infrastructure without n8n workflow support",
       monthly: 75, yearly: 62.50,
       features: [
-        { text: "Full Awesomate stack", bold: false },
+        { text: "Fully managed infrastructure", bold: false },
         { text: "Automated backups", bold: false },
         { text: "Maintenance & Reliability", bold: false },
         { text: "Managed environment", bold: false }
@@ -254,9 +254,9 @@ export const Pricing: React.FC = () => {
       monthly: 150, yearly: 125,
       features: [
         { text: "Everything in Essentials", bold: true },
-        { text: "AI agentic support", bold: false },
+        { text: "AI-powered support", bold: false },
         { text: "Ticketed troubleshooting", bold: false },
-        { text: "Design & error diagnosis", bold: false }
+        { text: "Workflow design help", bold: false }
       ]
     },
     {
@@ -266,8 +266,8 @@ export const Pricing: React.FC = () => {
       features: [
         { text: "Everything in Support Plus", bold: true },
         { text: "1 Built Workflow / Mo", bold: true, highlight: true },
-        { text: "Proactive failure monitoring", bold: false },
-        { text: "Outcome dashboards", bold: false }
+        { text: "We monitor everything 24/7", bold: false },
+        { text: "Performance reports", bold: false }
       ]
     },
     {
@@ -277,7 +277,7 @@ export const Pricing: React.FC = () => {
       features: [
         { text: "Dedicated Architect", bold: true },
         { text: "Continuous Optimisation", bold: false },
-        { text: "Deep AI Integration", bold: false },
+        { text: "Advanced AI features", bold: false },
         { text: "No per-workflow costs", bold: false }
       ]
     }
@@ -291,10 +291,10 @@ export const Pricing: React.FC = () => {
           <div className="max-w-3xl mx-auto mb-16">
             <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Pricing</div>
             <h2 className="text-4xl md:text-5xl font-heading font-800 text-brand-navy leading-[1.15] tracking-tight mb-6">
-              Scale your business, not your server stress
+              Simple Pricing. Serious Results.
             </h2>
             <p className="text-xl text-gray-500 font-500 leading-relaxed">
-              Choose the level of infrastructure and support your mission-critical automation needs.
+              Choose the plan that fits your business. Start small, scale when you're ready.
             </p>
           </div>
 

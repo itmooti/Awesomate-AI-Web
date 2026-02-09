@@ -78,29 +78,29 @@ const WhoItIsForCode = `
   <div class="n8w-container">
     <div class="n8w-header">
       <div class="n8w-label">Who It's For</div>
-      <h2 class="n8w-h2">Built for people who rely on automation</h2>
-      <p class="n8w-sub">Enterprises and growing businesses that have outgrown "standard" hosting.</p>
+      <h2 class="n8w-h2">Built for Businesses That Can't Afford Downtime</h2>
+      <p class="n8w-sub">If your business depends on connected apps and automated processes, this is for you.</p>
     </div>
     <div class="n8w-grid">
       <div class="n8w-card">
-        <div class="n8w-icon">A</div>
-        <h3 class="n8w-title">Agencies</h3>
-        <p class="n8w-desc">Running mission-critical client workflows that simply cannot fail during business hours.</p>
-      </div>
-      <div class="n8w-card">
         <div class="n8w-icon">S</div>
-        <h3 class="n8w-title">SaaS Products</h3>
-        <p class="n8w-desc">Powered by n8n behind the scenes. Your product is only as reliable as your backend.</p>
+        <h3 class="n8w-title">Service Businesses</h3>
+        <p class="n8w-desc">You've automated client onboarding, invoicing, and follow-ups. If those stop, clients notice.</p>
       </div>
       <div class="n8w-card">
         <div class="n8w-icon">O</div>
-        <h3 class="n8w-title">Internal Ops</h3>
-        <p class="n8w-desc">Scaling teams with complex automation needs that require 24/7 uptime and stability.</p>
+        <h3 class="n8w-title">Online Businesses</h3>
+        <p class="n8w-desc">Your website, store, or platform runs on connected apps. If one breaks, customers leave.</p>
       </div>
       <div class="n8w-card">
-        <div class="n8w-icon">E</div>
-        <h3 class="n8w-title">Enterprise</h3>
-        <p class="n8w-desc">Anyone tired of "hope the backup works" hosting and ready for real high-availability.</p>
+        <div class="n8w-icon">G</div>
+        <h3 class="n8w-title">Growing Teams</h3>
+        <p class="n8w-desc">Your team relies on automated handoffs, reports, and notifications. Manual workarounds slow everyone down.</p>
+      </div>
+      <div class="n8w-card">
+        <div class="n8w-icon">D</div>
+        <h3 class="n8w-title">Anyone Tired of Duct-Tape Solutions</h3>
+        <p class="n8w-desc">If you've outgrown Zapier, lost data from a crash, or stayed up fixing something that shouldn't have broken — this is for you.</p>
       </div>
     </div>
   </div>
@@ -109,10 +109,10 @@ const WhoItIsForCode = `
 
 export const WhoItIsFor: React.FC = () => {
   const cards = [
-    { icon: 'A', title: 'Agencies', desc: 'Running mission-critical client workflows that simply cannot fail during business hours.' },
-    { icon: 'S', title: 'SaaS Products', desc: 'Powered by n8n behind the scenes. Your product is only as reliable as your backend.' },
-    { icon: 'O', title: 'Internal Ops', desc: 'Scaling teams with complex automation needs that require 24/7 uptime and stability.' },
-    { icon: 'E', title: 'Enterprise', desc: 'Anyone tired of "hope the backup works" hosting and ready for real high-availability.' },
+    { icon: 'S', title: 'Service Businesses', desc: "You've automated client onboarding, invoicing, and follow-ups. If those stop, clients notice." },
+    { icon: 'O', title: 'Online Businesses', desc: 'Your website, store, or platform runs on connected apps. If one breaks, customers leave.' },
+    { icon: 'G', title: 'Growing Teams', desc: 'Your team relies on automated handoffs, reports, and notifications. Manual workarounds slow everyone down.' },
+    { icon: 'D', title: 'Anyone Tired of Duct-Tape Solutions', desc: "If you've outgrown Zapier, lost data from a crash, or stayed up fixing something that shouldn't have broken \u2014 this is for you." },
   ];
 
   return (
@@ -123,10 +123,10 @@ export const WhoItIsFor: React.FC = () => {
           <div className="text-center mb-16">
             <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Who It's For</div>
             <h2 className="text-4xl md:text-[44px] font-heading font-800 text-brand-navy leading-[1.2] tracking-tight mb-4">
-              Built for people who rely on automation
+              Built for Businesses That Can't Afford Downtime
             </h2>
             <p className="text-lg text-gray-500 font-500 max-w-2xl mx-auto leading-relaxed">
-              Enterprises and growing businesses that have outgrown "standard" hosting.
+              If your business depends on connected apps and automated processes, this is for you.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

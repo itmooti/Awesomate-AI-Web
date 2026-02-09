@@ -26,12 +26,12 @@ const VibeHeroCode = `
 <section id="vc-hero">
   <div class="vc-hero-glow"></div>
   <div class="vc-hero-container">
-    <div class="vc-hero-breadcrumb"><a href="/">Services</a> / <span>Vibe Coding</span></div>
-    <h1 class="vc-hero-h1">Your Business App.<br><span class="vc-hero-gradient">Built at a Fraction of the Cost.</span></h1>
-    <p class="vc-hero-sub">Tell us what you need. We'll build it with AI-powered development tools, deliver it fast, and teach you how to maintain it yourself.</p>
+    <div class="vc-hero-breadcrumb"><a href="/">Home</a> / <a href="/services">Services</a> / <span>Custom Apps</span></div>
+    <h1 class="vc-hero-h1">The App You've Always Wanted.<br><span class="vc-hero-gradient">Now Within Reach.</span></h1>
+    <p class="vc-hero-sub">Real apps — on your clients' phones, with push notifications, real-time data, and a beautiful experience. Custom software used to cost a fortune. Not anymore. We build it in weeks — and handle everything for you.</p>
     <div class="vc-hero-actions">
       <a href="/contact" class="vc-hero-cta">Start Your Project</a>
-      <a href="#vc-process" class="vc-hero-secondary">See Our Process</a>
+      <a href="#vc-process" class="vc-hero-secondary">See How It Works</a>
     </div>
   </div>
 </section>
@@ -44,23 +44,25 @@ export const VibeHero: React.FC = () => {
         <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,_rgba(239,149,99,0.06)_0%,_rgba(239,149,99,0.02)_40%,_transparent_70%)] pointer-events-none" />
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 text-xs text-gray-400 mb-6">
-            <a href="#home" className="hover:text-brand-orange transition-colors no-underline text-gray-400">Services</a>
+            <a href="#home" className="hover:opacity-80 transition-colors no-underline text-gray-400" style={{ color: '#9ca3af' }}>Home</a>
             <span>/</span>
-            <span className="text-brand-orange font-700">Vibe Coding</span>
+            <a href="#services" className="hover:opacity-80 transition-colors no-underline text-gray-400" style={{ color: '#9ca3af' }}>Services</a>
+            <span>/</span>
+            <span className="text-brand-orange font-700">Custom Apps</span>
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-800 text-brand-navy leading-[1.05] tracking-tight mb-6">
-            Your Business App.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-accent">Built at a Fraction of the Cost.</span>
+            The App You've Always Wanted.<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-accent">Now Within Reach.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-500 font-medium leading-relaxed max-w-[680px] mx-auto mb-10">
-            Tell us what you need. We'll build it with AI-powered development tools, deliver it fast, and teach you how to maintain it yourself.
+            Real apps — on your clients' phones, with push notifications, real-time data, and a beautiful experience. Custom software used to cost a fortune. Not anymore. We build it in weeks — and handle everything for you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-7 py-3.5 rounded-[10px] text-sm font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/20 hover:-translate-y-0.5 transition-all no-underline">
               Start Your Project
             </a>
             <a href="#vc-process" className="inline-flex items-center gap-2 border-[1.5px] border-brand-navy/[0.12] text-brand-navy px-7 py-3.5 rounded-[10px] text-sm font-700 hover:border-brand-orange hover:text-brand-orange transition-all no-underline">
-              See Our Process
+              See How It Works
             </a>
           </div>
         </div>

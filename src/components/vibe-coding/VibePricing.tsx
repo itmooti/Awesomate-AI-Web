@@ -20,7 +20,7 @@ const VibePricingCode = `
   <div class="vcpr-container">
     <div class="vcpr-label">Pricing</div>
     <h2 class="vcpr-h2">Every Project Is Unique</h2>
-    <p class="vcpr-sub">We quote based on complexity, not hourly rates. Tell us what you need and we'll give you a transparent, fixed-price proposal.</p>
+    <p class="vcpr-sub">We quote based on what you need, not hourly rates. You'll be surprised how affordable 'custom' has become. Tell us what you need and we'll give you a transparent, fixed-price proposal.</p>
     <div class="vcpr-card">
       <div class="vcpr-card-title">Get a Free Quote</div>
       <div class="vcpr-card-desc">Book a strategy call and we'll scope your project, give you a timeline, and a fixed price. No surprises, no hidden costs.</div>
@@ -40,7 +40,7 @@ export const VibePricing: React.FC = () => {
             Every Project Is Unique
           </h2>
           <p className="text-[17px] text-gray-500 leading-relaxed mb-10">
-            We quote based on complexity, not hourly rates. Tell us what you need and we'll give you a transparent, fixed-price proposal.
+            We quote based on what you need, not hourly rates. You'll be surprised how affordable 'custom' has become. Tell us what you need and we'll give you a transparent, fixed-price proposal.
           </p>
           <div className="bg-white border-2 border-brand-orange/15 rounded-3xl p-12">
             <div className="text-2xl font-800 text-brand-navy mb-3">Get a Free Quote</div>
