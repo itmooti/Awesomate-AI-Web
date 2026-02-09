@@ -5,6 +5,7 @@ const workProjects = [
   {
     name: 'SEED NORTHERN RIVERS',
     logo: 'seednorthernrivers.png',
+    image: 'seed-northern-rivers.png',
     color: '#289A47',
     gradient: 'linear-gradient(135deg, #289A47, #50A5DF)',
     tagline: 'Empowering a Network of Changemakers',
@@ -15,6 +16,7 @@ const workProjects = [
   {
     name: 'PHYX',
     logo: 'phyx.png',
+    image: 'phyx.png',
     color: '#27BAA6',
     gradient: 'linear-gradient(135deg, #176A7A, #27BAA6)',
     tagline: 'The Home of Longevity, Built to Scale',
@@ -25,6 +27,7 @@ const workProjects = [
   {
     name: 'AWARDEE',
     logo: 'awardee.png',
+    image: 'awardee.png',
     color: '#0079FE',
     gradient: 'linear-gradient(135deg, #212b45, #0079FE)',
     tagline: 'From Startup Idea to Live Platform',
@@ -35,6 +38,7 @@ const workProjects = [
   {
     name: 'AUSTRALIAN WRITERS\u2019 CENTRE',
     logo: 'awc.png',
+    image: 'australian-writers-centre.png',
     color: '#E31B23',
     gradient: 'linear-gradient(135deg, #E31B23, #FF6B6B)',
     tagline: 'Australia\u2019s Leading Writing Community, Connected',
@@ -45,6 +49,7 @@ const workProjects = [
   {
     name: 'MCG',
     logo: 'mcgqs.png',
+    image: 'mcg.png',
     color: '#E9484D',
     gradient: 'linear-gradient(135deg, #1a1a1a, #444444)',
     tagline: 'Scaling Australia\u2019s Fastest-Growing QS Firm',
@@ -55,6 +60,7 @@ const workProjects = [
   {
     name: 'REAL ESTATE GYM',
     logo: 'realestategym.png',
+    image: 'real-estate-gym.png',
     color: '#19ffb4',
     gradient: 'linear-gradient(135deg, #1d1d20, #2a2a30)',
     tagline: 'Train Like an Athlete, Scale Like a Business',
@@ -65,6 +71,7 @@ const workProjects = [
   {
     name: 'FILTERMAX',
     logo: 'filtermax.png',
+    image: 'filtermax.png',
     color: '#fd5b2a',
     gradient: 'linear-gradient(135deg, #232323, #fd5b2a)',
     tagline: 'Custom-Built to Supply Australia\u2019s Hardest Workers',
@@ -75,6 +82,7 @@ const workProjects = [
   {
     name: 'RESICERT',
     logo: 'resicert.png',
+    image: 'resicert.png',
     color: '#4CAF50',
     gradient: 'linear-gradient(135deg, #2E7D32, #4CAF50)',
     tagline: 'From Solo Operator to National Franchise',
@@ -85,6 +93,7 @@ const workProjects = [
   {
     name: 'THE HAPPY CLINIC',
     logo: 'thehappyclinic.png',
+    image: 'the-happy-clinic.png',
     color: '#00BCD4',
     gradient: 'linear-gradient(135deg, #0097A7, #00BCD4)',
     tagline: 'Modern Wellness, Fully Automated',
@@ -101,8 +110,8 @@ const generateProjectCards = () => {
     return `
       <div class="wk-proj-card">
         <div class="wk-proj-card-inner${isEven ? '' : ' wk-proj-reverse'}">
-          <div class="wk-proj-img" style="background: ${p.gradient};">
-            <div class="wk-proj-img-overlay"></div>
+          <div class="wk-proj-img">
+            <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div class="wk-proj-content">
             <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo">
@@ -154,17 +163,13 @@ const WorkProjectsCode = `
   }
   .wk-proj-img {
     width: 100% !important; min-height: 280px !important;
-    display: flex !important; align-items: center !important; justify-content: center !important;
     position: relative !important; overflow: hidden !important;
+    background: #f3f4f6 !important;
   }
   @media (min-width: 768px) {
     .wk-proj-img {
       width: 45% !important; flex-shrink: 0 !important; min-height: 400px !important;
     }
-  }
-  .wk-proj-img-overlay {
-    position: absolute !important; inset: 0 !important;
-    background: rgba(0,0,0,0.15) !important; pointer-events: none !important;
   }
   .wk-proj-logo {
     height: 48px !important; width: auto !important;
@@ -230,12 +235,13 @@ export const WorkProjects: React.FC = () => {
             return (
               <div key={project.name} className="mb-16 last:mb-0">
                 <div className={`flex flex-col md:flex-row ${!isEven ? 'md:flex-row-reverse' : ''} rounded-3xl overflow-hidden border border-gray-100 bg-white hover:-translate-y-1 hover:shadow-2xl transition-all duration-300`}>
-                  {/* Image placeholder */}
-                  <div
-                    className="w-full md:w-[45%] md:flex-shrink-0 min-h-[280px] md:min-h-[400px] flex items-center justify-center relative overflow-hidden"
-                    style={{ background: project.gradient }}
-                  >
-                    <div className="absolute inset-0 bg-black/15" />
+                  {/* Project image */}
+                  <div className="w-full md:w-[45%] md:flex-shrink-0 min-h-[280px] md:min-h-[400px] relative overflow-hidden bg-gray-100">
+                    <img
+                      src={`/src/assets/images/work/${project.image}`}
+                      alt={project.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   {/* Content */}
