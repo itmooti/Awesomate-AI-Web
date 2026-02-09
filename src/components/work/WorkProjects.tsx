@@ -52,6 +52,7 @@ const workProjects = [
     image: 'mcg.png',
     color: '#E9484D',
     gradient: 'linear-gradient(135deg, #1a1a1a, #444444)',
+    imageStyle: 'transform:scale(1.1);object-position:center 35%;',
     tagline: 'Scaling Australia\u2019s Fastest-Growing QS Firm',
     description: 'MCG Quantity Surveyors \u2014 recognised in the AFR Fast 100 as Australia\u2019s fastest-growing QS firm \u2014 needed technology to match their ambition. We built the complete automation layer: business intelligence dashboards giving directors real-time visibility, a customer and agent app streamlining property inspections, a referrer portal for accountants and buyers\u2019 agents, and a Tax Depreciation Calculator application with API service that powers their "double your fee back" guarantee. The result: a firm that scaled from boutique to national without scaling headcount.',
     tags: ['Business Automation', 'BI Dashboards', 'Apps', 'API Service'],
@@ -113,7 +114,7 @@ const generateProjectCards = () => {
       <div class="wk-proj-card">
         <div class="wk-proj-card-inner${isEven ? '' : ' wk-proj-reverse'}">
           <div class="wk-proj-img">
-            <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">
+            <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;${(p as any).imageStyle || ''}">
           </div>
           <div class="wk-proj-content">
             ${p.logoDark ? `<div class="wk-proj-logo-dark"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo" style="margin-bottom:0 !important;"></div>` : `<img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo">`}
@@ -249,6 +250,7 @@ export const WorkProjects: React.FC = () => {
                       src={`/src/assets/images/work/${project.image}`}
                       alt={project.name}
                       className="w-full h-full object-cover"
+                      style={(project as any).imageStyle ? { transform: 'scale(1.1)', objectPosition: 'center 35%' } : undefined}
                     />
                   </div>
 

@@ -48,6 +48,7 @@ const projects = [
     image: 'mcg.png',
     color: '#E9484D',
     gradient: 'linear-gradient(135deg, #1a1a1a, #444444)',
+    imageStyle: { transform: 'scale(1.1)', objectPosition: 'center 35%' },
     tagline: 'Scaling Australia\u2019s Fastest-Growing QS Firm',
     description: 'Business dashboards, customer app, referrer portal and Tax Depreciation Calculator.',
     tags: ['Automation', 'Business Dashboards', 'Apps'],
@@ -280,7 +281,7 @@ const ProjectShowcaseCode = `
       </div>
 
       <div class="hm-proj-card">
-        <div class="hm-proj-img"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/mcg.png" alt="MCG"></div>
+        <div class="hm-proj-img"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/mcg.png" alt="MCG" style="transform:scale(1.1);object-position:center 35%;"></div>
         <div class="hm-proj-body">
           <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/mcgqs.png" alt="MCG" class="hm-proj-logo">
           <div class="hm-proj-tagline">Scaling Australia\u2019s Fastest-Growing QS Firm</div>
@@ -409,6 +410,7 @@ export const ProjectShowcase: React.FC = () => {
                     src={`/src/assets/images/work/${project.image}`}
                     alt={project.name}
                     className="w-full h-full object-cover"
+                    style={(project as any).imageStyle || undefined}
                   />
                 </div>
                 <div className="p-6">
