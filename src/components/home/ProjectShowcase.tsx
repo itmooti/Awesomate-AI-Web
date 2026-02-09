@@ -68,6 +68,7 @@ const projects = [
     image: 'filtermax.png',
     color: '#fd5b2a',
     gradient: 'linear-gradient(135deg, #232323, #fd5b2a)',
+    logoDark: true,
     tagline: 'Custom-Built to Supply Australia\u2019s Hardest Workers',
     description: 'Bespoke platform powering industrial filter distribution across mining, agriculture and transport.',
     tags: ['Platform Build', 'Custom Application'],
@@ -78,6 +79,7 @@ const projects = [
     image: 'resicert.png',
     color: '#4CAF50',
     gradient: 'linear-gradient(135deg, #2E7D32, #4CAF50)',
+    logoDark: true,
     tagline: 'From Solo Operator to National Franchise',
     description: 'CRM automation that scaled from one inspector to 50+ businesses Australia-wide.',
     tags: ['CRM', 'Automation', 'Franchise Scale'],
@@ -178,6 +180,12 @@ const ProjectShowcaseCode = `
   .hm-proj-logo {
     height: 48px !important; width: auto !important;
     object-fit: contain !important; margin-bottom: 16px !important;
+  }
+  .hm-proj-logo-dark {
+    display: inline-flex !important; align-items: center !important;
+    background: var(--color-1, #0f1128) !important;
+    padding: 10px 20px !important; border-radius: 10px !important;
+    margin-bottom: 16px !important;
   }
   .hm-proj-tagline {
     font-family: var(--font-heading) !important; font-weight: 700 !important;
@@ -302,7 +310,7 @@ const ProjectShowcaseCode = `
       <div class="hm-proj-card">
         <div class="hm-proj-img"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/filtermax.png" alt="FILTERMAX"></div>
         <div class="hm-proj-body">
-          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/filtermax.png" alt="FILTERMAX" class="hm-proj-logo">
+          <div class="hm-proj-logo-dark"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/filtermax.png" alt="FILTERMAX" class="hm-proj-logo" style="margin-bottom:0 !important;"></div>
           <div class="hm-proj-tagline">Custom-Built to Supply Australia\u2019s Hardest Workers</div>
           <div class="hm-proj-desc">Bespoke platform powering industrial filter distribution across mining, agriculture and transport.</div>
           <div class="hm-proj-tags">
@@ -315,7 +323,7 @@ const ProjectShowcaseCode = `
       <div class="hm-proj-card">
         <div class="hm-proj-img"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/resicert.png" alt="RESICERT"></div>
         <div class="hm-proj-body">
-          <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/resicert.png" alt="RESICERT" class="hm-proj-logo">
+          <div class="hm-proj-logo-dark"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/resicert.png" alt="RESICERT" class="hm-proj-logo" style="margin-bottom:0 !important;"></div>
           <div class="hm-proj-tagline">From Solo Operator to National Franchise</div>
           <div class="hm-proj-desc">CRM automation that scaled from one inspector to 50+ businesses Australia-wide.</div>
           <div class="hm-proj-tags">
@@ -404,11 +412,21 @@ export const ProjectShowcase: React.FC = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <img
-                    src={`/src/assets/project-logos/${project.logo}`}
-                    alt={project.name}
-                    className="h-12 w-auto object-contain mb-4"
-                  />
+                  {(project as any).logoDark ? (
+                    <div className="inline-flex items-center bg-brand-navy px-5 py-2.5 rounded-[10px] mb-4">
+                      <img
+                        src={`/src/assets/project-logos/${project.logo}`}
+                        alt={project.name}
+                        className="h-12 w-auto object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <img
+                      src={`/src/assets/project-logos/${project.logo}`}
+                      alt={project.name}
+                      className="h-12 w-auto object-contain mb-4"
+                    />
+                  )}
                   <div className="font-heading font-700 text-[17px] text-brand-navy mb-2 leading-snug">{project.tagline}</div>
                   <div className="text-sm text-gray-500 leading-relaxed mb-4">{project.description}</div>
                   <div className="flex flex-wrap gap-1.5">

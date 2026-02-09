@@ -74,6 +74,7 @@ const workProjects = [
     image: 'filtermax.png',
     color: '#fd5b2a',
     gradient: 'linear-gradient(135deg, #232323, #fd5b2a)',
+    logoDark: true,
     tagline: 'Custom-Built to Supply Australia\u2019s Hardest Workers',
     description: 'Filtermax supplies filters to Australia\u2019s hardest-working fleets across mining, agriculture, heavy transport, and earthmoving. Off-the-shelf e-commerce couldn\u2019t handle their complexity \u2014 custom service kits, fleet-specific ordering, wholesale portal (FleetMax), and industry-specific catalogues. We built a purpose-engineered platform application that scales with demand: intelligent product search, fleet management tools, wholesale enquiry workflows, and a backend designed for the operational reality of industrial supply. From Albury to every mine site and farm in the country.',
     tags: ['Platform Build', 'Custom Application'],
@@ -85,6 +86,7 @@ const workProjects = [
     image: 'resicert.png',
     color: '#4CAF50',
     gradient: 'linear-gradient(135deg, #2E7D32, #4CAF50)',
+    logoDark: true,
     tagline: 'From Solo Operator to National Franchise',
     description: 'Resicert\u2019s growth story is remarkable: from a single property inspector to an ISO 9001-certified national franchise with 50+ businesses across every state and territory. We built the CRM automation engine that made it possible \u2014 automating the inspection lifecycle from online booking through report delivery, managing franchisee operations, coordinating inspector dispatch across Perth to Sydney, and maintaining the 9.4/10 customer rating and 48-hour turnaround guarantee at scale. Over 141,000 inspections processed through the system since 2009. Their "Don\u2019t Expect, Inspect!" promise, delivered by technology.',
     tags: ['CRM', 'Automation', 'Franchise Scale'],
@@ -114,7 +116,7 @@ const generateProjectCards = () => {
             <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/work/${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div class="wk-proj-content">
-            <img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo">
+            ${p.logoDark ? `<div class="wk-proj-logo-dark"><img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo" style="margin-bottom:0 !important;"></div>` : `<img src="https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/project-logos/${p.logo}" alt="${p.name}" class="wk-proj-logo">`}
             <div class="wk-proj-tagline">${p.tagline}</div>
             <div class="wk-proj-desc">${p.description}</div>
             <div class="wk-proj-stats">
@@ -174,6 +176,12 @@ const WorkProjectsCode = `
   .wk-proj-logo {
     height: 48px !important; width: auto !important;
     object-fit: contain !important; margin-bottom: 16px !important;
+  }
+  .wk-proj-logo-dark {
+    display: inline-flex !important; align-items: center !important;
+    background: var(--color-1, #0f1128) !important;
+    padding: 10px 20px !important; border-radius: 10px !important;
+    margin-bottom: 16px !important; align-self: flex-start !important;
   }
   .wk-proj-content {
     padding: 32px !important; display: flex !important;
@@ -246,11 +254,21 @@ export const WorkProjects: React.FC = () => {
 
                   {/* Content */}
                   <div className="p-8 md:p-10 lg:px-12 flex flex-col justify-center flex-1">
-                    <img
-                      src={`/src/assets/project-logos/${project.logo}`}
-                      alt={project.name}
-                      className="h-12 w-auto object-contain mb-4"
-                    />
+                    {(project as any).logoDark ? (
+                      <div className="inline-flex items-center bg-brand-navy px-5 py-2.5 rounded-[10px] mb-4 self-start">
+                        <img
+                          src={`/src/assets/project-logos/${project.logo}`}
+                          alt={project.name}
+                          className="h-12 w-auto object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <img
+                        src={`/src/assets/project-logos/${project.logo}`}
+                        alt={project.name}
+                        className="h-12 w-auto object-contain mb-4"
+                      />
+                    )}
                     <h3 className="font-heading font-800 text-[22px] md:text-[26px] text-brand-navy mb-4 leading-tight tracking-tight">
                       {project.tagline}
                     </h3>
