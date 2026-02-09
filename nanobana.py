@@ -106,6 +106,9 @@ def generate_image(prompt, reference_images=None, aspect_ratio="1:1", image_size
         "contents": [{"parts": parts}],
         "generationConfig": {
             "responseModalities": ["TEXT", "IMAGE"],
+            "imageConfig": {
+                "aspectRatio": aspect_ratio,
+            },
         },
     }
 
