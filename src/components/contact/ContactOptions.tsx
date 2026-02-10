@@ -12,9 +12,9 @@ const ContactOptionsCode = `
   .ct-opt-card:hover { transform: translateY(-4px) !important; box-shadow: 0 20px 40px rgba(233,72,77,0.08) !important; }
   .ct-opt-icon { width: 56px !important; height: 56px !important; border-radius: 16px !important; background: rgba(233,72,77,0.08) !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0 auto 20px !important; }
   .ct-opt-icon svg { width: 24px !important; height: 24px !important; color: var(--color-2) !important; }
-  .ct-opt-title { font-family: var(--font-heading) !important; font-size: 20px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 10px !important; }
+  .ct-opt-title { font-family: var(--font-heading) !important; font-size: 20px !important; color: var(--color-1) !important; margin-bottom: 10px !important; }
   .ct-opt-desc { font-family: var(--font-main) !important; font-size: 15px !important; color: #6b7280 !important; line-height: 1.6 !important; margin-bottom: 24px !important; }
-  .ct-opt-link { font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 700 !important; color: var(--color-2) !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; }
+  .ct-opt-link { font-family: var(--font-main) !important; font-size: 14px !important; color: var(--color-2) !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; }
   .ct-opt-link:hover { gap: 10px !important; }
   .ct-opt-link svg { width: 16px !important; height: 16px !important; }
 </style>

@@ -13,12 +13,12 @@ const BuddzeeProblemCode = `
   }
   .bzp-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important;
+    font-size: 12px !important; color: var(--bz-blue) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .bzp-h2.bzp-h2.bzp-h2.bzp-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.2 !important;
     color: var(--bz-navy) !important; margin: 0 0 16px !important;
     letter-spacing: -0.02em !important;
@@ -29,7 +29,7 @@ const BuddzeeProblemCode = `
   .bzp-intro {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
-    margin: 0 0 40px !important; font-weight: 500 !important;
+    margin: 0 0 40px !important;
   }
   .bzp-grid {
     display: grid !important; grid-template-columns: 1fr !important;
@@ -60,7 +60,7 @@ const BuddzeeProblemCode = `
   }
   .bzp-card-title {
     font-family: var(--font-main) !important; font-size: 16px !important;
-    font-weight: 700 !important; color: var(--bz-navy) !important;
+    color: var(--bz-navy) !important;
     margin: 0 0 8px !important;
   }
   .bzp-card-desc {

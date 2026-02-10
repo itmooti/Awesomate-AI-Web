@@ -21,12 +21,12 @@ const N8nProblemCode = `
   }
   .n8p-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .n8p-h2.n8p-h2.n8p-h2.n8p-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.2 !important;
     color: var(--color-1) !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -37,7 +37,7 @@ const N8nProblemCode = `
   .n8p-body {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
-    margin-bottom: 40px !important; font-weight: 500 !important;
+    margin-bottom: 40px !important;
   }
   .n8p-grid {
     display: grid !important; grid-template-columns: 1fr !important; gap: 16px !important;
@@ -60,12 +60,12 @@ const N8nProblemCode = `
   }
   .n8p-pain-title {
     font-family: var(--font-main) !important; font-size: 15px !important;
-    font-weight: 700 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     margin-bottom: 6px !important;
   }
   .n8p-pain-desc {
     font-family: var(--font-main) !important; font-size: 14px !important;
-    color: #9ca3af !important; line-height: 1.6 !important; font-weight: 500 !important;
+    color: #9ca3af !important; line-height: 1.6 !important;
   }
 </style>
 

@@ -5,8 +5,8 @@ const VibeExplainerCode = `
 <style>
   #vc-explainer { padding: 100px 0 !important; background: var(--color-bg-alt, #f8f9fb) !important; }
   .vce-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .vce-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .vce-h2.vce-h2.vce-h2.vce-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
+  .vce-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .vce-h2.vce-h2.vce-h2.vce-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .vce-h2.vce-h2.vce-h2.vce-h2 { font-size: 44px !important; } }
   .vce-intro { font-family: var(--font-main) !important; font-size: 17px !important; color: #6b7280 !important; line-height: 1.7 !important; max-width: 700px !important; margin-bottom: 56px !important; }
   .vce-compare { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
@@ -14,13 +14,13 @@ const VibeExplainerCode = `
   .vce-col { border-radius: 20px !important; padding: 40px 32px !important; border: 1px solid #f3f4f6 !important; }
   .vce-col-old { background: white !important; }
   .vce-col-new { background: white !important; border-color: var(--color-3) !important; box-shadow: 0 0 0 1px var(--color-3) !important; }
-  .vce-col-tag { display: inline-block !important; font-family: var(--font-main) !important; font-size: 11px !important; font-weight: 800 !important; text-transform: uppercase !important; letter-spacing: 0.1em !important; padding: 4px 12px !important; border-radius: 6px !important; margin-bottom: 20px !important; }
+  .vce-col-tag { display: inline-block !important; font-family: var(--font-main) !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 0.1em !important; padding: 4px 12px !important; border-radius: 6px !important; margin-bottom: 20px !important; }
   .vce-col-old .vce-col-tag { background: #f3f4f6 !important; color: #9ca3af !important; }
   .vce-col-new .vce-col-tag { background: rgba(239,149,99,0.1) !important; color: var(--color-3) !important; }
-  .vce-col-title { font-family: var(--font-heading) !important; font-size: 22px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 20px !important; }
+  .vce-col-title { font-family: var(--font-heading) !important; font-size: 22px !important; color: var(--color-1) !important; margin-bottom: 20px !important; }
   .vce-col-item { display: flex !important; align-items: center !important; gap: 10px !important; font-family: var(--font-main) !important; font-size: 15px !important; margin-bottom: 14px !important; }
   .vce-col-old .vce-col-item { color: #9ca3af !important; }
-  .vce-col-new .vce-col-item { color: var(--color-1) !important; font-weight: 600 !important; }
+  .vce-col-new .vce-col-item { color: var(--color-1) !important; }
 </style>
 
 <section id="vc-explainer">

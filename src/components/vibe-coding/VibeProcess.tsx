@@ -5,15 +5,15 @@ const VibeProcessCode = `
 <style>
   #vc-process { padding: 100px 0 !important; background: var(--color-5) !important; }
   .vcp-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .vcp-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .vcp-h2.vcp-h2.vcp-h2.vcp-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
+  .vcp-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .vcp-h2.vcp-h2.vcp-h2.vcp-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .vcp-h2.vcp-h2.vcp-h2.vcp-h2 { font-size: 44px !important; } }
   .vcp-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   @media (min-width: 768px) { .vcp-grid { grid-template-columns: repeat(2, 1fr) !important; } }
   @media (min-width: 1024px) { .vcp-grid { grid-template-columns: repeat(4, 1fr) !important; } }
   .vcp-step { background: var(--color-bg-alt, #f8f9fb) !important; border: 1px solid #f3f4f6 !important; border-radius: 20px !important; padding: 32px !important; }
-  .vcp-num { font-family: var(--font-heading) !important; font-size: 48px !important; font-weight: 800 !important; background: linear-gradient(135deg, var(--color-3), var(--color-2)) !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; margin-bottom: 16px !important; }
-  .vcp-title { font-family: var(--font-heading) !important; font-size: 20px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 8px !important; }
+  .vcp-num { font-family: var(--font-heading) !important; font-size: 48px !important; background: linear-gradient(135deg, var(--color-3), var(--color-2)) !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; margin-bottom: 16px !important; }
+  .vcp-title { font-family: var(--font-heading) !important; font-size: 20px !important; color: var(--color-1) !important; margin-bottom: 8px !important; }
   .vcp-desc { font-family: var(--font-main) !important; font-size: 15px !important; color: #6b7280 !important; line-height: 1.6 !important; }
 </style>
 

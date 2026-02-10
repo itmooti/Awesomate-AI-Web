@@ -7,12 +7,12 @@ const ContactInfoCode = `
   .ct-info-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
   .ct-info-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 40px !important; align-items: center !important; }
   @media (min-width: 768px) { .ct-info-grid { grid-template-columns: 1fr 1fr !important; } }
-  .ct-info-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .ct-info-h2.ct-info-h2.ct-info-h2.ct-info-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 32px !important; line-height: 1.2 !important; color: var(--color-1) !important; margin: 0 0 24px !important; }
+  .ct-info-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .ct-info-h2.ct-info-h2.ct-info-h2.ct-info-h2 { font-family: var(--font-heading) !important; font-size: 32px !important; line-height: 1.2 !important; color: var(--color-1) !important; margin: 0 0 24px !important; }
   .ct-info-item { display: flex !important; gap: 16px !important; align-items: flex-start !important; margin-bottom: 24px !important; }
   .ct-info-icon { width: 40px !important; height: 40px !important; border-radius: 12px !important; background: rgba(239,149,99,0.08) !important; display: flex !important; align-items: center !important; justify-content: center !important; flex-shrink: 0 !important; }
   .ct-info-icon svg { width: 18px !important; height: 18px !important; color: var(--color-3) !important; }
-  .ct-info-item-title { font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 700 !important; color: var(--color-1) !important; margin-bottom: 2px !important; }
+  .ct-info-item-title { font-family: var(--font-main) !important; font-size: 14px !important; color: var(--color-1) !important; margin-bottom: 2px !important; }
   .ct-info-item-text { font-family: var(--font-main) !important; font-size: 14px !important; color: #6b7280 !important; line-height: 1.5 !important; }
   .ct-info-map { border-radius: 24px !important; width: 100% !important; height: 320px !important; object-fit: cover !important; box-shadow: 0 10px 40px rgba(0,0,0,0.06) !important; }
 </style>

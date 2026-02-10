@@ -16,12 +16,12 @@ const BuddzeeFeaturesCode = `
   }
   .bzf-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important;
+    font-size: 12px !important; color: var(--bz-blue) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .bzf-h2.bzf-h2.bzf-h2.bzf-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--bz-navy) !important; margin: 0 0 56px !important;
     letter-spacing: -0.02em !important;
@@ -67,7 +67,7 @@ const BuddzeeFeaturesCode = `
   }
   .bzf-card-title {
     font-family: var(--font-main) !important; font-size: 20px !important;
-    font-weight: 800 !important; color: var(--bz-navy) !important;
+    color: var(--bz-navy) !important;
     margin-bottom: 10px !important;
   }
   .bzf-card-desc {

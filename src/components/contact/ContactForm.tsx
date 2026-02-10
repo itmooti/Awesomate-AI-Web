@@ -5,12 +5,12 @@ const ContactFormCode = `
 <style>
   #ct-form { padding: 100px 0 !important; background: var(--color-bg-alt, #f8f9fb) !important; }
   .ct-form-container { max-width: 720px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .ct-form-h2.ct-form-h2.ct-form-h2.ct-form-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 32px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 8px !important; text-align: center !important; letter-spacing: -0.02em !important; }
+  .ct-form-h2.ct-form-h2.ct-form-h2.ct-form-h2 { font-family: var(--font-heading) !important; font-size: 32px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 8px !important; text-align: center !important; letter-spacing: -0.02em !important; }
   .ct-form-sub { font-family: var(--font-main) !important; font-size: 16px !important; color: #6b7280 !important; text-align: center !important; margin-bottom: 40px !important; }
   .ct-form-card { background: white !important; border-radius: 24px !important; padding: 48px 40px !important; border: 1px solid #f3f4f6 !important; }
   .ct-form-row { display: grid !important; grid-template-columns: 1fr !important; gap: 20px !important; margin-bottom: 20px !important; }
   @media (min-width: 640px) { .ct-form-row-half { grid-template-columns: 1fr 1fr !important; } }
-  .ct-form-label { display: block !important; font-family: var(--font-main) !important; font-size: 13px !important; font-weight: 700 !important; color: var(--color-1) !important; margin-bottom: 6px !important; }
+  .ct-form-label { display: block !important; font-family: var(--font-main) !important; font-size: 13px !important; color: var(--color-1) !important; margin-bottom: 6px !important; }
   .ct-form-input, .ct-form-select, .ct-form-textarea {
     width: 100% !important; padding: 12px 16px !important; border: 1.5px solid #e5e7eb !important;
     border-radius: 10px !important; font-family: var(--font-main) !important;
@@ -21,7 +21,7 @@ const ContactFormCode = `
   .ct-form-input:focus, .ct-form-select:focus, .ct-form-textarea:focus { border-color: var(--color-2) !important; }
   .ct-form-textarea { min-height: 120px !important; resize: vertical !important; }
   .ct-form-note { font-family: var(--font-main) !important; font-size: 13px !important; color: #9ca3af !important; text-align: center !important; margin-top: 16px !important; }
-  .ct-form-btn { display: block !important; width: 100% !important; background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important; color: white !important; padding: 16px !important; border: none !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 800 !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; cursor: pointer !important; transition: all 0.2s !important; margin-top: 32px !important; }
+  .ct-form-btn { display: block !important; width: 100% !important; background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important; color: white !important; padding: 16px !important; border: none !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; cursor: pointer !important; transition: all 0.2s !important; margin-top: 32px !important; }
   .ct-form-btn:hover { transform: translateY(-2px) !important; box-shadow: 0 12px 32px rgba(233,72,77,0.3) !important; }
 </style>
 

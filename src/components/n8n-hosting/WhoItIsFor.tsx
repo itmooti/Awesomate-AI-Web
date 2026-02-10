@@ -21,12 +21,12 @@ const WhoItIsForCode = `
   .n8w-header { text-align: center !important; margin-bottom: 64px !important; }
   .n8w-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .n8w-h2.n8w-h2.n8w-h2.n8w-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.2 !important;
     color: var(--color-1) !important; margin: 0 0 16px !important;
     letter-spacing: -0.02em !important;
@@ -37,7 +37,7 @@ const WhoItIsForCode = `
   .n8w-sub {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; max-width: 600px !important; margin: 0 auto !important;
-    line-height: 1.6 !important; font-weight: 500 !important;
+    line-height: 1.6 !important;
   }
   .n8w-grid {
     display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important;
@@ -59,17 +59,17 @@ const WhoItIsForCode = `
     background: rgba(233,72,77,0.08) !important; color: var(--color-2) !important;
     border-radius: 12px !important; display: flex !important;
     align-items: center !important; justify-content: center !important;
-    margin-bottom: 24px !important; font-weight: 800 !important; font-size: 20px !important;
+    margin-bottom: 24px !important; font-size: 20px !important;
     font-family: var(--font-main) !important;
   }
   .n8w-title {
     font-family: var(--font-main) !important; font-size: 18px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     margin-bottom: 12px !important;
   }
   .n8w-desc {
     font-family: var(--font-main) !important; font-size: 15px !important;
-    color: #6b7280 !important; line-height: 1.6 !important; font-weight: 500 !important;
+    color: #6b7280 !important; line-height: 1.6 !important;
   }
 </style>
 

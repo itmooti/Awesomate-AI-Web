@@ -5,8 +5,8 @@ const AboutValuesCode = `
 <style>
   #ab-values { padding: 100px 0 !important; background: var(--color-5) !important; }
   .ab-val-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .ab-val-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .ab-val-h2.ab-val-h2.ab-val-h2.ab-val-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
+  .ab-val-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .ab-val-h2.ab-val-h2.ab-val-h2.ab-val-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .ab-val-h2.ab-val-h2.ab-val-h2.ab-val-h2 { font-size: 44px !important; } }
   .ab-val-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   @media (min-width: 768px) { .ab-val-grid { grid-template-columns: repeat(2, 1fr) !important; } }
@@ -14,7 +14,7 @@ const AboutValuesCode = `
   .ab-val-card::before { content: '' !important; position: absolute !important; top: 0 !important; left: 0 !important; bottom: 0 !important; width: 3px !important; background: linear-gradient(to bottom, var(--color-2), var(--color-3)) !important; }
   .ab-val-icon { width: 48px !important; height: 48px !important; border-radius: 14px !important; background: rgba(233,72,77,0.08) !important; display: flex !important; align-items: center !important; justify-content: center !important; margin-bottom: 20px !important; }
   .ab-val-icon svg { width: 22px !important; height: 22px !important; color: var(--color-2) !important; }
-  .ab-val-title { font-family: var(--font-heading) !important; font-size: 20px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 10px !important; }
+  .ab-val-title { font-family: var(--font-heading) !important; font-size: 20px !important; color: var(--color-1) !important; margin-bottom: 10px !important; }
   .ab-val-desc { font-family: var(--font-main) !important; font-size: 15px !important; color: #6b7280 !important; line-height: 1.7 !important; }
 </style>
 

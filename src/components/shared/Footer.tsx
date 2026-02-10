@@ -28,6 +28,8 @@ const GlobalCode = `
   * {
     box-sizing: border-box !important;
     -webkit-tap-highlight-color: transparent !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
   }
 
   *:focus-visible {
@@ -35,13 +37,13 @@ const GlobalCode = `
     outline-offset: 4px !important;
   }
 
-  /* ONTRAPORT TYPOGRAPHY OVERRIDES (4x SPECIFICITY) */
-  .h1.h1.h1.h1 { font-family: var(--font-heading); font-weight: 800; color: var(--color-1); line-height: 1.1; }
-  .h2.h2.h2.h2 { font-family: var(--font-heading); font-weight: 800; color: var(--color-1); line-height: 1.2; }
-  .h3.h3.h3.h3 { font-family: var(--font-heading); font-weight: 700; color: var(--color-1); }
+  /* ONTRAPORT TYPOGRAPHY OVERRIDES (4x SPECIFICITY) — font-weight left to Ontraport UI */
+  .h1.h1.h1.h1 { font-family: var(--font-heading); color: var(--color-1); line-height: 1.1; }
+  .h2.h2.h2.h2 { font-family: var(--font-heading); color: var(--color-1); line-height: 1.2; }
+  .h3.h3.h3.h3 { font-family: var(--font-heading); color: var(--color-1); }
   .body-text.body-text.body-text.body-text { font-family: var(--font-main); font-size: 16px; color: #4b5563; line-height: 1.6; }
-  .button.button.button.button { font-family: var(--font-main); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 8px; }
-  .label.label.label.label { font-family: var(--font-main); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .button.button.button.button { font-family: var(--font-main); text-transform: uppercase; letter-spacing: 0.05em; border-radius: 8px; }
+  .label.label.label.label { font-family: var(--font-main); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
 
   /* UNIVERSAL RESET FOR CUSTOM HTML BLOCKS */
   html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; overflow-x: hidden !important; scroll-behavior: smooth; }
@@ -92,7 +94,7 @@ const FooterBlockCode = `
   .ft-logo { display: inline-flex; align-items: center; text-decoration: none; margin-bottom: 16px; }
   .ft-logo svg { height: 28px; width: auto; }
   .ft-desc { font-family: var(--font-main); font-size: 14px; color: #9ca3af; line-height: 1.7; max-width: 320px; }
-  .ft-heading { font-family: var(--font-main); font-size: 12px; font-weight: 700; color: var(--color-1); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
+  .ft-heading { font-family: var(--font-main); font-size: 12px; color: var(--color-1); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
   .ft-link { display: block; font-family: var(--font-main); font-size: 14px; color: #6b7280; text-decoration: none; margin-bottom: 14px; transition: color 0.2s; }
   .ft-link:hover { color: var(--color-2); }
   .ft-bottom { margin-top: 60px; padding-top: 32px; border-top: 1px solid #f3f4f6; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; }

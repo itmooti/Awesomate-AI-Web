@@ -7,11 +7,11 @@ const AboutStoryCode = `
   .ab-story-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
   .ab-story-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 56px !important; align-items: center !important; }
   @media (min-width: 768px) { .ab-story-grid { grid-template-columns: 1fr 1fr !important; } }
-  .ab-story-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .ab-story-h2.ab-story-h2.ab-story-h2.ab-story-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 24px !important; letter-spacing: -0.02em !important; }
+  .ab-story-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-2) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .ab-story-h2.ab-story-h2.ab-story-h2.ab-story-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 24px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .ab-story-h2.ab-story-h2.ab-story-h2.ab-story-h2 { font-size: 44px !important; } }
   .ab-story-text { font-family: var(--font-main) !important; font-size: 16px !important; color: #6b7280 !important; line-height: 1.8 !important; margin-bottom: 20px !important; }
-  .ab-story-highlight { font-family: var(--font-main) !important; font-size: 18px !important; font-weight: 700 !important; color: var(--color-1) !important; line-height: 1.6 !important; padding-left: 20px !important; border-left: 3px solid transparent !important; border-image: linear-gradient(to bottom, var(--color-2), var(--color-3)) 1 !important; margin-top: 32px !important; }
+  .ab-story-highlight { font-family: var(--font-main) !important; font-size: 18px !important; color: var(--color-1) !important; line-height: 1.6 !important; padding-left: 20px !important; border-left: 3px solid transparent !important; border-image: linear-gradient(to bottom, var(--color-2), var(--color-3)) 1 !important; margin-top: 32px !important; }
   .ab-story-img { border-radius: 24px !important; width: 100% !important; height: 400px !important; object-fit: cover !important; box-shadow: 0 20px 60px rgba(0,0,0,0.08) !important; }
 </style>
 

@@ -109,7 +109,7 @@ const ProjectShowcaseCode = `
   }
   .hm-proj-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
@@ -118,7 +118,7 @@ const ProjectShowcaseCode = `
     align-items: flex-end !important; margin-bottom: 48px !important;
   }
   .hm-proj-h2.hm-proj-h2.hm-proj-h2.hm-proj-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--color-1) !important; margin: 0 !important;
     letter-spacing: -0.02em !important;
@@ -189,7 +189,7 @@ const ProjectShowcaseCode = `
     margin-bottom: 16px !important;
   }
   .hm-proj-tagline {
-    font-family: var(--font-heading) !important; font-weight: 700 !important;
+    font-family: var(--font-heading) !important;
     font-size: 17px !important; color: var(--color-1) !important;
     margin-bottom: 8px !important; line-height: 1.3 !important;
   }
@@ -203,7 +203,7 @@ const ProjectShowcaseCode = `
   }
   .hm-proj-tag {
     font-family: var(--font-main) !important; font-size: 11px !important;
-    font-weight: 700 !important; padding: 4px 10px !important;
+    padding: 4px 10px !important;
     border-radius: 6px !important; background: #f3f4f6 !important;
     color: #6b7280 !important; white-space: nowrap !important;
   }

@@ -14,12 +14,12 @@ const WhyAwesomateCode = `
   }
   .hm-why-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .hm-why-h2.hm-why-h2.hm-why-h2.hm-why-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--color-1) !important; margin: 0 0 56px !important;
     letter-spacing: -0.02em !important; max-width: 600px !important;
@@ -49,7 +49,7 @@ const WhyAwesomateCode = `
   .hm-why-icon-wrap svg { width: 22px !important; height: 22px !important; color: var(--color-2) !important; }
   .hm-why-title {
     font-family: var(--font-heading) !important; font-size: 18px !important;
-    font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 8px !important;
+    color: var(--color-1) !important; margin-bottom: 8px !important;
   }
   .hm-why-desc {
     font-family: var(--font-main) !important; font-size: 15px !important;

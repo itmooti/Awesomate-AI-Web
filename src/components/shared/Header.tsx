@@ -46,7 +46,7 @@ const HeaderCode = `
     }
 
     .hdr-link.hdr-link.hdr-link.hdr-link {
-      font-family: var(--font-main) !important; font-size: 13px !important; font-weight: 600 !important;
+      font-family: var(--font-main) !important; font-size: 13px !important;
       color: #6b7280 !important; text-decoration: none !important;
       transition: all 0.2s !important; padding: 8px 10px !important;
       border-radius: 8px !important; background: transparent !important;
@@ -64,7 +64,7 @@ const HeaderCode = `
       position: relative !important; background: transparent !important;
     }
     .hdr-services-btn.hdr-services-btn.hdr-services-btn.hdr-services-btn {
-      font-family: var(--font-main) !important; font-size: 13px !important; font-weight: 600 !important;
+      font-family: var(--font-main) !important; font-size: 13px !important;
       color: #6b7280 !important; padding: 8px 10px !important;
       border-radius: 8px !important; border: none !important;
       background: transparent !important; cursor: pointer !important;
@@ -110,11 +110,11 @@ const HeaderCode = `
     .hdr-drop-icon.hdr-drop-icon.hdr-drop-icon.hdr-drop-icon {
       width: 36px !important; height: 36px !important; border-radius: 10px !important;
       display: flex !important; align-items: center !important; justify-content: center !important;
-      font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 800 !important;
+      font-family: var(--font-main) !important; font-size: 14px !important;
       flex-shrink: 0 !important; box-sizing: border-box !important;
     }
     .hdr-drop-title.hdr-drop-title.hdr-drop-title.hdr-drop-title {
-      font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 700 !important;
+      font-family: var(--font-main) !important; font-size: 14px !important;
       color: var(--color-1) !important; margin: 0 0 2px 0 !important; padding: 0 !important;
     }
     .hdr-drop-desc.hdr-drop-desc.hdr-drop-desc.hdr-drop-desc {
@@ -126,7 +126,7 @@ const HeaderCode = `
       background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
       color: white !important; padding: 10px 14px !important;
       border-radius: 8px !important; font-family: var(--font-main) !important; font-size: 13px !important;
-      font-weight: 800 !important; text-decoration: none !important;
+      text-decoration: none !important;
       transition: all 0.2s !important; display: inline-block !important;
       text-transform: uppercase !important; letter-spacing: 0.05em !important;
       border: none !important; margin: 0 !important; box-sizing: border-box !important;

@@ -5,10 +5,10 @@ const VibeFAQCode = `
 <style>
   #vc-faq { padding: 80px 0 !important; background: var(--color-5) !important; }
   .vcfq-container { max-width: 900px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .vcfq-h2.vcfq-h2.vcfq-h2.vcfq-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; color: var(--color-1) !important; text-align: center !important; margin: 0 0 48px !important; letter-spacing: -0.02em !important; }
+  .vcfq-h2.vcfq-h2.vcfq-h2.vcfq-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; color: var(--color-1) !important; text-align: center !important; margin: 0 0 48px !important; letter-spacing: -0.02em !important; }
   .vcfq-list { border-top: 1px solid #e5e7eb !important; }
   .vcfq-item { border-bottom: 1px solid #e5e7eb !important; }
-  .vcfq-q.vcfq-q.vcfq-q.vcfq-q { width: 100% !important; text-align: left !important; padding: 24px 0 !important; display: flex !important; justify-content: space-between !important; align-items: center !important; border: none !important; background: transparent !important; cursor: pointer !important; font-family: var(--font-main) !important; font-size: 15px !important; font-weight: 700 !important; color: var(--color-1) !important; transition: color 0.2s !important; outline: none !important; }
+  .vcfq-q.vcfq-q.vcfq-q.vcfq-q { width: 100% !important; text-align: left !important; padding: 24px 0 !important; display: flex !important; justify-content: space-between !important; align-items: center !important; border: none !important; background: transparent !important; cursor: pointer !important; font-family: var(--font-main) !important; font-size: 15px !important; color: var(--color-1) !important; transition: color 0.2s !important; outline: none !important; }
   .vcfq-q:hover { color: var(--color-3) !important; }
   .vcfq-item.active .vcfq-q { color: var(--color-3) !important; }
   .vcfq-icon { width: 20px !important; height: 20px !important; color: var(--color-3) !important; transition: transform 0.3s !important; flex-shrink: 0 !important; margin-left: 16px !important; }

@@ -22,12 +22,12 @@ const PerformanceScaleCode = `
   .n8s-header { text-align: center !important; margin-bottom: 80px !important; }
   .n8s-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-4) !important;
+    font-size: 12px !important; color: var(--color-4) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .n8s-h2.n8s-h2.n8s-h2.n8s-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.2 !important;
     color: var(--color-1) !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -38,7 +38,7 @@ const PerformanceScaleCode = `
   .n8s-sub {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; max-width: 700px !important; margin: 0 auto !important;
-    line-height: 1.6 !important; font-weight: 500 !important;
+    line-height: 1.6 !important;
   }
   .n8s-layout {
     display: flex !important; flex-direction: column !important; gap: 48px !important;
@@ -49,7 +49,7 @@ const PerformanceScaleCode = `
   }
   .n8s-sticky {
     font-family: var(--font-heading) !important; font-size: 32px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     letter-spacing: -0.01em !important; position: sticky !important; top: 120px !important;
   }
   .n8s-grid {
@@ -67,12 +67,12 @@ const PerformanceScaleCode = `
   }
   .n8s-feat-title {
     font-family: var(--font-main) !important; font-size: 18px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     margin-bottom: 8px !important;
   }
   .n8s-feat-desc {
     font-family: var(--font-main) !important; font-size: 15px !important;
-    color: #6b7280 !important; line-height: 1.6 !important; font-weight: 500 !important;
+    color: #6b7280 !important; line-height: 1.6 !important;
   }
 </style>
 

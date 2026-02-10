@@ -6,14 +6,14 @@ const BuddzeePricingCode = `
   :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; }
   #bz-pricing { padding: 100px 0 !important; background: var(--bz-cloud) !important; }
   .bzpr-container { max-width: 720px !important; margin: 0 auto !important; padding: 0 24px !important; text-align: center !important; }
-  .bzpr-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .bzpr-h2.bzpr-h2.bzpr-h2.bzpr-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--bz-navy) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
+  .bzpr-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--bz-blue) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .bzpr-h2.bzpr-h2.bzpr-h2.bzpr-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--bz-navy) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .bzpr-h2.bzpr-h2.bzpr-h2.bzpr-h2 { font-size: 44px !important; } }
   .bzpr-sub { font-family: var(--font-main) !important; font-size: 17px !important; color: #6b7280 !important; line-height: 1.7 !important; margin-bottom: 40px !important; }
   .bzpr-card { background: #ffffff !important; border: 2px solid rgba(82,132,255,0.15) !important; border-radius: 24px !important; padding: 48px 40px !important; }
-  .bzpr-card-title { font-family: var(--font-main) !important; font-size: 24px !important; font-weight: 800 !important; color: var(--bz-navy) !important; margin-bottom: 12px !important; }
+  .bzpr-card-title { font-family: var(--font-main) !important; font-size: 24px !important; color: var(--bz-navy) !important; margin-bottom: 12px !important; }
   .bzpr-card-desc { font-family: var(--font-main) !important; font-size: 16px !important; color: #6b7280 !important; line-height: 1.6 !important; margin-bottom: 32px !important; }
-  .bzpr-btn { display: inline-flex !important; align-items: center !important; gap: 8px !important; background: var(--bz-blue) !important; color: white !important; padding: 14px 32px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 800 !important; text-decoration: none !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; transition: all 0.2s !important; border: none !important; cursor: pointer !important; }
+  .bzpr-btn { display: inline-flex !important; align-items: center !important; gap: 8px !important; background: var(--bz-blue) !important; color: white !important; padding: 14px 32px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; text-decoration: none !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; transition: all 0.2s !important; border: none !important; cursor: pointer !important; }
   .bzpr-btn:hover { transform: translateY(-2px) !important; box-shadow: 0 12px 32px rgba(82,132,255,0.3) !important; }
   .bzpr-note { font-family: var(--font-main) !important; font-size: 13px !important; color: #9ca3af !important; margin-top: 20px !important; }
 </style>

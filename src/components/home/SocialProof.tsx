@@ -13,12 +13,12 @@ const SocialProofCode = `
   }
   .hm-trust-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .hm-trust-h2.hm-trust-h2.hm-trust-h2.hm-trust-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--color-1) !important; margin: 0 0 56px !important;
     letter-spacing: -0.02em !important;
@@ -35,14 +35,14 @@ const SocialProofCode = `
   @media (min-width: 640px) { .hm-trust-stats { grid-template-columns: repeat(3, 1fr) !important; } }
   .hm-trust-stat-num {
     font-family: var(--font-heading) !important; font-size: 48px !important;
-    font-weight: 800 !important; margin-bottom: 4px !important;
+    margin-bottom: 4px !important;
     background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
     -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
   }
   .hm-trust-stat-label {
     font-family: var(--font-main) !important; font-size: 14px !important;
-    color: #9ca3af !important; font-weight: 600 !important;
+    color: #9ca3af !important;
   }
 
   /* Logo strip */
@@ -78,11 +78,11 @@ const SocialProofCode = `
     background: linear-gradient(135deg, rgba(233,72,77,0.1), rgba(239,149,99,0.1)) !important;
     display: flex !important; align-items: center !important; justify-content: center !important;
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 800 !important; color: var(--color-2) !important;
+    color: var(--color-2) !important;
   }
   .hm-trust-name {
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 700 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
   }
   .hm-trust-role {
     font-family: var(--font-main) !important; font-size: 12px !important;

@@ -5,15 +5,15 @@ const AboutProcessCode = `
 <style>
   #ab-process { padding: 100px 0 !important; background: var(--color-bg-alt, #f8f9fb) !important; }
   .ab-proc-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; text-align: center !important; }
-  .ab-proc-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .ab-proc-h2.ab-proc-h2.ab-proc-h2.ab-proc-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
+  .ab-proc-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-2) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .ab-proc-h2.ab-proc-h2.ab-proc-h2.ab-proc-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .ab-proc-h2.ab-proc-h2.ab-proc-h2.ab-proc-h2 { font-size: 44px !important; } }
   .ab-proc-sub { font-family: var(--font-main) !important; font-size: 17px !important; color: #6b7280 !important; line-height: 1.7 !important; max-width: 600px !important; margin: 0 auto 56px !important; }
   .ab-proc-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   @media (min-width: 768px) { .ab-proc-grid { grid-template-columns: repeat(5, 1fr) !important; } }
   .ab-proc-step { text-align: center !important; position: relative !important; }
-  .ab-proc-num { width: 48px !important; height: 48px !important; border-radius: 50% !important; background: linear-gradient(135deg, var(--color-2), var(--color-3)) !important; color: white !important; font-family: var(--font-heading) !important; font-size: 18px !important; font-weight: 800 !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0 auto 16px !important; }
-  .ab-proc-step-title { font-family: var(--font-heading) !important; font-size: 18px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 8px !important; }
+  .ab-proc-num { width: 48px !important; height: 48px !important; border-radius: 50% !important; background: linear-gradient(135deg, var(--color-2), var(--color-3)) !important; color: white !important; font-family: var(--font-heading) !important; font-size: 18px !important; display: flex !important; align-items: center !important; justify-content: center !important; margin: 0 auto 16px !important; }
+  .ab-proc-step-title { font-family: var(--font-heading) !important; font-size: 18px !important; color: var(--color-1) !important; margin-bottom: 8px !important; }
   .ab-proc-step-desc { font-family: var(--font-main) !important; font-size: 14px !important; color: #6b7280 !important; line-height: 1.6 !important; }
   .ab-proc-line { display: none !important; }
   @media (min-width: 768px) {

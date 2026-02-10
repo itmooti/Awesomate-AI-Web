@@ -5,8 +5,8 @@ const VibeFeaturesCode = `
 <style>
   #vc-features { padding: 100px 0 !important; background: var(--color-bg-alt, #f8f9fb) !important; }
   .vcf-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .vcf-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .vcf-h2.vcf-h2.vcf-h2.vcf-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
+  .vcf-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .vcf-h2.vcf-h2.vcf-h2.vcf-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .vcf-h2.vcf-h2.vcf-h2.vcf-h2 { font-size: 44px !important; } }
   .vcf-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   @media (min-width: 768px) { .vcf-grid { grid-template-columns: repeat(2, 1fr) !important; } }
@@ -16,7 +16,7 @@ const VibeFeaturesCode = `
   .vcf-card:hover { transform: translateY(-2px) !important; box-shadow: 0 12px 24px rgba(0,0,0,0.04), 0 0 20px rgba(239,149,99,0.15) !important; }
   .vcf-icon { width: 44px !important; height: 44px !important; border-radius: 12px !important; background: rgba(239,149,99,0.08) !important; display: flex !important; align-items: center !important; justify-content: center !important; margin-bottom: 20px !important; }
   .vcf-icon svg { width: 22px !important; height: 22px !important; color: var(--color-3) !important; }
-  .vcf-title { font-family: var(--font-heading) !important; font-size: 18px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 8px !important; }
+  .vcf-title { font-family: var(--font-heading) !important; font-size: 18px !important; color: var(--color-1) !important; margin-bottom: 8px !important; }
   .vcf-desc { font-family: var(--font-main) !important; font-size: 15px !important; color: #6b7280 !important; line-height: 1.6 !important; }
 </style>
 

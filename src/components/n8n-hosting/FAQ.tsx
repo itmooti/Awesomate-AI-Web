@@ -21,12 +21,12 @@ const FAQCode = `
   .n8f-header { text-align: center !important; margin-bottom: 48px !important; }
   .n8f-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .n8f-h2.n8f-h2.n8f-h2.n8f-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.2 !important;
     color: var(--color-1) !important; margin: 0 !important;
     letter-spacing: -0.02em !important;
@@ -42,7 +42,7 @@ const FAQCode = `
     justify-content: space-between !important; align-items: center !important;
     border: none !important; background: var(--color-5, #ffffff) !important;
     cursor: pointer !important; font-family: var(--font-main) !important;
-    font-size: 15px !important; font-weight: 800 !important;
+    font-size: 15px !important;
     color: var(--color-1) !important; text-transform: uppercase !important;
     letter-spacing: 0.05em !important; transition: all 0.2s !important;
     outline: none !important;
@@ -59,7 +59,6 @@ const FAQCode = `
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
     font-family: var(--font-main) !important; font-size: 16px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
-    font-weight: 500 !important;
     background-color: var(--color-5, #ffffff) !important;
   }
   .n8f-item.active .n8f-answer {

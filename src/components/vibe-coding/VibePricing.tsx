@@ -5,14 +5,14 @@ const VibePricingCode = `
 <style>
   #vc-pricing { padding: 100px 0 !important; background: var(--color-bg-alt, #f8f9fb) !important; }
   .vcpr-container { max-width: 720px !important; margin: 0 auto !important; padding: 0 24px !important; text-align: center !important; }
-  .vcpr-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .vcpr-h2.vcpr-h2.vcpr-h2.vcpr-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
+  .vcpr-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .vcpr-h2.vcpr-h2.vcpr-h2.vcpr-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .vcpr-h2.vcpr-h2.vcpr-h2.vcpr-h2 { font-size: 44px !important; } }
   .vcpr-sub { font-family: var(--font-main) !important; font-size: 17px !important; color: #6b7280 !important; line-height: 1.7 !important; margin-bottom: 40px !important; }
   .vcpr-card { background: white !important; border: 2px solid rgba(239,149,99,0.15) !important; border-radius: 24px !important; padding: 48px 40px !important; }
-  .vcpr-card-title { font-family: var(--font-heading) !important; font-size: 24px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 12px !important; }
+  .vcpr-card-title { font-family: var(--font-heading) !important; font-size: 24px !important; color: var(--color-1) !important; margin-bottom: 12px !important; }
   .vcpr-card-desc { font-family: var(--font-main) !important; font-size: 16px !important; color: #6b7280 !important; line-height: 1.6 !important; margin-bottom: 32px !important; }
-  .vcpr-btn { display: inline-flex !important; align-items: center !important; gap: 8px !important; background: linear-gradient(135deg, var(--color-3) 0%, var(--color-2) 100%) !important; color: white !important; padding: 14px 32px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 800 !important; text-decoration: none !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; transition: all 0.2s !important; }
+  .vcpr-btn { display: inline-flex !important; align-items: center !important; gap: 8px !important; background: linear-gradient(135deg, var(--color-3) 0%, var(--color-2) 100%) !important; color: white !important; padding: 14px 32px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; text-decoration: none !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; transition: all 0.2s !important; }
   .vcpr-btn:hover { transform: translateY(-2px) !important; box-shadow: 0 12px 32px rgba(239,149,99,0.3) !important; }
 </style>
 

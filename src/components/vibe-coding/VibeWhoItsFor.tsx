@@ -5,15 +5,15 @@ const VibeWhoItsForCode = `
 <style>
   #vc-who { padding: 100px 0 !important; background: var(--color-5) !important; }
   .vcw-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .vcw-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .vcw-h2.vcw-h2.vcw-h2.vcw-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
+  .vcw-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--color-3) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .vcw-h2.vcw-h2.vcw-h2.vcw-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--color-1) !important; margin: 0 0 56px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .vcw-h2.vcw-h2.vcw-h2.vcw-h2 { font-size: 44px !important; } }
   .vcw-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
   @media (min-width: 768px) { .vcw-grid { grid-template-columns: repeat(2, 1fr) !important; } }
   .vcw-card { background: var(--color-bg-alt, #f8f9fb) !important; border: 1px solid #f3f4f6 !important; border-radius: 20px !important; padding: 32px !important; display: flex !important; gap: 20px !important; align-items: flex-start !important; }
   .vcw-icon { width: 48px !important; height: 48px !important; border-radius: 14px !important; background: rgba(239,149,99,0.08) !important; display: flex !important; align-items: center !important; justify-content: center !important; flex-shrink: 0 !important; }
   .vcw-icon svg { width: 22px !important; height: 22px !important; color: var(--color-3) !important; }
-  .vcw-title { font-family: var(--font-heading) !important; font-size: 18px !important; font-weight: 800 !important; color: var(--color-1) !important; margin-bottom: 6px !important; }
+  .vcw-title { font-family: var(--font-heading) !important; font-size: 18px !important; color: var(--color-1) !important; margin-bottom: 6px !important; }
   .vcw-desc { font-family: var(--font-main) !important; font-size: 15px !important; color: #6b7280 !important; line-height: 1.6 !important; }
 </style>
 

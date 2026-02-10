@@ -51,7 +51,7 @@ const InfraCode = `
     padding: 8px 16px !important; border-radius: 100px !important;
     background: rgba(233,72,77,0.08) !important; border: 1px solid rgba(233,72,77,0.2) !important;
     font-family: var(--font-main) !important; font-size: 11px !important;
-    font-weight: 800 !important; color: var(--color-2) !important;
+    color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 24px !important;
   }
@@ -60,7 +60,7 @@ const InfraCode = `
     background: var(--color-2) !important; border-radius: 50% !important;
   }
   .n8i-h2.n8i-h2.n8i-h2.n8i-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.1 !important;
     color: white !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -71,7 +71,7 @@ const InfraCode = `
   .n8i-body {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: rgba(255,255,255,0.6) !important; line-height: 1.7 !important;
-    margin-bottom: 32px !important; font-weight: 500 !important;
+    margin-bottom: 32px !important;
   }
   .n8i-body strong { color: var(--color-2) !important; }
   .n8i-callout {
@@ -82,7 +82,7 @@ const InfraCode = `
   }
   .n8i-callout-label {
     font-family: var(--font-main) !important; font-size: 11px !important;
-    font-weight: 800 !important; color: var(--color-3) !important;
+    color: var(--color-3) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 8px !important;
   }
@@ -96,7 +96,7 @@ const InfraCode = `
   }
   .n8i-check {
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 700 !important; color: white !important;
+    color: white !important;
     background: rgba(255,255,255,0.03) !important; padding: 12px 16px !important;
     border-radius: 10px !important; border: 1px solid rgba(255,255,255,0.06) !important;
     transition: all 0.2s !important;
@@ -134,7 +134,7 @@ const InfraCode = `
   }
   .n8i-node-label {
     color: white !important; font-size: 11px !important;
-    font-weight: 800 !important; font-family: var(--font-mono) !important;
+    font-family: var(--font-mono) !important;
     letter-spacing: 0.1em !important;
   }
 </style>

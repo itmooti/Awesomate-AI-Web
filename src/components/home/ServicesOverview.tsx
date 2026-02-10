@@ -12,12 +12,12 @@ const ServicesOverviewCode = `
   }
   .hm-svc-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .hm-svc-h2.hm-svc-h2.hm-svc-h2.hm-svc-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--color-1) !important; margin: 0 0 16px !important;
     letter-spacing: -0.02em !important;
@@ -69,7 +69,7 @@ const ServicesOverviewCode = `
   .hm-svc-icon {
     width: 56px !important; height: 56px !important; border-radius: 16px !important;
     display: flex !important; align-items: center !important; justify-content: center !important;
-    font-size: 20px !important; font-weight: 800 !important; margin-bottom: 24px !important;
+    font-size: 20px !important; margin-bottom: 24px !important;
     font-family: var(--font-main) !important; transition: transform 0.3s !important;
   }
   .hm-svc-card:hover .hm-svc-icon { transform: scale(1.1) !important; }
@@ -78,7 +78,7 @@ const ServicesOverviewCode = `
   .hm-svc-icon-orange { background: rgba(239,149,99,0.08) !important; color: var(--color-3) !important; }
   .hm-svc-card-title {
     font-family: var(--font-heading) !important; font-size: 22px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     margin-bottom: 12px !important;
   }
   .hm-svc-card-desc {
@@ -87,7 +87,7 @@ const ServicesOverviewCode = `
   }
   .hm-svc-card-link {
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 700 !important; text-decoration: none !important;
+    text-decoration: none !important;
     display: inline-flex !important; align-items: center !important; gap: 6px !important;
     transition: gap 0.2s !important;
   }

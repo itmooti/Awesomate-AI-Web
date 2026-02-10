@@ -9,17 +9,17 @@ const VibeHeroCode = `
   .vc-hero-breadcrumb { display: inline-flex !important; align-items: center !important; gap: 8px !important; font-family: var(--font-main) !important; font-size: 12px !important; color: #9ca3af !important; margin-bottom: 24px !important; }
   .vc-hero-breadcrumb a { color: #9ca3af !important; text-decoration: none !important; }
   .vc-hero-breadcrumb a:hover { color: var(--color-3) !important; }
-  .vc-hero-breadcrumb span { color: var(--color-3) !important; font-weight: 700 !important; }
-  .vc-hero-h1.vc-hero-h1.vc-hero-h1.vc-hero-h1 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 48px !important; line-height: 1.05 !important; color: var(--color-1) !important; margin: 0 0 24px !important; letter-spacing: -0.02em !important; }
+  .vc-hero-breadcrumb span { color: var(--color-3) !important; }
+  .vc-hero-h1.vc-hero-h1.vc-hero-h1.vc-hero-h1 { font-family: var(--font-heading) !important; font-size: 48px !important; line-height: 1.05 !important; color: var(--color-1) !important; margin: 0 0 24px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .vc-hero-h1.vc-hero-h1.vc-hero-h1.vc-hero-h1 { font-size: 64px !important; } }
   @media (min-width: 1024px) { .vc-hero-h1.vc-hero-h1.vc-hero-h1.vc-hero-h1 { font-size: 72px !important; } }
   .vc-hero-gradient { background: linear-gradient(135deg, var(--color-3) 0%, var(--color-2) 100%) !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; }
-  .vc-hero-sub { font-family: var(--font-main) !important; font-size: 18px !important; color: #6b7280 !important; line-height: 1.7 !important; max-width: 680px !important; margin: 0 auto 40px !important; font-weight: 500 !important; }
+  .vc-hero-sub { font-family: var(--font-main) !important; font-size: 18px !important; color: #6b7280 !important; line-height: 1.7 !important; max-width: 680px !important; margin: 0 auto 40px !important; }
   .vc-hero-actions { display: flex !important; flex-direction: column !important; align-items: center !important; gap: 12px !important; }
   @media (min-width: 640px) { .vc-hero-actions { flex-direction: row !important; justify-content: center !important; gap: 16px !important; } }
-  .vc-hero-cta { display: inline-flex !important; align-items: center !important; gap: 8px !important; background: linear-gradient(135deg, var(--color-3) 0%, var(--color-2) 100%) !important; color: white !important; padding: 14px 28px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 800 !important; text-decoration: none !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; transition: all 0.2s !important; }
+  .vc-hero-cta { display: inline-flex !important; align-items: center !important; gap: 8px !important; background: linear-gradient(135deg, var(--color-3) 0%, var(--color-2) 100%) !important; color: white !important; padding: 14px 28px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; text-decoration: none !important; text-transform: uppercase !important; letter-spacing: 0.05em !important; transition: all 0.2s !important; }
   .vc-hero-cta:hover { transform: translateY(-2px) !important; box-shadow: 0 12px 32px rgba(239,149,99,0.3) !important; }
-  .vc-hero-secondary { display: inline-flex !important; align-items: center !important; gap: 8px !important; color: var(--color-1) !important; padding: 14px 28px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; font-weight: 700 !important; text-decoration: none !important; border: 1.5px solid rgba(15,17,40,0.12) !important; transition: all 0.2s !important; }
+  .vc-hero-secondary { display: inline-flex !important; align-items: center !important; gap: 8px !important; color: var(--color-1) !important; padding: 14px 28px !important; border-radius: 10px !important; font-family: var(--font-main) !important; font-size: 14px !important; text-decoration: none !important; border: 1.5px solid rgba(15,17,40,0.12) !important; transition: all 0.2s !important; }
   .vc-hero-secondary:hover { border-color: var(--color-3) !important; color: var(--color-3) !important; }
 </style>
 

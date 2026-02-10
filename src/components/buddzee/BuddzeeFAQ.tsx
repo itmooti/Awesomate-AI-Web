@@ -12,7 +12,7 @@ const BuddzeeFAQCode = `
     max-width: 900px !important; margin: 0 auto !important; padding: 0 24px !important;
   }
   .bzfq-h2.bzfq-h2.bzfq-h2.bzfq-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--bz-navy) !important; text-align: center !important;
     margin: 0 0 48px !important; letter-spacing: -0.02em !important;
@@ -30,7 +30,7 @@ const BuddzeeFAQCode = `
     width: 100% !important; text-align: left !important; padding: 24px 0 !important;
     display: flex !important; justify-content: space-between !important; align-items: center !important;
     border: none !important; background: transparent !important; cursor: pointer !important;
-    font-family: var(--font-main) !important; font-size: 16px !important; font-weight: 700 !important;
+    font-family: var(--font-main) !important; font-size: 16px !important;
     color: var(--bz-navy) !important; transition: color 0.2s !important; outline: none !important;
   }
   .bzfq-q:hover { color: var(--bz-blue) !important; }

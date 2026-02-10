@@ -19,7 +19,7 @@ const HomeCTACode = `
     text-align: center !important; position: relative !important; z-index: 1 !important;
   }
   .hm-cta-h2.hm-cta-h2.hm-cta-h2.hm-cta-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: white !important; margin: 0 0 20px !important;
     letter-spacing: -0.02em !important;
@@ -37,7 +37,7 @@ const HomeCTACode = `
     background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
     color: white !important; padding: 16px 36px !important; border-radius: 10px !important;
     font-family: var(--font-main) !important; font-size: 15px !important;
-    font-weight: 800 !important; text-decoration: none !important;
+    text-decoration: none !important;
     text-transform: uppercase !important; letter-spacing: 0.05em !important;
     transition: all 0.2s !important; border: none !important; cursor: pointer !important;
   }

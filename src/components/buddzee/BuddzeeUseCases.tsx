@@ -6,8 +6,8 @@ const BuddzeeUseCasesCode = `
   :root { --bz-navy:#09142B; --bz-blue:#5284FF; --bz-blue-light:#ABC1FF; --bz-cloud:#EDEFF7; }
   #bz-usecases { padding: 100px 0 !important; background: #ffffff !important; }
   .bzu-container { max-width: 1440px !important; margin: 0 auto !important; padding: 0 24px !important; }
-  .bzu-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
-  .bzu-h2.bzu-h2.bzu-h2.bzu-h2 { font-family: var(--font-heading) !important; font-weight: 800 !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--bz-navy) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
+  .bzu-label { display: inline-block !important; font-family: var(--font-main) !important; font-size: 12px !important; color: var(--bz-blue) !important; text-transform: uppercase !important; letter-spacing: 0.15em !important; margin-bottom: 16px !important; }
+  .bzu-h2.bzu-h2.bzu-h2.bzu-h2 { font-family: var(--font-heading) !important; font-size: 36px !important; line-height: 1.15 !important; color: var(--bz-navy) !important; margin: 0 0 16px !important; letter-spacing: -0.02em !important; }
   @media (min-width: 768px) { .bzu-h2.bzu-h2.bzu-h2.bzu-h2 { font-size: 44px !important; } }
   .bzu-intro { font-family: var(--font-main) !important; font-size: 17px !important; color: #6b7280 !important; line-height: 1.7 !important; max-width: 600px !important; margin-bottom: 56px !important; }
   .bzu-grid { display: grid !important; grid-template-columns: 1fr !important; gap: 24px !important; }
@@ -15,7 +15,7 @@ const BuddzeeUseCasesCode = `
   .bzu-card { background: white !important; border: 1px solid #f3f4f6 !important; border-radius: 20px !important; overflow: hidden !important; }
   .bzu-card-img { width: 100% !important; height: 200px !important; background: #f8f9fb !important; object-fit: cover !important; }
   .bzu-card-body { padding: 24px !important; }
-  .bzu-card-title { font-family: var(--font-main) !important; font-size: 18px !important; font-weight: 800 !important; color: var(--bz-navy) !important; margin-bottom: 8px !important; }
+  .bzu-card-title { font-family: var(--font-main) !important; font-size: 18px !important; color: var(--bz-navy) !important; margin-bottom: 8px !important; }
   .bzu-card-desc { font-family: var(--font-main) !important; font-size: 14px !important; color: #6b7280 !important; line-height: 1.6 !important; }
 </style>
 

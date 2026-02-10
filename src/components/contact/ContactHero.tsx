@@ -25,9 +25,9 @@ const ContactHeroCode = `
   }
   .ct-hero-breadcrumb a { color: #9ca3af !important; text-decoration: none !important; }
   .ct-hero-breadcrumb a:hover { color: var(--color-2) !important; }
-  .ct-hero-breadcrumb span { color: var(--color-2) !important; font-weight: 700 !important; }
+  .ct-hero-breadcrumb span { color: var(--color-2) !important; }
   .ct-hero-h1.ct-hero-h1.ct-hero-h1.ct-hero-h1 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 48px !important; line-height: 1.05 !important;
     color: var(--color-1) !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -41,7 +41,7 @@ const ContactHeroCode = `
   .ct-hero-sub {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
-    max-width: 540px !important; margin: 0 auto !important; font-weight: 500 !important;
+    max-width: 540px !important; margin: 0 auto !important;
   }
 </style>
 

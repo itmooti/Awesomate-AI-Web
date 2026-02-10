@@ -16,12 +16,12 @@ const BuddzeeHowItWorksCode = `
   }
   .bzh-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--bz-blue) !important;
+    font-size: 12px !important; color: var(--bz-blue) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .bzh-h2.bzh-h2.bzh-h2.bzh-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--bz-navy) !important; margin: 0 0 16px !important;
     letter-spacing: -0.02em !important;
@@ -52,7 +52,7 @@ const BuddzeeHowItWorksCode = `
   }
   .bzh-number {
     font-family: var(--font-main) !important; font-size: 48px !important;
-    font-weight: 800 !important; line-height: 1 !important;
+    line-height: 1 !important;
     margin-bottom: 20px !important; display: inline-block !important;
     background: linear-gradient(135deg, var(--bz-blue-light) 0%, var(--bz-blue) 100%) !important;
     -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;
@@ -60,7 +60,7 @@ const BuddzeeHowItWorksCode = `
   }
   .bzh-step-title {
     font-family: var(--font-main) !important; font-size: 22px !important;
-    font-weight: 800 !important; color: var(--bz-navy) !important;
+    color: var(--bz-navy) !important;
     margin-bottom: 12px !important;
   }
   .bzh-step-desc {

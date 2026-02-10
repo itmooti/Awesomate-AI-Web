@@ -34,12 +34,12 @@ const HomeHeroCode = `
     padding: 6px 16px !important; border-radius: 100px !important;
     background: rgba(15,17,40,0.04) !important; border: 1px solid rgba(15,17,40,0.08) !important;
     font-family: var(--font-main) !important; font-size: 11px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     text-transform: uppercase !important; letter-spacing: 0.2em !important;
     margin-bottom: 32px !important;
   }
   .hm-hero-h1.hm-hero-h1.hm-hero-h1.hm-hero-h1 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 48px !important; line-height: 1.05 !important;
     color: var(--color-1) !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -59,7 +59,6 @@ const HomeHeroCode = `
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
     max-width: 640px !important; margin: 0 auto 40px !important;
-    font-weight: 500 !important;
   }
   @media (min-width: 768px) {
     .hm-hero-sub { font-size: 20px !important; }
@@ -78,7 +77,7 @@ const HomeHeroCode = `
     animation: hm-shimmer 3s ease infinite !important;
     color: white !important; padding: 14px 28px !important; border-radius: 10px !important;
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 800 !important; text-decoration: none !important;
+    text-decoration: none !important;
     text-transform: uppercase !important; letter-spacing: 0.05em !important;
     transition: all 0.2s !important; border: none !important; cursor: pointer !important;
   }
@@ -89,7 +88,7 @@ const HomeHeroCode = `
     background: transparent !important; color: var(--color-1) !important;
     padding: 14px 28px !important; border-radius: 10px !important;
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 700 !important; text-decoration: none !important;
+    text-decoration: none !important;
     border: 1.5px solid rgba(15,17,40,0.12) !important;
     transition: all 0.2s !important; cursor: pointer !important;
   }

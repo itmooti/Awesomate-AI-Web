@@ -192,7 +192,7 @@ const WorkProjectsCode = `
     .wk-proj-content { padding: 40px 48px !important; flex: 1 !important; }
   }
   .wk-proj-tagline {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 22px !important; color: var(--color-1) !important;
     margin-bottom: 16px !important; line-height: 1.25 !important;
     letter-spacing: -0.01em !important;
@@ -211,7 +211,6 @@ const WorkProjectsCode = `
   }
   .wk-proj-stat {
     font-family: var(--font-main) !important; font-size: 13px !important;
-    font-weight: 800 !important;
     background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
     -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
@@ -221,7 +220,7 @@ const WorkProjectsCode = `
   }
   .wk-proj-tag {
     font-family: var(--font-main) !important; font-size: 11px !important;
-    font-weight: 700 !important; padding: 5px 12px !important;
+    padding: 5px 12px !important;
     border-radius: 6px !important; background: #f3f4f6 !important;
     color: #6b7280 !important; white-space: nowrap !important;
   }

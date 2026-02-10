@@ -23,12 +23,12 @@ const PricingCode = `
   .n8pr-header { text-align: center !important; margin-bottom: 64px !important; }
   .n8pr-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important; color: var(--color-2) !important;
+    font-size: 12px !important; color: var(--color-2) !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 16px !important;
   }
   .n8pr-h2.n8pr-h2.n8pr-h2.n8pr-h2 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 36px !important; line-height: 1.15 !important;
     color: var(--color-1) !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -39,7 +39,7 @@ const PricingCode = `
   .n8pr-sub {
     font-family: var(--font-main) !important; font-size: 20px !important;
     color: #6b7280 !important; max-width: 600px !important; margin: 0 auto !important;
-    line-height: 1.6 !important; font-weight: 500 !important;
+    line-height: 1.6 !important;
   }
   .n8pr-toggle {
     display: inline-flex !important; background: var(--color-5, #fff) !important;
@@ -48,7 +48,7 @@ const PricingCode = `
   }
   .n8pr-tbtn {
     padding: 12px 32px !important; border-radius: 999px !important;
-    font-family: var(--font-main) !important; font-weight: 700 !important;
+    font-family: var(--font-main) !important;
     font-size: 14px !important; cursor: pointer !important;
     color: var(--color-1) !important; border: none !important;
     background: none !important; transition: all 0.2s !important;
@@ -81,36 +81,35 @@ const PricingCode = `
     position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important;
     background: var(--color-2) !important; color: white !important;
     text-align: center !important; padding: 6px !important;
-    font-family: var(--font-main) !important; font-weight: 800 !important;
+    font-family: var(--font-main) !important;
     font-size: 11px !important; text-transform: uppercase !important;
     letter-spacing: 0.1em !important; border-radius: 14px 14px 0 0 !important;
     margin: -2px !important;
   }
   .n8pr-name {
     font-family: var(--font-main) !important; font-size: 22px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     margin-bottom: 8px !important;
   }
   .n8pr-desc {
     font-family: var(--font-main) !important; font-size: 13px !important;
     color: #6b7280 !important; line-height: 1.5 !important;
-    height: 40px !important; font-weight: 500 !important;
+    height: 40px !important;
   }
   .n8pr-price { margin: 32px 0 !important; }
   .n8pr-amount {
     font-family: var(--font-main) !important; font-size: 44px !important;
-    font-weight: 800 !important; color: var(--color-1) !important;
+    color: var(--color-1) !important;
     letter-spacing: -0.04em !important;
   }
   .n8pr-period {
     font-family: var(--font-main) !important; font-size: 16px !important;
-    font-weight: 600 !important; color: #9ca3af !important;
+    color: #9ca3af !important;
   }
   .n8pr-hint {
     font-family: var(--font-main) !important; font-size: 11px !important;
     color: #9ca3af !important; margin-top: 4px !important;
     font-style: italic !important; text-transform: uppercase !important;
-    font-weight: 700 !important;
   }
   .n8pr-features {
     list-style: none !important; padding: 0 !important;
@@ -120,16 +119,16 @@ const PricingCode = `
     font-family: var(--font-main) !important; font-size: 14px !important;
     color: #374151 !important; margin-bottom: 12px !important;
     display: flex !important; align-items: flex-start !important;
-    gap: 10px !important; font-weight: 500 !important;
+    gap: 10px !important;
   }
-  .n8pr-check { color: var(--color-2) !important; font-weight: 800 !important; flex-shrink: 0 !important; }
-  .n8pr-feat.n8pr-bold { color: var(--color-1) !important; font-weight: 700 !important; }
+  .n8pr-check { color: var(--color-2) !important; flex-shrink: 0 !important; }
+  .n8pr-feat.n8pr-bold { color: var(--color-1) !important; }
   .n8pr-feat.n8pr-highlight { color: var(--color-2) !important; }
   .n8pr-cta.n8pr-cta.n8pr-cta.n8pr-cta {
     display: block !important; width: 100% !important; padding: 18px !important;
     background: var(--color-1) !important; color: var(--color-5) !important;
     text-align: center !important; border-radius: 10px !important;
-    font-family: var(--font-main) !important; font-weight: 800 !important;
+    font-family: var(--font-main) !important;
     text-decoration: none !important; transition: all 0.2s !important;
     font-size: 16px !important; border: none !important; cursor: pointer !important;
   }

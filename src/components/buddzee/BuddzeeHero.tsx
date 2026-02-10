@@ -40,9 +40,9 @@ const BuddzeeHeroCode = `
   }
   .bz-hero-breadcrumb a { color: #9ca3af !important; text-decoration: none !important; }
   .bz-hero-breadcrumb a:hover { color: var(--bz-blue) !important; }
-  .bz-hero-breadcrumb span.bz-hero-crumb-active { color: var(--bz-blue) !important; font-weight: 700 !important; }
+  .bz-hero-breadcrumb span.bz-hero-crumb-active { color: var(--bz-blue) !important; }
   .bz-hero-h1.bz-hero-h1.bz-hero-h1.bz-hero-h1 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 48px !important; line-height: 1.05 !important;
     color: var(--bz-navy) !important; margin: 0 0 24px !important;
     letter-spacing: -0.02em !important;
@@ -57,7 +57,7 @@ const BuddzeeHeroCode = `
   .bz-hero-sub {
     font-family: var(--font-main) !important; font-size: 18px !important;
     color: #6b7280 !important; line-height: 1.7 !important;
-    max-width: 680px !important; margin: 0 auto 40px !important; font-weight: 500 !important;
+    max-width: 680px !important; margin: 0 auto 40px !important;
   }
   .bz-hero-actions {
     display: flex !important; flex-direction: column !important;
@@ -71,7 +71,7 @@ const BuddzeeHeroCode = `
     background: linear-gradient(135deg, var(--bz-blue) 0%, var(--bz-blue-light) 100%) !important;
     color: white !important; padding: 14px 28px !important; border-radius: 10px !important;
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 800 !important; text-decoration: none !important;
+    text-decoration: none !important;
     text-transform: uppercase !important; letter-spacing: 0.05em !important;
     transition: all 0.2s !important; border: none !important; cursor: pointer !important;
   }
@@ -83,7 +83,7 @@ const BuddzeeHeroCode = `
     display: inline-flex !important; align-items: center !important; gap: 8px !important;
     color: var(--bz-navy) !important; padding: 14px 28px !important; border-radius: 10px !important;
     font-family: var(--font-main) !important; font-size: 14px !important;
-    font-weight: 700 !important; text-decoration: none !important;
+    text-decoration: none !important;
     border: 1.5px solid rgba(9,20,43,0.12) !important; transition: all 0.2s !important;
     background: transparent !important; cursor: pointer !important;
   }

@@ -28,7 +28,7 @@ const WorkHeroCode = `
   }
   .wk-hero-label {
     display: inline-block !important; font-family: var(--font-main) !important;
-    font-size: 12px !important; font-weight: 800 !important;
+    font-size: 12px !important;
     text-transform: uppercase !important; letter-spacing: 0.15em !important;
     margin-bottom: 20px !important;
     background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
@@ -36,7 +36,7 @@ const WorkHeroCode = `
     background-clip: text !important;
   }
   .wk-hero-h1.wk-hero-h1.wk-hero-h1.wk-hero-h1 {
-    font-family: var(--font-heading) !important; font-weight: 800 !important;
+    font-family: var(--font-heading) !important;
     font-size: 44px !important; line-height: 1.1 !important;
     color: var(--color-5) !important; margin: 0 0 24px !important;
     letter-spacing: -0.03em !important;
