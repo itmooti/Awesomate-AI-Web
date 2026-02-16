@@ -69,8 +69,10 @@ const ServicesOverviewCode = `
   .hm-svc-icon {
     width: 56px !important; height: 56px !important; border-radius: 16px !important;
     display: flex !important; align-items: center !important; justify-content: center !important;
-    font-size: 20px !important; margin-bottom: 24px !important;
-    font-family: var(--font-main) !important; transition: transform 0.3s !important;
+    margin-bottom: 24px !important; transition: transform 0.3s !important;
+  }
+  .hm-svc-icon svg {
+    width: 28px !important; height: 28px !important;
   }
   .hm-svc-card:hover .hm-svc-icon { transform: scale(1.1) !important; }
   .hm-svc-icon-red { background: rgba(233,72,77,0.08) !important; color: var(--color-2) !important; }
@@ -106,7 +108,7 @@ const ServicesOverviewCode = `
 
     <div class="hm-svc-grid">
       <a href="/n8n-hosting" class="hm-svc-card hm-svc-card-red">
-        <div class="hm-svc-icon hm-svc-icon-red">n8</div>
+        <div class="hm-svc-icon hm-svc-icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.5 11L16.5 7M7.5 13L16.5 17"/></svg></div>
         <div class="hm-svc-card-title">Automations That Run Themselves</div>
         <div class="hm-svc-card-desc">We connect your CRM, accounting, email, team chat, docs, and everything in between — so data flows automatically. No more manual entry, no missed follow-ups. Managed and monitored by us, 24/7.</div>
         <span class="hm-svc-card-link hm-svc-card-link-red">
@@ -116,7 +118,7 @@ const ServicesOverviewCode = `
       </a>
 
       <div class="hm-svc-card hm-svc-card-blue">
-        <div class="hm-svc-icon hm-svc-icon-blue">Bz</div>
+        <div class="hm-svc-icon hm-svc-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/></svg></div>
         <div class="hm-svc-card-title">Buddzee — Your AI Data Platform</div>
         <div class="hm-svc-card-desc">Our proprietary platform puts all your business data in one place — queryable by AI in plain English. Ask a question, get an instant answer. Then go further: build custom apps on top of your unified data using the Buddzee SDK.</div>
         <span class="hm-svc-card-link hm-svc-card-link-blue">
@@ -125,7 +127,7 @@ const ServicesOverviewCode = `
       </div>
 
       <a href="/vibe-coding" class="hm-svc-card hm-svc-card-orange">
-        <div class="hm-svc-icon hm-svc-icon-orange">Vc</div>
+        <div class="hm-svc-icon hm-svc-icon-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20"/><path d="M9 14l-2 2 2 2"/><path d="M15 14l2 2-2 2"/></svg></div>
         <div class="hm-svc-card-title">Custom Apps. Built by Experts.</div>
         <div class="hm-svc-card-desc">Anyone can drag-and-drop an app in an AI builder. But without expert guidance and direct access to your business data, you get a toy — not a tool. We build real apps connected to Buddzee, so your team and customers get something genuinely useful.</div>
         <span class="hm-svc-card-link hm-svc-card-link-orange">
@@ -156,7 +158,9 @@ export const ServicesOverview: React.FC = () => {
             <a href="#n8n-hosting" className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(233,72,77,0.1)] hover:border-transparent no-underline relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-accent to-brand-orange" />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-accent to-brand-orange opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 rounded-2xl bg-brand-accent/[0.08] text-brand-accent flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110">n8</div>
+              <div className="w-14 h-14 rounded-2xl bg-brand-accent/[0.08] text-brand-accent flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.5 11L16.5 7M7.5 13L16.5 17"/></svg>
+              </div>
               <div className="text-[22px] font-800 text-brand-navy mb-3">Automations That Run Themselves</div>
               <div className="text-[15px] text-gray-500 leading-relaxed mb-6">We connect your CRM, accounting, email, team chat, docs, and everything in between — so data flows automatically. No more manual entry, no missed follow-ups. Managed and monitored by us, 24/7.</div>
               <span className="inline-flex items-center gap-1.5 text-sm font-700 text-brand-accent group-hover:gap-2.5 transition-all">
@@ -169,7 +173,9 @@ export const ServicesOverview: React.FC = () => {
             <div className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:border-transparent relative overflow-hidden" style={{ boxShadow: undefined }} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 40px rgba(82,132,255,0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = ''}>
               <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ background: 'linear-gradient(90deg, #5284FF, #ABC1FF)' }} />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: 'linear-gradient(90deg, #5284FF, #ABC1FF)' }} />
-              <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110" style={{ background: 'rgba(82,132,255,0.08)', color: '#5284FF' }}>Bz</div>
+              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110" style={{ background: 'rgba(82,132,255,0.08)', color: '#5284FF' }}>
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/></svg>
+              </div>
               <div className="text-[22px] font-800 text-brand-navy mb-3">Buddzee — Your AI Data Platform</div>
               <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Our proprietary platform puts all your business data in one place — queryable by AI in plain English. Ask a question, get an instant answer. Then go further: build custom apps on top of your unified data using the Buddzee SDK.</div>
               <span className="inline-flex items-center gap-1.5 text-sm font-700" style={{ color: '#5284FF' }}>
@@ -181,7 +187,9 @@ export const ServicesOverview: React.FC = () => {
             <a href="#vibe-coding" className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(239,149,99,0.1)] hover:border-transparent no-underline relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-orange to-yellow-400" />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-orange to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="w-14 h-14 rounded-2xl bg-brand-orange/[0.08] text-brand-orange flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110">Vc</div>
+              <div className="w-14 h-14 rounded-2xl bg-brand-orange/[0.08] text-brand-orange flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20"/><path d="M9 14l-2 2 2 2"/><path d="M15 14l2 2-2 2"/></svg>
+              </div>
               <div className="text-[22px] font-800 text-brand-navy mb-3">Custom Apps. Built by Experts.</div>
               <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Anyone can drag-and-drop an app in an AI builder. But without expert guidance and direct access to your business data, you get a toy — not a tool. We build real apps connected to Buddzee, so your team and customers get something genuinely useful.</div>
               <span className="inline-flex items-center gap-1.5 text-sm font-700 text-brand-orange group-hover:gap-2.5 transition-all">

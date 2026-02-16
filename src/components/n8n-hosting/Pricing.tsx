@@ -233,11 +233,14 @@ const PricingCode = `
     monthly: ["AU$75", "AU$175", "AU$375", "Custom"],
     yearly: ["AU$62.50", "AU$145.83", "AU$312.50", "Custom"]
   };
-  var n8prHints = { monthly: "Billed monthly", yearly: "Billed annually (2 months free)" };
+  var n8prHints = {
+    monthly: ["Billed monthly", "Billed monthly", "Billed monthly"],
+    yearly: ["AU$750 billed annually (2 months free)", "AU$1,750 billed annually (2 months free)", "AU$3,750 billed annually (2 months free)"]
+  };
   function n8prUpdate(term) {
     for(var i=1; i<=3; i++) {
       document.getElementById('n8pr-p' + i).innerText = n8prPrices[term][i-1];
-      document.getElementById('n8pr-h' + i).innerText = n8prHints[term];
+      document.getElementById('n8pr-h' + i).innerText = n8prHints[term][i-1];
     }
   }
 </script>
@@ -250,7 +253,7 @@ export const Pricing: React.FC = () => {
     {
       name: "Essentials",
       desc: "Reliable infrastructure without n8n workflow support",
-      monthly: 75, yearly: 62.50,
+      monthly: 75, yearly: 62.50, annualTotal: 750,
       features: [
         { text: "Fully managed infrastructure", bold: false },
         { text: "Automated backups", bold: false },
@@ -261,7 +264,7 @@ export const Pricing: React.FC = () => {
     {
       name: "Support Plus",
       desc: "For teams building workflows wanting an expert backup",
-      monthly: 175, yearly: 145.83,
+      monthly: 175, yearly: 145.83, annualTotal: 1750,
       features: [
         { text: "Everything in Essentials", bold: true },
         { text: "AI-powered support", bold: false },
@@ -272,7 +275,7 @@ export const Pricing: React.FC = () => {
     {
       name: "Automations Pro",
       desc: "For businesses who want real automation outcomes",
-      monthly: 375, yearly: 312.50, rec: true,
+      monthly: 375, yearly: 312.50, annualTotal: 3750, rec: true,
       features: [
         { text: "Everything in Support Plus", bold: true },
         { text: "1 Built Workflow / Mo", bold: true, highlight: true },
@@ -356,7 +359,7 @@ export const Pricing: React.FC = () => {
                         <span className="text-base font-600 text-gray-400">/mo</span>
                       </div>
                       <p className="text-[11px] text-gray-400 mt-1 font-700 italic uppercase tracking-wider">
-                        {term === 'monthly' ? 'Billed Monthly' : 'Billed Annually (2 months free)'}
+                        {term === 'monthly' ? 'Billed Monthly' : `AU$${p.annualTotal?.toLocaleString()} billed annually (2 months free)`}
                       </p>
                     </>
                   )}

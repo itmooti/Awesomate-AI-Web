@@ -242,12 +242,15 @@ const DiscountPricingCode = `
     monthly: { original: ["AU$75", "AU$175", "AU$375"], discount: ["AU$50", "AU$150", "AU$350"] },
     yearly: { original: ["AU$62.50", "AU$145.83", "AU$312.50"], discount: ["AU$41.67", "AU$125", "AU$291.67"] }
   };
-  var n8dpHints = { monthly: "Billed monthly", yearly: "Billed annually (2 months free)" };
+  var n8dpHints = {
+    monthly: ["Billed monthly", "Billed monthly", "Billed monthly"],
+    yearly: ["AU$500 billed annually (2 months free)", "AU$1,500 billed annually (2 months free)", "AU$3,500 billed annually (2 months free)"]
+  };
   function n8dpUpdate(term) {
     for(var i=1; i<=3; i++) {
       document.getElementById('n8dp-orig' + i).innerText = n8dpPrices[term].original[i-1];
       document.getElementById('n8dp-p' + i).innerText = n8dpPrices[term].discount[i-1];
-      document.getElementById('n8dp-h' + i).innerText = n8dpHints[term];
+      document.getElementById('n8dp-h' + i).innerText = n8dpHints[term][i-1];
     }
   }
 </script>
@@ -259,7 +262,7 @@ export const DiscountPricing: React.FC = () => {
     {
       name: "Essentials",
       desc: "Reliable infrastructure without n8n workflow support",
-      monthly: 75, yearly: 62.50, discountMonthly: 50, discountYearly: 41.67,
+      monthly: 75, yearly: 62.50, discountMonthly: 50, discountYearly: 41.67, discountAnnualTotal: 500,
       features: [
         { text: "Fully managed infrastructure", bold: false },
         { text: "Automated backups", bold: false },
@@ -270,7 +273,7 @@ export const DiscountPricing: React.FC = () => {
     {
       name: "Support Plus",
       desc: "For teams building workflows wanting an expert backup",
-      monthly: 175, yearly: 145.83, discountMonthly: 150, discountYearly: 125,
+      monthly: 175, yearly: 145.83, discountMonthly: 150, discountYearly: 125, discountAnnualTotal: 1500,
       features: [
         { text: "Everything in Essentials", bold: true },
         { text: "AI-powered support", bold: false },
@@ -281,7 +284,7 @@ export const DiscountPricing: React.FC = () => {
     {
       name: "Automations Pro",
       desc: "For businesses who want real automation outcomes",
-      monthly: 375, yearly: 312.50, discountMonthly: 350, discountYearly: 291.67, rec: true,
+      monthly: 375, yearly: 312.50, discountMonthly: 350, discountYearly: 291.67, discountAnnualTotal: 3500, rec: true,
       features: [
         { text: "Everything in Support Plus", bold: true },
         { text: "1 Built Workflow / Mo", bold: true, highlight: true },
@@ -381,7 +384,7 @@ export const DiscountPricing: React.FC = () => {
                           <span className="text-base font-600 text-gray-400">/mo</span>
                         </div>
                         <p className="text-[11px] text-gray-400 mt-1 font-700 italic uppercase tracking-wider">
-                          {term === 'monthly' ? 'Billed Monthly' : 'Billed Annually (2 months free)'}
+                          {term === 'monthly' ? 'Billed Monthly' : `AU$${p.discountAnnualTotal?.toLocaleString()} billed annually (2 months free)`}
                         </p>
                       </>
                     )}

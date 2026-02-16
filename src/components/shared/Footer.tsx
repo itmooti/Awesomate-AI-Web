@@ -105,7 +105,7 @@ const FooterBlockCode = `
   .ft-link:hover { color: var(--color-2); }
   .ft-bottom { margin-top: 60px; padding-top: 32px; border-top: 1px solid #f3f4f6; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; }
   .ft-copyright { font-family: var(--font-main); font-size: 13px; color: #d1d5db; }
-  .ft-legal { display: flex; gap: 24px; }
+  .ft-legal { display: flex; gap: 24px; padding-right: 80px; }
   .ft-legal a { font-family: var(--font-main); font-size: 13px; color: #d1d5db; text-decoration: none; transition: color 0.2s; }
   .ft-legal a:hover { color: var(--color-2); }
 </style>
@@ -192,7 +192,7 @@ export const Footer: React.FC = () => {
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[13px] text-gray-300 font-medium">&copy; {new Date().getFullYear()} Awesomate.ai. All rights reserved.</p>
           <div className="flex items-center gap-10">
-            <div className="flex gap-6 text-[13px] text-gray-300 font-medium">
+            <div className="flex gap-6 text-[13px] text-gray-300 font-medium pr-20">
               <a href="#privacy-policy" className="hover:text-brand-accent transition-colors no-underline">Privacy</a>
               <a href="#terms-of-service" className="hover:text-brand-accent transition-colors no-underline">Terms</a>
             </div>
