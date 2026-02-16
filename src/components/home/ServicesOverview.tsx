@@ -115,15 +115,14 @@ const ServicesOverviewCode = `
         </span>
       </a>
 
-      <a href="/buddzee" class="hm-svc-card hm-svc-card-blue">
+      <div class="hm-svc-card hm-svc-card-blue">
         <div class="hm-svc-icon hm-svc-icon-blue">Bz</div>
         <div class="hm-svc-card-title">Buddzee — Your AI Data Platform</div>
         <div class="hm-svc-card-desc">Our proprietary platform puts all your business data in one place — queryable by AI in plain English. Ask a question, get an instant answer. Then go further: build custom apps on top of your unified data using the Buddzee SDK.</div>
         <span class="hm-svc-card-link hm-svc-card-link-blue">
-          Discover Buddzee
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+          Coming soon
         </span>
-      </a>
+      </div>
 
       <a href="/vibe-coding" class="hm-svc-card hm-svc-card-orange">
         <div class="hm-svc-icon hm-svc-icon-orange">Vc</div>
@@ -167,17 +166,16 @@ export const ServicesOverview: React.FC = () => {
             </a>
 
             {/* Buddzee Card */}
-            <a href="#buddzee" className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:border-transparent no-underline relative overflow-hidden" style={{ boxShadow: undefined }} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 40px rgba(82,132,255,0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = ''}>
+            <div className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:border-transparent relative overflow-hidden" style={{ boxShadow: undefined }} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 20px 40px rgba(82,132,255,0.1)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = ''}>
               <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ background: 'linear-gradient(90deg, #5284FF, #ABC1FF)' }} />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: 'linear-gradient(90deg, #5284FF, #ABC1FF)' }} />
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-800 mb-6 transition-transform duration-300 group-hover:scale-110" style={{ background: 'rgba(82,132,255,0.08)', color: '#5284FF' }}>Bz</div>
               <div className="text-[22px] font-800 text-brand-navy mb-3">Buddzee — Your AI Data Platform</div>
               <div className="text-[15px] text-gray-500 leading-relaxed mb-6">Our proprietary platform puts all your business data in one place — queryable by AI in plain English. Ask a question, get an instant answer. Then go further: build custom apps on top of your unified data using the Buddzee SDK.</div>
-              <span className="inline-flex items-center gap-1.5 text-sm font-700 group-hover:gap-2.5 transition-all" style={{ color: '#5284FF' }}>
-                Discover Buddzee
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14m-7-7l7 7-7 7" /></svg>
+              <span className="inline-flex items-center gap-1.5 text-sm font-700" style={{ color: '#5284FF' }}>
+                Coming soon
               </span>
-            </a>
+            </div>
 
             {/* Vibe Coding Card */}
             <a href="#vibe-coding" className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(239,149,99,0.1)] hover:border-transparent no-underline relative overflow-hidden">

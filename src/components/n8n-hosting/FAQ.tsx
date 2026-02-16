@@ -82,36 +82,36 @@ const FAQCode = `
     </div>
     <div class="n8f-list">
       <div class="n8f-item">
-        <button class="n8f-question">WHAT DOES MANAGED AUTOMATION HOSTING ACTUALLY MEAN? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">We set everything up, keep it running, and fix problems before you even notice them. You don\u2019t touch anything technical.</div>
+        <button class="n8f-question">WHAT DOES \u201CUNCAPPED EXECUTIONS\u201D ACTUALLY MEAN? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Most cloud platforms charge per execution or cap you at a set number per month. We use infrastructure-based pricing \u2014 you pay for the server resources, not per workflow run. Whether you run 10,000 or 100,000 executions, your bill stays the same.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">HOW IS THIS DIFFERENT FROM ZAPIER OR MAKE? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">You own your automations instead of renting them. No per-task fees, no limits, and way more powerful.</div>
+        <button class="n8f-question">HOW IS YOUR INFRASTRUCTURE DIFFERENT FROM SHARED CLOUD HOSTING? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Cloud platforms typically run your instance on shared servers with as little as 320MB of RAM. We deploy on Kubernetes with dedicated resources, and your database runs as three HOT replicas \u2014 not cold backups, but live copies that can accept traffic at any time. If one node goes down, failover happens in 1\u20132 seconds with no manual intervention. On top of that, local snapshots run every 30 minutes and offsite backups provide point-in-time recovery.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">WHAT HAPPENS IF SOMETHING GOES WRONG? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">We run three copies of everything. If one has a problem, the others take over instantly. Plus our team monitors 24/7.</div>
+        <button class="n8f-question">WHERE IS MY DATA HOSTED? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Your data is hosted on OVHcloud infrastructure \u2014 the world\u2019s #5 hosting provider \u2014 in enterprise-grade US data centres. Most cloud platforms default to Frankfurt, Germany with no option to choose. We offer regional flexibility: if your business needs hosting in Asia Pacific, Europe, or a specific jurisdiction, we can deploy there for you.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">DO I NEED TECHNICAL SKILLS? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">No. We handle all the technical setup and maintenance. You tell us what you want automated, we make it happen.</div>
+        <button class="n8f-question">CAN I INSTALL CUSTOM NODES AND NPM PACKAGES? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Yes. You get the full power of self-hosting \u2014 custom nodes, NPM packages, bash scripts, environment variables, and full configuration control. Cloud platforms restrict these to self-hosted plans only. We give you all of it without the DevOps burden.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">CAN I MOVE MY EXISTING AUTOMATIONS ACROSS? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Yes. We handle the migration for you.</div>
+        <button class="n8f-question">WHAT HAPPENS IF A SERVER GOES DOWN? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Your database runs as three HOT replicas at all times \u2014 not cold backups, but live copies ready to accept traffic instantly. If any node experiences an issue, failover happens in 1\u20132 seconds. Beyond that, local snapshots run every 30 minutes (held for a rolling 3 days) and offsite backups provide point-in-time recovery to any minute in the past (rolling 10 days). Your workflows keep running through all of it.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">WHAT DOES IT COST? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Plans start from AU$75/month. See pricing above for full details.</div>
+        <button class="n8f-question">DO YOU PROVIDE STATIC IP ADDRESSES? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Yes. Cloud platform IPs change without warning, which breaks allowlists for internal APIs, databases, and CRMs. We deploy dedicated infrastructure that your IT team can allowlist natively \u2014 no proxies, no VPNs, no extra architecture needed.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">IS MY DATA SECURE? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Your data runs on dedicated Australian infrastructure. It\u2019s encrypted, backed up, and never shared.</div>
+        <button class="n8f-question">WHAT SUPPORT DO I GET? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Concierge onboarding to configure your credentials and first workflows. Ticketed support with workflow design help. 24/7 proactive monitoring. Pre-deployed templates. We\u2019re a service, not just software.</div>
       </div>
       <div class="n8f-item">
-        <button class="n8f-question">CAN I CANCEL ANYTIME? <span class="n8f-icon">\u25BC</span></button>
-        <div class="n8f-answer">Yes. No lock-in contracts.</div>
+        <button class="n8f-question">CAN I MIGRATE FROM ANOTHER PLATFORM? <span class="n8f-icon">\u25BC</span></button>
+        <div class="n8f-answer">Yes. We handle the migration for you \u2014 from n8n Cloud, self-hosted instances, or other platforms. No lock-in contracts. Cancel anytime.</div>
       </div>
     </div>
   </div>
@@ -134,14 +134,14 @@ export const FAQ: React.FC = () => {
   const [active, setActive] = useState<number | null>(null);
 
   const items = [
-    { q: "WHAT DOES MANAGED AUTOMATION HOSTING ACTUALLY MEAN?", a: "We set everything up, keep it running, and fix problems before you even notice them. You don\u2019t touch anything technical." },
-    { q: "HOW IS THIS DIFFERENT FROM ZAPIER OR MAKE?", a: "You own your automations instead of renting them. No per-task fees, no limits, and way more powerful." },
-    { q: "WHAT HAPPENS IF SOMETHING GOES WRONG?", a: "We run three copies of everything. If one has a problem, the others take over instantly. Plus our team monitors 24/7." },
-    { q: "DO I NEED TECHNICAL SKILLS?", a: "No. We handle all the technical setup and maintenance. You tell us what you want automated, we make it happen." },
-    { q: "CAN I MOVE MY EXISTING AUTOMATIONS ACROSS?", a: "Yes. We handle the migration for you." },
-    { q: "WHAT DOES IT COST?", a: "Plans start from AU$75/month. See pricing above for full details." },
-    { q: "IS MY DATA SECURE?", a: "Your data runs on dedicated Australian infrastructure. It\u2019s encrypted, backed up, and never shared." },
-    { q: "CAN I CANCEL ANYTIME?", a: "Yes. No lock-in contracts." }
+    { q: 'WHAT DOES \u201CUNCAPPED EXECUTIONS\u201D ACTUALLY MEAN?', a: "Most cloud platforms charge per execution or cap you at a set number per month. We use infrastructure-based pricing \u2014 you pay for the server resources, not per workflow run. Whether you run 10,000 or 100,000 executions, your bill stays the same." },
+    { q: "HOW IS YOUR INFRASTRUCTURE DIFFERENT FROM SHARED CLOUD HOSTING?", a: "Cloud platforms typically run your instance on shared servers with as little as 320MB of RAM. We deploy on Kubernetes with dedicated resources, and your database runs as three HOT replicas \u2014 not cold backups, but live copies that can accept traffic at any time. If one node goes down, failover happens in 1\u20132 seconds with no manual intervention. On top of that, local snapshots run every 30 minutes and offsite backups provide point-in-time recovery." },
+    { q: "WHERE IS MY DATA HOSTED?", a: "Your data is hosted on OVHcloud infrastructure \u2014 the world\u2019s #5 hosting provider \u2014 in enterprise-grade US data centres. Most cloud platforms default to Frankfurt, Germany with no option to choose. We offer regional flexibility: if your business needs hosting in Asia Pacific, Europe, or a specific jurisdiction, we can deploy there for you." },
+    { q: "CAN I INSTALL CUSTOM NODES AND NPM PACKAGES?", a: "Yes. You get the full power of self-hosting \u2014 custom nodes, NPM packages, bash scripts, environment variables, and full configuration control. Cloud platforms restrict these to self-hosted plans only. We give you all of it without the DevOps burden." },
+    { q: "WHAT HAPPENS IF A SERVER GOES DOWN?", a: "Your database runs as three HOT replicas at all times \u2014 not cold backups, but live copies ready to accept traffic instantly. If any node experiences an issue, failover happens in 1\u20132 seconds. Beyond that, local snapshots run every 30 minutes (held for a rolling 3 days) and offsite backups provide point-in-time recovery to any minute in the past (rolling 10 days). Your workflows keep running through all of it." },
+    { q: "DO YOU PROVIDE STATIC IP ADDRESSES?", a: "Yes. Cloud platform IPs change without warning, which breaks allowlists for internal APIs, databases, and CRMs. We deploy dedicated infrastructure that your IT team can allowlist natively \u2014 no proxies, no VPNs, no extra architecture needed." },
+    { q: "WHAT SUPPORT DO I GET?", a: "Concierge onboarding to configure your credentials and first workflows. Ticketed support with workflow design help. 24/7 proactive monitoring. Pre-deployed templates. We\u2019re a service, not just software." },
+    { q: "CAN I MIGRATE FROM ANOTHER PLATFORM?", a: "Yes. We handle the migration for you \u2014 from n8n Cloud, self-hosted instances, or other platforms. No lock-in contracts. Cancel anytime." },
   ];
 
   return (

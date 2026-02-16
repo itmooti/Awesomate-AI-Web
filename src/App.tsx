@@ -9,8 +9,11 @@ import { VibeCodingPage } from './pages/VibeCoding';
 import { AboutPage } from './pages/About';
 import { ContactPage } from './pages/Contact';
 import { WorkPage } from './pages/Work';
+import { NotFoundPage } from './pages/NotFound';
+import { PrivacyPage } from './pages/Privacy';
+import { TermsPage } from './pages/Terms';
 
-type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work';
+type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work' | 'privacy-policy' | 'terms-of-service' | '404';
 
 const pages: Record<PageKey, { label: string; component: React.FC }> = {
   'home': { label: 'Home', component: HomePage },
@@ -20,6 +23,9 @@ const pages: Record<PageKey, { label: string; component: React.FC }> = {
   'about': { label: 'About', component: AboutPage },
   'contact': { label: 'Contact', component: ContactPage },
   'work': { label: 'Work', component: WorkPage },
+  'privacy-policy': { label: 'Privacy', component: PrivacyPage },
+  'terms-of-service': { label: 'Terms', component: TermsPage },
+  '404': { label: '404', component: NotFoundPage },
 };
 
 function getPageFromHash(): PageKey {

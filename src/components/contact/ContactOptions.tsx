@@ -24,7 +24,7 @@ const ContactOptionsCode = `
     <div class="ct-opt-grid">
       <div class="ct-opt-card">
         <div class="ct-opt-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-        <div class="ct-opt-title">Book a Strategy Call</div>
+        <div class="ct-opt-title">Book a Discovery Call</div>
         <div class="ct-opt-desc">Free 30-minute call to discuss your needs. We'll map out the right solution together — no obligation, no hard sell.</div>
         <a href="#ct-form" class="ct-opt-link">Book Now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg></a>
       </div>
@@ -48,7 +48,7 @@ const ContactOptionsCode = `
 export const ContactOptions: React.FC = () => {
   const options = [
     {
-      title: 'Book a Strategy Call',
+      title: 'Book a Discovery Call',
       desc: 'Free 30-minute call to discuss your needs. We\u2019ll map out the right solution together \u2014 no obligation, no hard sell.',
       link: '#ct-form',
       linkText: 'Book Now',

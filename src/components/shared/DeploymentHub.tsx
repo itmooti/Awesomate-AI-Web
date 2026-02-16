@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work' | '404';
+type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work' | 'privacy-policy' | 'terms-of-service' | '404';
 
 interface PageBlocks {
   label: string;
@@ -31,11 +31,19 @@ const pageBlockMap: Record<PageKey, PageBlocks> = {
   },
   'contact': {
     label: 'Contact',
-    sections: ['ContactHero', 'ContactOptions', 'ContactForm', 'ContactInfo'],
+    sections: ['ContactHero', 'ContactOptions', 'ContactForm', 'ContactFAQ', 'ContactInfo'],
   },
   'work': {
     label: 'Work',
     sections: ['WorkHero', 'WorkProjects'],
+  },
+  'privacy-policy': {
+    label: 'Privacy',
+    sections: ['PrivacyPolicy'],
+  },
+  'terms-of-service': {
+    label: 'Terms',
+    sections: ['TermsOfService'],
   },
   '404': {
     label: '404',

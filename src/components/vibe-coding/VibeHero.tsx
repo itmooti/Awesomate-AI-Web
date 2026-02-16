@@ -26,11 +26,11 @@ const VibeHeroCode = `
 <section id="vc-hero">
   <div class="vc-hero-glow"></div>
   <div class="vc-hero-container">
-    <div class="vc-hero-breadcrumb"><a href="/">Home</a> / <a href="/services">Services</a> / <span>Custom Apps</span></div>
+    <div class="vc-hero-breadcrumb"><a href="/">Home</a> / <a href="/#o04ee70b895f3">Services</a> / <span>Custom Apps</span></div>
     <h1 class="vc-hero-h1">The App You've Always Wanted.<br><span class="vc-hero-gradient">Now Within Reach.</span></h1>
     <p class="vc-hero-sub">Real apps — on your clients' phones, with push notifications, real-time data, and a beautiful experience. Custom software used to cost a fortune. Not anymore. We build it in weeks — and handle everything for you.</p>
     <div class="vc-hero-actions">
-      <a href="/contact" class="vc-hero-cta">Start Your Project</a>
+      <a href="https://awesomate.ai/discovery" class="vc-hero-cta">Start Your Project</a>
       <a href="#vc-process" class="vc-hero-secondary">See How It Works</a>
     </div>
   </div>
@@ -46,7 +46,7 @@ export const VibeHero: React.FC = () => {
           <div className="inline-flex items-center gap-2 text-xs text-gray-400 mb-6">
             <a href="#home" className="hover:opacity-80 transition-colors no-underline text-gray-400" style={{ color: '#9ca3af' }}>Home</a>
             <span>/</span>
-            <a href="#services" className="hover:opacity-80 transition-colors no-underline text-gray-400" style={{ color: '#9ca3af' }}>Services</a>
+            <a href="#home" className="hover:opacity-80 transition-colors no-underline text-gray-400" style={{ color: '#9ca3af' }}>Services</a>
             <span>/</span>
             <span className="text-brand-orange font-700">Custom Apps</span>
           </div>
@@ -58,7 +58,7 @@ export const VibeHero: React.FC = () => {
             Real apps — on your clients' phones, with push notifications, real-time data, and a beautiful experience. Custom software used to cost a fortune. Not anymore. We build it in weeks — and handle everything for you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-7 py-3.5 rounded-[10px] text-sm font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/20 hover:-translate-y-0.5 transition-all no-underline">
+            <a href="https://awesomate.ai/discovery" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-7 py-3.5 rounded-[10px] text-sm font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/20 hover:-translate-y-0.5 transition-all no-underline">
               Start Your Project
             </a>
             <a href="#vc-process" className="inline-flex items-center gap-2 border-[1.5px] border-brand-navy/[0.12] text-brand-navy px-7 py-3.5 rounded-[10px] text-sm font-700 hover:border-brand-orange hover:text-brand-orange transition-all no-underline">

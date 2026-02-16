@@ -168,13 +168,6 @@ const HeaderCode = `
                             <div class="hdr-drop-desc">Connect your apps and automate your business — we keep it running 24/7</div>
                         </div>
                     </a>
-                    <a href="/buddzee" class="hdr-drop-item">
-                        <div class="hdr-drop-icon" style="background: rgba(82,132,255,0.08); color: #5284FF;">Bz</div>
-                        <div>
-                            <div class="hdr-drop-title">Buddzee</div>
-                            <div class="hdr-drop-desc">Ask your business a question and get an instant answer</div>
-                        </div>
-                    </a>
                     <a href="/vibe-coding" class="hdr-drop-item">
                         <div class="hdr-drop-icon" style="background: rgba(239,149,99,0.08); color: var(--color-3);">Vc</div>
                         <div>
@@ -238,13 +231,6 @@ export const Header: React.FC = () => {
                       <div>
                         <div className="text-sm font-700 text-brand-navy">Automation</div>
                         <div className="text-xs text-gray-400 leading-snug">Connect your apps and automate your business — we keep it running 24/7</div>
-                      </div>
-                    </a>
-                    <a href="#buddzee" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">
-                      <div className="w-9 h-9 rounded-[10px] flex items-center justify-center text-sm font-800 flex-shrink-0" style={{ background: 'rgba(82,132,255,0.1)', color: '#5284FF' }}>Bz</div>
-                      <div>
-                        <div className="text-sm font-700 text-brand-navy">Buddzee</div>
-                        <div className="text-xs text-gray-400 leading-snug">Ask your business a question and get an instant answer</div>
                       </div>
                     </a>
                     <a href="#vibe-coding" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">

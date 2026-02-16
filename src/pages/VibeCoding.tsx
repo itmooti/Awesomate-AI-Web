@@ -1,5 +1,6 @@
 import React from 'react';
 import { VibeHero } from '../components/vibe-coding/VibeHero';
+import { VibeWhatIs } from '../components/vibe-coding/VibeWhatIs';
 import { VibeExplainer } from '../components/vibe-coding/VibeExplainer';
 import { VibeProcess } from '../components/vibe-coding/VibeProcess';
 import { VibeFeatures } from '../components/vibe-coding/VibeFeatures';
@@ -12,6 +13,7 @@ export const VibeCodingPage: React.FC = () => {
   return (
     <>
       <VibeHero />
+      <VibeWhatIs />
       <VibeExplainer />
       <VibeProcess />
       <VibeFeatures />

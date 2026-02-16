@@ -23,8 +23,8 @@ const VibePricingCode = `
     <p class="vcpr-sub">We quote based on what you need, not hourly rates. You'll be surprised how affordable 'custom' has become. Tell us what you need and we'll give you a transparent, fixed-price proposal.</p>
     <div class="vcpr-card">
       <div class="vcpr-card-title">Get a Free Quote</div>
-      <div class="vcpr-card-desc">Book a strategy call and we'll scope your project, give you a timeline, and a fixed price. No surprises, no hidden costs.</div>
-      <a href="/contact" class="vcpr-btn">Book a Free Strategy Call</a>
+      <div class="vcpr-card-desc">Book a discovery call and we'll scope your project, give you a timeline, and a fixed price. No surprises, no hidden costs.</div>
+      <a href="https://awesomate.ai/discovery" class="vcpr-btn">Book a Free Discovery Call</a>
     </div>
   </div>
 </section>
@@ -45,10 +45,10 @@ export const VibePricing: React.FC = () => {
           <div className="bg-white border-2 border-brand-orange/15 rounded-3xl p-12">
             <div className="text-2xl font-800 text-brand-navy mb-3">Get a Free Quote</div>
             <div className="text-base text-gray-500 leading-relaxed mb-8">
-              Book a strategy call and we'll scope your project, give you a timeline, and a fixed price. No surprises, no hidden costs.
+              Book a discovery call and we'll scope your project, give you a timeline, and a fixed price. No surprises, no hidden costs.
             </div>
-            <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-8 py-3.5 rounded-[10px] text-sm font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/20 hover:-translate-y-0.5 transition-all no-underline">
-              Book a Free Strategy Call
+            <a href="https://awesomate.ai/discovery" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-8 py-3.5 rounded-[10px] text-sm font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/20 hover:-translate-y-0.5 transition-all no-underline">
+              Book a Free Discovery Call
             </a>
           </div>
         </div>

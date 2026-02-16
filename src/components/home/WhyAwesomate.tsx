@@ -69,7 +69,7 @@ const WhyAwesomateCode = `
         </div>
         <div>
           <div class="hm-why-title">HIPAA-Compliant. Enterprise-Grade Security.</div>
-          <div class="hm-why-desc">Your data is encrypted, access-controlled, and processed to HIPAA standards — the same level of compliance required by healthcare and finance. Need local hosting? We can deploy to Australian data centres or your own servers.</div>
+          <div class="hm-why-desc">Your data is encrypted, access-controlled, and processed to HIPAA standards — the same level of compliance required by healthcare and finance. Hosted on OVHcloud, the world's #5 hosting provider. Need a specific region? We deploy across North America, Asia Pacific, and Europe.</div>
         </div>
       </div>
 
@@ -78,8 +78,8 @@ const WhyAwesomateCode = `
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
         <div>
-          <div class="hm-why-title">3x Redundancy. Zero Downtime.</div>
-          <div class="hm-why-desc">We run three identical live copies of everything at all times. If one has a problem, the others take over instantly. Your business never goes offline.</div>
+          <div class="hm-why-title">3x Hot Redundancy. Zero Downtime.</div>
+          <div class="hm-why-desc">We run three HOT database replicas at all times — live copies that can accept traffic instantly, not cold backups you wait to restore. If one has a problem, failover takes 1–2 seconds. Your business never goes offline.</div>
         </div>
       </div>
 
@@ -118,7 +118,7 @@ export const WhyAwesomate: React.FC = () => {
         </svg>
       ),
       title: 'HIPAA-Compliant. Enterprise-Grade Security.',
-      desc: 'Your data is encrypted, access-controlled, and processed to HIPAA standards \u2014 the same level of compliance required by healthcare and finance. Need local hosting? We can deploy to Australian data centres or your own servers.',
+      desc: 'Your data is encrypted, access-controlled, and processed to HIPAA standards \u2014 the same level of compliance required by healthcare and finance. Hosted on OVHcloud, the world\u2019s #5 hosting provider. Need a specific region? We deploy across North America, Asia Pacific, and Europe.',
     },
     {
       icon: (
@@ -127,8 +127,8 @@ export const WhyAwesomate: React.FC = () => {
           <path d="M9 12l2 2 4-4" />
         </svg>
       ),
-      title: '3x Redundancy. Zero Downtime.',
-      desc: 'We run three identical live copies of everything at all times. If one has a problem, the others take over instantly. Your business never goes offline.',
+      title: '3x Hot Redundancy. Zero Downtime.',
+      desc: 'We run three HOT database replicas at all times \u2014 live copies that can accept traffic instantly, not cold backups you wait to restore. If one has a problem, failover takes 1\u20132 seconds. Your business never goes offline.',
     },
     {
       icon: (

@@ -113,7 +113,7 @@ const HomeHeroCode = `
         See What We Do
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 9l-7 7-7-7"/></svg>
       </a>
-      <a href="/contact" class="hm-hero-secondary">Book a Free Strategy Call</a>
+      <a href="https://awesomate.ai/discovery" class="hm-hero-secondary">Book a Free Discovery Call</a>
     </div>
   </div>
 </section>
@@ -176,8 +176,8 @@ export const HomeHero: React.FC = () => {
               See What We Do
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M19 9l-7 7-7-7" /></svg>
             </a>
-            <a href="#contact" className="inline-flex items-center gap-2 border-[1.5px] border-brand-navy/[0.12] text-brand-navy px-7 py-3.5 rounded-[10px] text-sm font-700 hover:border-brand-accent hover:text-brand-accent transition-all no-underline">
-              Book a Free Strategy Call
+            <a href="https://awesomate.ai/discovery" className="inline-flex items-center gap-2 border-[1.5px] border-brand-navy/[0.12] text-brand-navy px-7 py-3.5 rounded-[10px] text-sm font-700 hover:border-brand-accent hover:text-brand-accent transition-all no-underline">
+              Book a Free Discovery Call
             </a>
           </div>
         </div>

@@ -118,8 +118,8 @@ const BuddzeeFeaturesCode = `
         <div class="bzf-icon-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="bzf-card-title">Secure and Australian-Hosted</div>
-        <div class="bzf-card-desc">Encrypted, Australian-hosted, with strict access controls. Your data never leaves the country.</div>
+        <div class="bzf-card-title">Enterprise-Grade Security</div>
+        <div class="bzf-card-desc">Encrypted, hosted on OVHcloud enterprise infrastructure, with strict access controls. Three tiers of data protection keep your information safe at every level.</div>
       </div>
 
       <div class="bzf-card">
@@ -195,8 +195,8 @@ export const BuddzeeFeatures: React.FC = () => {
     },
     {
       icon: featureIcons.shield,
-      title: 'Secure and Australian-Hosted',
-      desc: 'Encrypted, Australian-hosted, with strict access controls. Your data never leaves the country.',
+      title: 'Enterprise-Grade Security',
+      desc: 'Encrypted, hosted on OVHcloud enterprise infrastructure, with strict access controls. Three tiers of data protection keep your information safe at every level.',
     },
     {
       icon: featureIcons.chart,

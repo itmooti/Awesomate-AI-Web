@@ -83,6 +83,12 @@ const GlobalCode = `
     }
   }
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var el = document.getElementById('ft-year');
+    if (el) el.textContent = new Date().getFullYear();
+  });
+</script>
 `;
 
 const FooterBlockCode = `
@@ -114,26 +120,24 @@ const FooterBlockCode = `
       <div>
         <div class="ft-heading">Services</div>
         <a href="/n8n-hosting" class="ft-link">n8n Hosting</a>
-        <a href="/buddzee" class="ft-link">Buddzee</a>
-        <a href="/vibe-coding" class="ft-link">Vibe Coding</a>
+        <a href="/vibe-coding" class="ft-link">Custom Apps</a>
       </div>
       <div>
         <div class="ft-heading">Company</div>
         <a href="/about" class="ft-link">About</a>
         <a href="/contact" class="ft-link">Contact</a>
-        <a href="/privacy" class="ft-link">Privacy Policy</a>
       </div>
       <div>
         <div class="ft-heading">Support</div>
-        <a href="/faq" class="ft-link">FAQ</a>
+        <a href="/contact#ct-faq" class="ft-link">FAQ</a>
         <a href="mailto:hello@awesomate.ai" class="ft-link">hello@awesomate.ai</a>
       </div>
     </div>
     <div class="ft-bottom">
-      <div class="ft-copyright">&copy; 2025 Awesomate.ai. All rights reserved.</div>
+      <div class="ft-copyright">&copy; <span id="ft-year"></span> Awesomate.ai. All rights reserved.</div>
       <div class="ft-legal">
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Terms</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-service">Terms</a>
       </div>
     </div>
   </div>
@@ -167,8 +171,7 @@ export const Footer: React.FC = () => {
             <h5 className="text-[12px] font-700 text-brand-navy uppercase tracking-[0.1em] mb-5">Services</h5>
             <ul className="space-y-3.5 text-sm text-gray-500 font-medium">
               <li><a href="#n8n-hosting" className="hover:text-brand-accent transition-colors no-underline">n8n Hosting</a></li>
-              <li><a href="#buddzee" className="hover:text-brand-accent transition-colors no-underline">Buddzee</a></li>
-              <li><a href="#vibe-coding" className="hover:text-brand-accent transition-colors no-underline">Vibe Coding</a></li>
+              <li><a href="#vibe-coding" className="hover:text-brand-accent transition-colors no-underline">Custom Apps</a></li>
             </ul>
           </div>
           <div>
@@ -176,23 +179,22 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3.5 text-sm text-gray-500 font-medium">
               <li><a href="#about" className="hover:text-brand-accent transition-colors no-underline">About</a></li>
               <li><a href="#contact" className="hover:text-brand-accent transition-colors no-underline">Contact</a></li>
-              <li><a href="#privacy" className="hover:text-brand-accent transition-colors no-underline">Privacy Policy</a></li>
             </ul>
           </div>
           <div>
             <h5 className="text-[12px] font-700 text-brand-navy uppercase tracking-[0.1em] mb-5">Support</h5>
             <ul className="space-y-3.5 text-sm text-gray-500 font-medium">
-              <li><a href="#faq" className="hover:text-brand-accent transition-colors no-underline">FAQ</a></li>
+              <li><a href="#contact" className="hover:text-brand-accent transition-colors no-underline" onClick={() => setTimeout(() => document.getElementById('ct-faq')?.scrollIntoView({ behavior: 'smooth' }), 100)}>FAQ</a></li>
               <li><a href="mailto:hello@awesomate.ai" className="hover:text-brand-accent transition-colors no-underline">hello@awesomate.ai</a></li>
             </ul>
           </div>
         </div>
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[13px] text-gray-300 font-medium">&copy; 2025 Awesomate.ai. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <p className="text-[13px] text-gray-300 font-medium">&copy; {new Date().getFullYear()} Awesomate.ai. All rights reserved.</p>
+          <div className="flex items-center gap-10">
             <div className="flex gap-6 text-[13px] text-gray-300 font-medium">
-              <a href="#privacy" className="hover:text-brand-accent transition-colors no-underline">Privacy</a>
-              <a href="#terms" className="hover:text-brand-accent transition-colors no-underline">Terms</a>
+              <a href="#privacy-policy" className="hover:text-brand-accent transition-colors no-underline">Privacy</a>
+              <a href="#terms-of-service" className="hover:text-brand-accent transition-colors no-underline">Terms</a>
             </div>
             <button
               onClick={copyGlobal}

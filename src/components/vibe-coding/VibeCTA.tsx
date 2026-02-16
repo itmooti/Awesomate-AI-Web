@@ -21,7 +21,7 @@ const VibeCTACode = `
   <div class="vcc-container">
     <h2 class="vcc-h2">Let's Build Something Awesome Together</h2>
     <p class="vcc-sub">Tell us your idea. We'll tell you how fast we can build it — and what it'll cost. Free consultation, no obligation.</p>
-    <a href="/contact" class="vcc-btn">Start Your Project</a>
+    <a href="https://awesomate.ai/discovery" class="vcc-btn">Start Your Project</a>
     <p class="vcc-note">Free consultation. Fixed-price quotes. No surprises.</p>
   </div>
 </section>
@@ -43,7 +43,7 @@ export const VibeCTA: React.FC = () => {
           <p className="text-[17px] text-white/50 leading-relaxed max-w-[520px] mx-auto mb-9">
             Tell us your idea. We'll tell you how fast we can build it — and what it'll cost. Free consultation, no obligation.
           </p>
-          <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-9 py-4 rounded-[10px] text-[15px] font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/25 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-orange/35 transition-all no-underline">
+          <a href="https://awesomate.ai/discovery" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-orange to-brand-accent text-white px-9 py-4 rounded-[10px] text-[15px] font-800 uppercase tracking-wider shadow-lg shadow-brand-orange/25 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-orange/35 transition-all no-underline">
             Start Your Project
           </a>
           <p className="text-[13px] text-white/30 mt-5">Free consultation. Fixed-price quotes. No surprises.</p>

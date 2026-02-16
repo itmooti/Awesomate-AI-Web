@@ -126,10 +126,71 @@ These sections currently work without images (using decorative CSS elements), bu
 
 ---
 
+## 8. n8n Hosting Page Images
+
+**Generated with NanoBanana** (Gemini 2.5 Flash Image)
+**Storage:** `src/assets/images/n8n/` (local dev paths) / GitHub raw URLs in HTML strings
+**GitHub base URL:** `https://raw.githubusercontent.com/itmooti/Awesomate-AI-Web/main/src/assets/images/n8n/`
+
+### Style Consistency Rules
+
+**Vector illustrations** — flat modern style, geometric shapes, rounded corners. ONLY brand colours: navy (#0f1128), red (#e9484d), orange (#ef9563), blue (#1e63e9), white. No text or labels. White or very light backgrounds. Stripe/Linear marketing illustration style.
+
+**People photography** — natural, candid poses (never staged/stock). Warm colour temperature, natural lighting (window light). Shallow depth of field (f/2.0–f/2.8). Australian context (casual smart, modern offices, greenery visible). Real skin textures, natural expressions, slight imperfections. No text/logos/brand elements.
+
+### 8a. Hero — Contextual Person Photo
+
+**File:** `n8n-hero-person.png` (1443KB)
+**Section:** `Hero.tsx` (right column, 2-column layout)
+**NanoBanana command:** `nanobana generate` (raw prompt, not template — gives full framing control)
+**Aspect:** 16:9
+
+> A wide environmental portrait of a confident Australian man in his early 30s, sitting in a modern office chair at a light timber desk. He is leaning back slightly with a relaxed, satisfied smile, holding his phone in one hand and glancing at it. His laptop is open on the desk showing a colourful workflow dashboard with connected nodes and green status indicators. A large monstera plant sits to the right of the desk, warm natural golden-hour window light streams in from the left. A coffee mug and a few items on the desk. His sleeves are rolled up on a casual button-up shirt. The body language says everything runs smoothly on its own. Shot from a medium distance with a 35mm lens at f/4, showing the full desk, chair, plant, and person from roughly the waist up. Warm colour grading, natural skin texture with slight stubble, candid and authentic feeling. Documentary photographic realism with organic sharpness. No text, no logos.
+
+**Design intent:** The image communicates *outcome* (automations running smoothly) rather than *activity* (person working). The relaxed lean-back posture, phone with success notifications, and open laptop with workflow dashboard all reinforce "your systems run themselves."
+
+### 8b. WhyAwesomate #1 — Pricing Comparison Vector
+
+**File:** `n8n-pricing-comparison.png` (715KB)
+**Section:** `WhyAwesomate.tsx` (differentiator #1: Uncapped Executions)
+**NanoBanana command:** `nanobana vector`
+**Template:** `flat_vector`
+
+> A simple comparison: on the left, a rising staircase of blocks representing escalating cloud costs with small dollar symbols; on the right, a single flat horizontal bar representing flat pricing, with a small checkmark. An abstract person figure stands confidently next to the flat bar. Use red (#e9484d) for the escalating blocks, and a blue-to-navy gradient (#1e63e9 to #0f1128) for the flat bar. White background. Clean geometric shapes with rounded corners, no text.
+
+### 8c. WhyAwesomate #2 — Infrastructure/Uptime Vector
+
+**File:** `n8n-infrastructure.png` (808KB)
+**Section:** `WhyAwesomate.tsx` (differentiator #2: Kubernetes + Airplane Rule)
+**NanoBanana command:** `nanobana vector`
+**Template:** `flat_vector`
+
+> Three interconnected server nodes arranged in a triangle pattern, connected by flowing gradient lines (red #e9484d to orange #ef9563). One node has a small warning indicator, while the other two glow brightly, showing automatic failover. Small shield icon in the centre of the triangle. Use navy (#0f1128) for the nodes, red-to-orange gradient for the connection lines. White background. Clean geometric shapes, no text.
+
+### 8d. WhyAwesomate #3 — Australian Data Residency
+
+**File:** `n8n-australia-data.png` (1547KB)
+**Section:** `WhyAwesomate.tsx` (differentiator #3: Data Stays in Australia)
+**NanoBanana command:** `nanobana generate`
+
+> A wide photograph of Melbourne city skyline at golden hour, shot from an elevated viewpoint. Warm natural light, slightly hazy atmosphere. The city looks vibrant and modern with the Yarra River visible. Extremely realistic, no AI artifacts. Shot with a telephoto lens, natural colour grading. No text, no overlays.
+
+### 8e. WhyAwesomate #4 — Support Team
+
+**File:** `n8n-support-team.png` (1523KB)
+**Section:** `WhyAwesomate.tsx` (differentiator #4: Real Support)
+**NanoBanana command:** `nanobana person`
+**Template:** `lifestyle_person`
+
+> A friendly female tech support person in her late 20s, wearing casual smart attire, on a video call at her desk. She is smiling warmly and gesturing while explaining something. A dual monitor setup is visible, one screen showing a colourful workflow dashboard. Natural office lighting with slight bokeh background. The person looks completely natural and authentic with real skin texture, a natural warm expression, and slight natural imperfections. Australian casual office setting with a small plant visible. No stock photo feel.
+
+---
+
 ## Recommended Tools
 
 | Tool | Best For | Notes |
 |------|----------|-------|
+| **NanoBanana** | People photos, vector illustrations, brand assets | CLI: `nanobana`. Uses Gemini 2.5 Flash Image. See `/Users/andrewwadsworth/Projects/nanobana/README.md` |
 | **Midjourney** | Hero backgrounds, abstract visuals, OG images | Use `--ar 16:9` or `--ar 1200:630` for OG images |
 | **DALL-E 3** | UI mockups, illustrations, precise compositions | Better at following exact colour specifications |
 | **Figma + AI plugins** | UI mockups for Sync Use Cases | Most control over layout and brand consistency |

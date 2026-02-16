@@ -58,17 +58,28 @@ const PricingCode = `
     box-shadow: 0 4px 6px rgba(15,17,40,0.2) !important;
   }
   .n8pr-grid {
-    display: grid !important; grid-template-columns: 1fr !important;
-    gap: 24px !important; margin-top: 64px !important;
+    display: flex !important; overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important; -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important; -ms-overflow-style: none !important;
+    gap: 24px !important; margin-top: 64px !important; padding-bottom: 16px !important;
   }
-  @media (min-width: 768px) { .n8pr-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+  .n8pr-grid::-webkit-scrollbar { display: none !important; }
+  @media (min-width: 768px) {
+    .n8pr-grid {
+      display: grid !important; grid-template-columns: repeat(2, 1fr) !important;
+      overflow-x: visible !important; scroll-snap-type: none !important;
+      padding-bottom: 0 !important;
+    }
+  }
   @media (min-width: 1024px) { .n8pr-grid { grid-template-columns: repeat(4, 1fr) !important; } }
   .n8pr-card {
     display: flex !important; flex-direction: column !important;
     padding: 40px !important; background: var(--color-5, #fff) !important;
     border: 1px solid rgba(15,17,40,0.06) !important; border-radius: 16px !important;
     transition: all 0.3s !important; position: relative !important;
+    scroll-snap-align: center !important; min-width: 280px !important; flex-shrink: 0 !important;
   }
+  @media (min-width: 768px) { .n8pr-card { min-width: 0 !important; } }
   .n8pr-card:hover {
     transform: translateY(-6px) !important;
     box-shadow: 0 20px 40px rgba(15,17,40,0.06) !important;
@@ -165,13 +176,13 @@ const PricingCode = `
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Maintenance &amp; Reliability</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Managed environment</li>
         </ul>
-        <a href="#" class="n8pr-cta">Choose Essentials</a>
+        <a href="https://n8n.awesomate.ai/?plan=1" class="n8pr-cta">Choose Essentials</a>
       </div>
       <div class="n8pr-card">
         <div class="n8pr-name">Support Plus</div>
         <div class="n8pr-desc">For teams building workflows wanting an expert backup</div>
         <div class="n8pr-price">
-          <span class="n8pr-amount" id="n8pr-p2">AU$150</span><span class="n8pr-period">/mo</span>
+          <span class="n8pr-amount" id="n8pr-p2">AU$175</span><span class="n8pr-period">/mo</span>
           <div class="n8pr-hint" id="n8pr-h2">Billed monthly</div>
         </div>
         <ul class="n8pr-features">
@@ -180,14 +191,14 @@ const PricingCode = `
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Ticketed troubleshooting</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Workflow design help</li>
         </ul>
-        <a href="#" class="n8pr-cta">Choose Support Plus</a>
+        <a href="https://n8n.awesomate.ai/?plan=2" class="n8pr-cta">Choose Support Plus</a>
       </div>
       <div class="n8pr-card n8pr-rec">
         <div class="n8pr-tag">RECOMMENDED</div>
         <div class="n8pr-name">Automations Pro</div>
         <div class="n8pr-desc">For businesses who want real automation outcomes</div>
         <div class="n8pr-price">
-          <span class="n8pr-amount" id="n8pr-p3">AU$370</span><span class="n8pr-period">/mo</span>
+          <span class="n8pr-amount" id="n8pr-p3">AU$375</span><span class="n8pr-period">/mo</span>
           <div class="n8pr-hint" id="n8pr-h3">Billed monthly</div>
         </div>
         <ul class="n8pr-features">
@@ -196,14 +207,14 @@ const PricingCode = `
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> We monitor everything 24/7</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Performance reports</li>
         </ul>
-        <a href="#" class="n8pr-cta">Choose Pro</a>
+        <a href="https://n8n.awesomate.ai/?plan=3" class="n8pr-cta">Choose Pro</a>
       </div>
       <div class="n8pr-card">
         <div class="n8pr-name">Embedded Team</div>
         <div class="n8pr-desc">Automation becomes an extension of your company</div>
         <div class="n8pr-price">
-          <span class="n8pr-amount" id="n8pr-p4">AU$3.5k</span><span class="n8pr-period">/mo</span>
-          <div class="n8pr-hint" id="n8pr-h4">Billed monthly</div>
+          <span class="n8pr-amount" id="n8pr-p4" style="font-size:32px !important;">Custom</span>
+          <div class="n8pr-hint" id="n8pr-h4">Tailored to your needs</div>
         </div>
         <ul class="n8pr-features">
           <li class="n8pr-feat n8pr-bold"><span class="n8pr-check">&#10003;</span> Dedicated Architect</li>
@@ -211,7 +222,7 @@ const PricingCode = `
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> Advanced AI features</li>
           <li class="n8pr-feat"><span class="n8pr-check">&#10003;</span> No per-workflow costs</li>
         </ul>
-        <a href="#" class="n8pr-cta">Inquire Now</a>
+        <a href="https://n8n.awesomate.ai/?plan=4" class="n8pr-cta">Inquire Now</a>
       </div>
     </div>
   </div>
@@ -219,12 +230,12 @@ const PricingCode = `
 
 <script>
   var n8prPrices = {
-    monthly: ["AU$75", "AU$150", "AU$370", "AU$3.5k"],
-    yearly: ["AU$62.50", "AU$125", "AU$308", "AU$2.9k"]
+    monthly: ["AU$75", "AU$175", "AU$375", "Custom"],
+    yearly: ["AU$62.50", "AU$145.83", "AU$312.50", "Custom"]
   };
   var n8prHints = { monthly: "Billed monthly", yearly: "Billed annually (2 months free)" };
   function n8prUpdate(term) {
-    for(var i=1; i<=4; i++) {
+    for(var i=1; i<=3; i++) {
       document.getElementById('n8pr-p' + i).innerText = n8prPrices[term][i-1];
       document.getElementById('n8pr-h' + i).innerText = n8prHints[term];
     }
@@ -250,7 +261,7 @@ export const Pricing: React.FC = () => {
     {
       name: "Support Plus",
       desc: "For teams building workflows wanting an expert backup",
-      monthly: 150, yearly: 125,
+      monthly: 175, yearly: 145.83,
       features: [
         { text: "Everything in Essentials", bold: true },
         { text: "AI-powered support", bold: false },
@@ -261,7 +272,7 @@ export const Pricing: React.FC = () => {
     {
       name: "Automations Pro",
       desc: "For businesses who want real automation outcomes",
-      monthly: 370, yearly: 308, rec: true,
+      monthly: 375, yearly: 312.50, rec: true,
       features: [
         { text: "Everything in Support Plus", bold: true },
         { text: "1 Built Workflow / Mo", bold: true, highlight: true },
@@ -272,7 +283,7 @@ export const Pricing: React.FC = () => {
     {
       name: "Embedded Team",
       desc: "Automation becomes an extension of your company",
-      monthly: 3500, yearly: 2916,
+      monthly: 0, yearly: 0, custom: true,
       features: [
         { text: "Dedicated Architect", bold: true },
         { text: "Continuous Optimisation", bold: false },
@@ -312,9 +323,9 @@ export const Pricing: React.FC = () => {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left items-stretch">
+          <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left items-stretch pb-4 md:pb-0 md:overflow-visible" style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}>
             {plans.map((p) => (
-              <div key={p.name} className={`flex flex-col p-10 bg-white rounded-2xl border transition-all relative group hover:-translate-y-1.5 hover:shadow-xl ${p.rec ? 'border-brand-accent border-2 shadow-xl shadow-brand-accent/10' : 'border-brand-navy/[0.06]'}`}>
+              <div key={p.name} className={`snap-center min-w-[280px] shrink-0 md:min-w-0 md:shrink flex flex-col p-10 bg-white rounded-2xl border transition-all relative group hover:-translate-y-1.5 hover:shadow-xl ${p.rec ? 'border-brand-accent border-2 shadow-xl shadow-brand-accent/10' : 'border-brand-navy/[0.06]'}`}>
                 {p.rec && (
                   <div className="absolute top-0 left-0 right-0 bg-brand-accent text-white text-center py-1.5 text-[11px] font-800 tracking-widest rounded-t-[14px]">
                     RECOMMENDED
@@ -327,15 +338,28 @@ export const Pricing: React.FC = () => {
                 </div>
 
                 <div className="mb-8">
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-[44px] font-800 text-brand-navy tracking-tighter">
-                      AU${term === 'monthly' ? (p.monthly >= 1000 ? (p.monthly/1000).toFixed(1) + 'k' : p.monthly) : (p.yearly >= 1000 ? (p.yearly/1000).toFixed(1) + 'k' : p.yearly)}
-                    </span>
-                    <span className="text-base font-600 text-gray-400">/mo</span>
-                  </div>
-                  <p className="text-[11px] text-gray-400 mt-1 font-700 italic uppercase tracking-wider">
-                    {term === 'monthly' ? 'Billed Monthly' : 'Billed Annually (2 months free)'}
-                  </p>
+                  {p.custom ? (
+                    <>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-[32px] font-800 text-brand-navy tracking-tighter">Custom</span>
+                      </div>
+                      <p className="text-[11px] text-gray-400 mt-1 font-700 italic uppercase tracking-wider">
+                        Tailored to your needs
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-[44px] font-800 text-brand-navy tracking-tighter">
+                          AU${term === 'monthly' ? p.monthly : p.yearly}
+                        </span>
+                        <span className="text-base font-600 text-gray-400">/mo</span>
+                      </div>
+                      <p className="text-[11px] text-gray-400 mt-1 font-700 italic uppercase tracking-wider">
+                        {term === 'monthly' ? 'Billed Monthly' : 'Billed Annually (2 months free)'}
+                      </p>
+                    </>
+                  )}
                 </div>
 
                 <ul className="space-y-3 mb-10 flex-grow">
@@ -347,9 +371,9 @@ export const Pricing: React.FC = () => {
                   ))}
                 </ul>
 
-                <button className={`w-full py-4.5 rounded-[10px] font-800 text-base transition-all ${p.rec ? 'bg-gradient-to-br from-brand-accent to-brand-orange text-white shadow-lg shadow-brand-accent/20 hover:shadow-xl hover:shadow-brand-accent/30 hover:-translate-y-0.5' : 'bg-brand-navy text-white hover:bg-brand-navy/90'}`}>
+                <a href={`https://n8n.awesomate.ai/?plan=${plans.indexOf(p) + 1}`} className={`block w-full py-4.5 rounded-[10px] font-800 text-base transition-all text-center no-underline ${p.rec ? 'bg-gradient-to-br from-brand-accent to-brand-orange text-white shadow-lg shadow-brand-accent/20 hover:shadow-xl hover:shadow-brand-accent/30 hover:-translate-y-0.5' : 'bg-brand-navy text-white hover:bg-brand-navy/90'}`}>
                   {p.name === 'Embedded Team' ? 'Inquire Now' : `Choose ${p.name}`}
-                </button>
+                </a>
               </div>
             ))}
           </div>
