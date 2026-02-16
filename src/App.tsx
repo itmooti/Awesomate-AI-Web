@@ -13,13 +13,13 @@ import { NotFoundPage } from './pages/NotFound';
 import { PrivacyPage } from './pages/Privacy';
 import { TermsPage } from './pages/Terms';
 
-type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work' | 'privacy-policy' | 'terms-of-service' | '404';
+type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'custom-apps' | 'about' | 'contact' | 'work' | 'privacy-policy' | 'terms-of-service' | '404';
 
 const pages: Record<PageKey, { label: string; component: React.FC }> = {
   'home': { label: 'Home', component: HomePage },
   'n8n-hosting': { label: 'n8n Hosting', component: N8nHostingPage },
   'buddzee': { label: 'Buddzee', component: BuddzeePage },
-  'vibe-coding': { label: 'Vibe Coding', component: VibeCodingPage },
+  'custom-apps': { label: 'Vibe Coding', component: VibeCodingPage },
   'about': { label: 'About', component: AboutPage },
   'contact': { label: 'Contact', component: ContactPage },
   'work': { label: 'Work', component: WorkPage },

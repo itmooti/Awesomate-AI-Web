@@ -171,7 +171,7 @@ const HeaderCode = `
                             <div class="hdr-drop-desc">Connect your apps and automate your business — we keep it running 24/7</div>
                         </div>
                     </a>
-                    <a href="/vibe-coding" class="hdr-drop-item">
+                    <a href="/custom-apps" class="hdr-drop-item">
                         <div class="hdr-drop-icon" style="background: rgba(239,149,99,0.08); color: var(--color-3);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20"/><path d="M9 14l-2 2 2 2"/><path d="M15 14l2 2-2 2"/></svg></div>
                         <div>
                             <div class="hdr-drop-title">Custom Apps</div>
@@ -238,7 +238,7 @@ export const Header: React.FC = () => {
                         <div className="text-xs text-gray-400 leading-snug">Connect your apps and automate your business — we keep it running 24/7</div>
                       </div>
                     </a>
-                    <a href="#vibe-coding" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">
+                    <a href="#custom-apps" onClick={() => setServicesOpen(false)} className="flex gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors no-underline items-start">
                       <div className="w-9 h-9 rounded-[10px] bg-brand-orange/10 text-brand-orange flex items-center justify-center flex-shrink-0">
                         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20"/><path d="M9 14l-2 2 2 2"/><path d="M15 14l2 2-2 2"/></svg>
                       </div>

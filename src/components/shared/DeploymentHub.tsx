@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work' | 'privacy-policy' | 'terms-of-service' | '404';
+type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'custom-apps' | 'about' | 'contact' | 'work' | 'privacy-policy' | 'terms-of-service' | '404';
 
 interface PageBlocks {
   label: string;
@@ -21,7 +21,7 @@ const pageBlockMap: Record<PageKey, PageBlocks> = {
     label: 'Buddzee',
     sections: ['BuddzeeHero', 'BuddzeeProblem', 'BuddzeeHowItWorks', 'BuddzeeFeatures', 'BuddzeeUseCases', 'BuddzeePricing', 'BuddzeeFAQ', 'BuddzeeCTA'],
   },
-  'vibe-coding': {
+  'custom-apps': {
     label: 'Vibe Coding',
     sections: ['VibeHero', 'VibeWhatIs', 'VibeExplainer', 'VibeProcess', 'VibeFeatures', 'VibeWhoItsFor', 'VibePricing', 'VibeFAQ', 'VibeCTA'],
   },

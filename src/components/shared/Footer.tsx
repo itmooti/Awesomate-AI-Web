@@ -120,7 +120,7 @@ const FooterBlockCode = `
       <div>
         <div class="ft-heading">Services</div>
         <a href="/n8n-hosting" class="ft-link">n8n Hosting</a>
-        <a href="/vibe-coding" class="ft-link">Custom Apps</a>
+        <a href="/custom-apps" class="ft-link">Custom Apps</a>
       </div>
       <div>
         <div class="ft-heading">Company</div>
@@ -171,7 +171,7 @@ export const Footer: React.FC = () => {
             <h5 className="text-[12px] font-700 text-brand-navy uppercase tracking-[0.1em] mb-5">Services</h5>
             <ul className="space-y-3.5 text-sm text-gray-500 font-medium">
               <li><a href="#n8n-hosting" className="hover:text-brand-accent transition-colors no-underline">n8n Hosting</a></li>
-              <li><a href="#vibe-coding" className="hover:text-brand-accent transition-colors no-underline">Custom Apps</a></li>
+              <li><a href="#custom-apps" className="hover:text-brand-accent transition-colors no-underline">Custom Apps</a></li>
             </ul>
           </div>
           <div>

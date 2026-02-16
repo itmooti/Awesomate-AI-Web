@@ -126,7 +126,7 @@ const ServicesOverviewCode = `
         </span>
       </div>
 
-      <a href="/vibe-coding" class="hm-svc-card hm-svc-card-orange">
+      <a href="/custom-apps" class="hm-svc-card hm-svc-card-orange">
         <div class="hm-svc-icon hm-svc-icon-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M2 8h20"/><path d="M9 14l-2 2 2 2"/><path d="M15 14l2 2-2 2"/></svg></div>
         <div class="hm-svc-card-title">Custom Apps. Built by Experts.</div>
         <div class="hm-svc-card-desc">Anyone can drag-and-drop an app in an AI builder. But without expert guidance and direct access to your business data, you get a toy — not a tool. We build real apps connected to Buddzee, so your team and customers get something genuinely useful.</div>
@@ -184,7 +184,7 @@ export const ServicesOverview: React.FC = () => {
             </div>
 
             {/* Vibe Coding Card */}
-            <a href="#vibe-coding" className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(239,149,99,0.1)] hover:border-transparent no-underline relative overflow-hidden">
+            <a href="#custom-apps" className="group block bg-white border border-gray-100 rounded-[20px] p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(239,149,99,0.1)] hover:border-transparent no-underline relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-orange to-yellow-400" />
               <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-brand-orange to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-14 h-14 rounded-2xl bg-brand-orange/[0.08] text-brand-orange flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
