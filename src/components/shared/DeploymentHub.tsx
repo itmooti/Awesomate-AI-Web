@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work';
+type PageKey = 'home' | 'n8n-hosting' | 'buddzee' | 'vibe-coding' | 'about' | 'contact' | 'work' | '404';
 
 interface PageBlocks {
   label: string;
@@ -15,7 +15,7 @@ const pageBlockMap: Record<PageKey, PageBlocks> = {
   },
   'n8n-hosting': {
     label: 'n8n Hosting',
-    sections: ['Hero', 'N8nProblem', 'Infrastructure', 'WhoItIsFor', 'Performance', 'Pricing', 'FAQ', 'N8nCTA'],
+    sections: ['Hero', 'N8nProblem', 'WhyAwesomate', 'Comparison', 'WhoItIsFor', 'Pricing', 'DiscountPricing', 'FAQ', 'N8nCTA'],
   },
   'buddzee': {
     label: 'Buddzee',
@@ -23,11 +23,11 @@ const pageBlockMap: Record<PageKey, PageBlocks> = {
   },
   'vibe-coding': {
     label: 'Vibe Coding',
-    sections: ['VibeHero', 'VibeExplainer', 'VibeProcess', 'VibeFeatures', 'VibeWhoItsFor', 'VibePricing', 'VibeFAQ', 'VibeCTA'],
+    sections: ['VibeHero', 'VibeWhatIs', 'VibeExplainer', 'VibeProcess', 'VibeFeatures', 'VibeWhoItsFor', 'VibePricing', 'VibeFAQ', 'VibeCTA'],
   },
   'about': {
     label: 'About',
-    sections: ['AboutHero', 'AboutStory', 'AboutValues', 'AboutProcess', 'AboutCTA'],
+    sections: ['AboutHero', 'AboutStory', 'AboutValues', 'AboutTeam', 'AboutProcess', 'AboutCTA'],
   },
   'contact': {
     label: 'Contact',
@@ -36,6 +36,10 @@ const pageBlockMap: Record<PageKey, PageBlocks> = {
   'work': {
     label: 'Work',
     sections: ['WorkHero', 'WorkProjects'],
+  },
+  '404': {
+    label: '404',
+    sections: ['NotFound'],
   },
 };
 
