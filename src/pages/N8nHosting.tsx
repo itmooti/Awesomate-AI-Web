@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hero } from '../components/n8n-hosting/Hero';
+import { BusinessBlueprintHero } from '../components/n8n-hosting/BusinessBlueprintHero';
 import { N8nProblem } from '../components/n8n-hosting/N8nProblem';
 import { WhyAwesomate } from '../components/n8n-hosting/WhyAwesomate';
 import { Comparison } from '../components/n8n-hosting/Comparison';
@@ -13,6 +14,7 @@ export const N8nHostingPage: React.FC = () => {
   return (
     <>
       <Hero />
+      <BusinessBlueprintHero />
       <N8nProblem />
       <WhyAwesomate />
       <Comparison />

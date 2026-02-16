@@ -159,9 +159,9 @@ const DiscountPricingCode = `
   <div class="n8dp-glow"></div>
   <div class="n8dp-container">
     <div class="n8dp-header">
-      <div class="n8dp-label">Launch Pricing</div>
-      <h2 class="n8dp-h2">Scale Your Business, Not Your Server Stress</h2>
-      <p class="n8dp-sub">Choose the level of infrastructure and support your mission-critical automation needs.</p>
+      <div class="n8dp-label">Business Blueprint Exclusive</div>
+      <h2 class="n8dp-h2">Conference Pricing — AU$25 Off All Plans</h2>
+      <p class="n8dp-sub">Exclusive for Business Blueprint members. Join at the conference and save AU$25/mo on any plan.</p>
       <div class="n8dp-toggle">
         <button id="n8dp-toggle-m" class="n8dp-tbtn active" onclick="document.getElementById('n8dp-toggle-y').classList.remove('active');this.classList.add('active');n8dpUpdate('monthly')">MONTHLY</button>
         <button id="n8dp-toggle-y" class="n8dp-tbtn" onclick="document.getElementById('n8dp-toggle-m').classList.remove('active');this.classList.add('active');n8dpUpdate('yearly')">YEARLY (2 MO FREE)</button>
@@ -318,12 +318,12 @@ export const DiscountPricing: React.FC = () => {
         <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] bg-[radial-gradient(circle,_rgba(233,72,77,0.04)_0%,_transparent_70%)] pointer-events-none" />
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center relative z-10">
           <div className="max-w-3xl mx-auto mb-16">
-            <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Launch Pricing</div>
+            <div className="text-xs font-800 text-brand-accent uppercase tracking-[0.15em] mb-4">Business Blueprint Exclusive</div>
             <h2 className="text-4xl md:text-5xl font-heading font-800 text-brand-navy leading-[1.15] tracking-tight mb-6">
-              Scale Your Business, Not Your Server Stress
+              Conference Pricing — AU$25 Off All Plans
             </h2>
             <p className="text-xl text-gray-500 font-500 leading-relaxed">
-              Choose the level of infrastructure and support your mission-critical automation needs.
+              Exclusive for Business Blueprint members. Join at the conference and save AU$25/mo on any plan.
             </p>
           </div>
 
