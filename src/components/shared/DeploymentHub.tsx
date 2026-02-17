@@ -11,7 +11,7 @@ interface PageBlocks {
 const pageBlockMap: Record<PageKey, PageBlocks> = {
   'home': {
     label: 'Home',
-    sections: ['HomeHero', 'ServicesOverview', 'WhyAwesomate', 'SocialProof', 'HomeCTA'],
+    sections: ['HomeHero', 'ServicesOverview', 'ServicesSolutions', 'WhyAwesomate', 'SocialProof', 'HomeCTA'],
   },
   'n8n-hosting': {
     label: 'n8n Hosting',
