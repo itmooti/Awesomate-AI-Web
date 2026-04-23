@@ -208,7 +208,7 @@ In `DeploymentHub.tsx`, add the section name to the page's `sections` array in `
 
 ## Ontraport API Notes (for reference)
 
-- API creds: Api-Appid: 2_20316_oulMCALkT, Api-Key: ljZBc2UE472ipjN
+- API creds: kept out-of-band (Ontraport admin → Integrations → API Apps). Never commit credentials to this repo.
 - objectID=0 Contacts, objectID=20 LandingPages, objectID=153 LandingPageVersionItem
 - Page resource field (objectID=20) is READ-ONLY — cannot update directly via API
 - DO NOT create/modify LandingPageVersionItems — it breaks the page editor
