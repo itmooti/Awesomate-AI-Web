@@ -33,7 +33,7 @@ const AboutTeamCode = `
   .ab-tm-sub {
     font-family: var(--font-main) !important; font-size: 17px !important;
     color: rgba(255,255,255,0.5) !important; line-height: 1.7 !important;
-    max-width: 500px !important; margin-bottom: 56px !important;
+    max-width: 820px !important; margin-bottom: 56px !important;
   }
 
   .ab-tm-card {
@@ -48,10 +48,13 @@ const AboutTeamCode = `
   }
   .ab-tm-grid {
     display: grid !important; grid-template-columns: 1fr !important;
-    gap: 32px !important; max-width: 800px !important;
+    gap: 32px !important; max-width: 1100px !important;
   }
   @media (min-width: 640px) {
-    .ab-tm-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 48px !important; }
+    .ab-tm-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 40px !important; }
+  }
+  @media (min-width: 900px) {
+    .ab-tm-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 40px !important; }
   }
 
   .ab-tm-member { text-align: center !important; }
@@ -66,6 +69,8 @@ const AboutTeamCode = `
   .ab-tm-photo {
     position: relative !important; overflow: hidden !important;
     border-radius: 20px 20px 0 0 !important;
+    aspect-ratio: 2 / 3 !important;
+    width: 100% !important;
   }
   .ab-tm-photo-bg {
     position: absolute !important; inset: 0 !important;
@@ -73,7 +78,7 @@ const AboutTeamCode = `
   }
   .ab-tm-photo img {
     position: relative !important; z-index: 1 !important;
-    width: 100% !important; height: auto !important;
+    width: 100% !important; height: 100% !important;
     display: block !important; object-fit: cover !important;
     object-position: top center !important;
   }
@@ -104,6 +109,14 @@ const AboutTeamCode = `
             <img src="${ghBase}/tenzin-transparent.png" alt="Tenzin Wadsworth — n8n Specialist">
           </div>
         </div>
+        <div class="ab-tm-member">
+          <div class="ab-tm-name">Jonathan Ramirez</div>
+          <div class="ab-tm-role">Automation Engineer</div>
+          <div class="ab-tm-photo">
+            <div class="ab-tm-photo-bg"></div>
+            <img src="${ghBase}/jonathan-transparent.png" alt="Jonathan Ramirez — Automation Engineer">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -113,6 +126,7 @@ const AboutTeamCode = `
 const team = [
   { name: 'Andrew Wadsworth', role: 'Founder', img: 'andrew-transparent.png', alt: 'Andrew Wadsworth — Founder' },
   { name: 'Tenzin Wadsworth', role: 'n8n Specialist', img: 'tenzin-transparent.png', alt: 'Tenzin Wadsworth — n8n Specialist' },
+  { name: 'Jonathan Ramirez', role: 'Automation Engineer', img: 'jonathan-transparent.png', alt: 'Jonathan Ramirez — Automation Engineer' },
 ];
 
 export const AboutTeam: React.FC = () => {
@@ -125,7 +139,7 @@ export const AboutTeam: React.FC = () => {
           <h2 className="text-[48px] md:text-[64px] font-heading font-800 leading-[1.1] tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-br from-brand-accent to-brand-orange">
             Team
           </h2>
-          <p className="text-[17px] text-white/50 leading-relaxed max-w-[500px] mb-14">
+          <p className="text-[17px] text-white/50 leading-relaxed max-w-[820px] mb-14">
             The humans behind the automation. We're a small team that punches well above its weight.
           </p>
         </div>
@@ -133,17 +147,17 @@ export const AboutTeam: React.FC = () => {
         {/* Team card */}
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
           <div className="bg-white/[0.04] border border-white/[0.06] rounded-t-3xl pt-12 px-8 md:px-12 overflow-hidden">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 max-w-[800px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 max-w-[1100px]">
               {team.map((m) => (
                 <div key={m.name} className="text-center">
                   <div className="text-[22px] font-heading font-800 text-white mb-1">{m.name}</div>
                   <div className="text-sm text-white/45 mb-7">{m.role}</div>
-                  <div className="relative rounded-t-[20px] overflow-hidden">
+                  <div className="relative rounded-t-[20px] overflow-hidden w-full" style={{ aspectRatio: '2 / 3' }}>
                     <div className="absolute inset-0 bg-gradient-to-b from-brand-accent/[0.08] to-brand-orange/[0.12]" />
                     <img
                       src={`/src/assets/images/about/${m.img}`}
                       alt={m.alt}
-                      className="relative z-10 w-full h-auto block object-cover object-top"
+                      className="relative z-10 w-full h-full block object-cover object-top"
                     />
                   </div>
                 </div>
