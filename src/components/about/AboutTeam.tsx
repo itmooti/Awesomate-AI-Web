@@ -48,13 +48,16 @@ const AboutTeamCode = `
   }
   .ab-tm-grid {
     display: grid !important; grid-template-columns: 1fr !important;
-    gap: 32px !important; max-width: 1100px !important;
+    gap: 32px !important; max-width: 1400px !important;
   }
   @media (min-width: 640px) {
     .ab-tm-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 40px !important; }
   }
   @media (min-width: 900px) {
-    .ab-tm-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 40px !important; }
+    .ab-tm-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 32px !important; }
+  }
+  @media (min-width: 1200px) {
+    .ab-tm-grid { grid-template-columns: repeat(4, 1fr) !important; gap: 32px !important; }
   }
 
   .ab-tm-member { text-align: center !important; }
@@ -117,6 +120,14 @@ const AboutTeamCode = `
             <img src="${ghBase}/jonathan-transparent.png" alt="Jonathan Ramirez — Automation Engineer">
           </div>
         </div>
+        <div class="ab-tm-member">
+          <div class="ab-tm-name">Dipesh Adhikari</div>
+          <div class="ab-tm-role">Automation Engineer</div>
+          <div class="ab-tm-photo">
+            <div class="ab-tm-photo-bg"></div>
+            <img src="${ghBase}/dipesh-transparent.png" alt="Dipesh Adhikari — Automation Engineer">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -127,6 +138,7 @@ const team = [
   { name: 'Andrew Wadsworth', role: 'Founder', img: 'andrew-transparent.png', alt: 'Andrew Wadsworth — Founder' },
   { name: 'Tenzin Wadsworth', role: 'n8n Specialist', img: 'tenzin-transparent.png', alt: 'Tenzin Wadsworth — n8n Specialist' },
   { name: 'Jonathan Ramirez', role: 'Automation Engineer', img: 'jonathan-transparent.png', alt: 'Jonathan Ramirez — Automation Engineer' },
+  { name: 'Dipesh Adhikari', role: 'Automation Engineer', img: 'dipesh-transparent.png', alt: 'Dipesh Adhikari — Automation Engineer' },
 ];
 
 export const AboutTeam: React.FC = () => {
@@ -147,7 +159,7 @@ export const AboutTeam: React.FC = () => {
         {/* Team card */}
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
           <div className="bg-white/[0.04] border border-white/[0.06] rounded-t-3xl pt-12 px-8 md:px-12 overflow-hidden">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 max-w-[1100px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-8 max-w-[1400px]">
               {team.map((m) => (
                 <div key={m.name} className="text-center">
                   <div className="text-[22px] font-heading font-800 text-white mb-1">{m.name}</div>
