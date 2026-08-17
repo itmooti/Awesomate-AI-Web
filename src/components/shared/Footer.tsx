@@ -130,6 +130,7 @@ const FooterBlockCode = `
       <div>
         <div class="ft-heading">Support</div>
         <a href="/contact#ct-faq" class="ft-link">FAQ</a>
+        <a href="https://awesomate.helpdocsite.com/" class="ft-link" target="_blank">Helpdesk</a>
         <a href="mailto:hello@awesomate.ai" class="ft-link">hello@awesomate.ai</a>
       </div>
     </div>
@@ -185,6 +186,7 @@ export const Footer: React.FC = () => {
             <h5 className="text-[12px] font-700 text-brand-navy uppercase tracking-[0.1em] mb-5">Support</h5>
             <ul className="space-y-3.5 text-sm text-gray-500 font-medium">
               <li><a href="#contact" className="hover:text-brand-accent transition-colors no-underline" onClick={() => setTimeout(() => document.getElementById('ct-faq')?.scrollIntoView({ behavior: 'smooth' }), 100)}>FAQ</a></li>
+              <li><a href="https://awesomate.helpdocsite.com/" target="_blank" className="hover:text-brand-accent transition-colors no-underline">Helpdesk</a></li>
               <li><a href="mailto:hello@awesomate.ai" className="hover:text-brand-accent transition-colors no-underline">hello@awesomate.ai</a></li>
             </ul>
           </div>

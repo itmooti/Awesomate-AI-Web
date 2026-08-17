@@ -1,0 +1,194 @@
+/* Teamwork Desk Custom Stylesheet - Awesomate.ai */
+
+/* 1. GOOGLE FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/* 2. GLOBAL RESET & BODY */
+body, .docs-body {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    color: #4b5563 !important; 
+    line-height: 1.6;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1440px !important;
+}
+
+/* 3. TYPOGRAPHY */
+h1, h2, h3, .article-title, .hero-unit h1 {
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+    color: #0f1128 !important; 
+    margin-bottom: 1rem;
+}
+
+h1, .article-title { line-height: 1.1; font-weight: 800; font-size: 2.5rem; }
+h2 { line-height: 1.2; font-weight: 700; margin-top: 32px; }
+h3 { font-weight: 600; margin-top: 24px; }
+
+/* 4. AWESOMATE HEADER (Extended & Dark) */
+.awesomate-header {
+    background-color: #0f1128 !important; 
+    padding: 45px 0 !important; /* Increased padding to make the blue area "longer" */
+    min-height: 120px; 
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/* Vertical centering for all header content */
+.awesomate-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.brand-logo img {
+    max-height: 60px !important; /* Slightly larger to fit the taller header */
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #ffffff !important;
+}
+.logo-text .dot { color: #e9484d; }
+
+/* Navigation & Links */
+.header--nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header--nav ul li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 15px;
+    margin-left: 25px;
+    transition: 0.2s;
+}
+
+.header--nav ul li a:hover {
+    color: #ef9563 !important; 
+}
+
+/* 5. BUTTONS & UI */
+.btn-header, .btn-primary, .submit-ticket {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: none; /* Keeps it modern like awesomate.ai */
+    border-radius: 8px !important;
+    background: linear-gradient(135deg, #e9484d 0%, #ef9563 100%) !important;
+    color: #ffffff !important;
+    padding: 12px 24px !important;
+    border: none !important;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* Hero Section / Gradient Text */
+.hero-unit h1 {
+    background: linear-gradient(135deg, #e9484d 0%, #ef9563 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Search Bar Styling */
+.search-input {
+    border-radius: 12px !important;
+    border: 1px solid #f3f4f6 !important;
+    padding: 18px 25px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Category Cards */
+.category-card, .card {
+    border-radius: 16px !important;
+    border: 1px solid #f3f4f6 !important;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(15, 17, 40, 0.1);
+}
+
+/* Footer */
+.docs-footer {
+    background-color: #f8f9fb !important;
+    padding: 60px 0;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* Mobile Toggle Color */
+.menu-lines span { background-color: #ffffff !important; }
+
+/* Awesomate Footer — light theme (works within platform container) */
+.site--footer {
+    background-color: #ffffff !important;
+    padding: 32px 0 !important;
+    border-top: 1px solid #f3f4f6 !important;
+}
+
+/* Hide the platform's default copyright paragraph */
+.site--footer > .container > .copyrights {
+    display: none !important;
+}
+
+.site--footer .aw-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.site--footer .aw-footer img {
+    height: 28px;
+    width: auto;
+}
+
+.site--footer .aw-footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #9ca3af;
+    margin: 0;
+}
+
+.site--footer .aw-footer a {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    color: #9ca3af !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.site--footer .aw-footer a:hover {
+    color: #e9484d !important;
+}
+
+.site--footer .aw-footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+/* Ensure footer stays at the bottom if page content is short */
+.site--wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.site--main {
+    flex: 1;
+}

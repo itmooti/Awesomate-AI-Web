@@ -125,6 +125,31 @@ const HeaderCode = `
       color: #9ca3af !important; line-height: 1.4 !important; margin: 0 !important; padding: 0 !important;
     }
 
+    .hdr-login.hdr-login.hdr-login.hdr-login {
+      font-family: var(--font-main) !important; font-size: 13px !important;
+      font-weight: 800 !important; color: var(--color-1) !important;
+      text-decoration: none !important; padding: 10px 14px !important;
+      border-radius: 8px !important; background: transparent !important;
+      border: 1.5px solid var(--color-1) !important;
+      transition: all 0.2s !important; display: inline-flex !important;
+      align-items: center !important; gap: 6px !important;
+      margin: 0 !important; box-sizing: border-box !important;
+      text-transform: uppercase !important; letter-spacing: 0.05em !important;
+      white-space: nowrap !important; line-height: 1 !important;
+    }
+    @media (min-width: 1300px) {
+      .hdr-login.hdr-login.hdr-login.hdr-login { padding: 10px 20px !important; }
+    }
+    .hdr-login.hdr-login.hdr-login.hdr-login:hover {
+      border-color: var(--color-2) !important; color: var(--color-2) !important;
+      background: rgba(233,72,77,0.04) !important;
+      transform: translateY(-1px) !important;
+    }
+    .hdr-login svg {
+      width: 14px !important; height: 14px !important; display: block !important;
+      stroke-width: 2.5 !important;
+    }
+
     .hdr-cta.hdr-cta.hdr-cta.hdr-cta {
       background: linear-gradient(135deg, var(--color-2) 0%, var(--color-3) 100%) !important;
       color: white !important; padding: 10px 14px !important;
@@ -183,6 +208,10 @@ const HeaderCode = `
             <a href="/work" class="hdr-link">Work</a>
             <a href="/about" class="hdr-link">About</a>
             <a href="/contact" class="hdr-link">Contact</a>
+            <a href="https://hub.awesomate.ai" target="_blank" rel="noopener noreferrer" class="hdr-login">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                Login
+            </a>
             <a href="/contact" class="hdr-cta button" style="margin-left: 8px;">Get Started</a>
         </nav>
 
@@ -254,6 +283,17 @@ export const Header: React.FC = () => {
               <a href="#work" className="text-[13px] font-600 text-gray-500 hover:text-brand-accent hover:bg-brand-accent/5 px-3.5 py-2 rounded-lg transition-all no-underline">Work</a>
               <a href="#about" className="text-[13px] font-600 text-gray-500 hover:text-brand-accent hover:bg-brand-accent/5 px-3.5 py-2 rounded-lg transition-all no-underline">About</a>
               <a href="#contact" className="text-[13px] font-600 text-gray-500 hover:text-brand-accent hover:bg-brand-accent/5 px-3.5 py-2 rounded-lg transition-all no-underline">Contact</a>
+
+              <a
+                href="https://hub.awesomate.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 inline-flex items-center gap-1.5 text-[13px] font-800 uppercase tracking-wider text-brand-navy border-[1.5px] border-brand-navy hover:border-brand-accent hover:text-brand-accent hover:bg-brand-accent/5 hover:-translate-y-0.5 px-5 py-2.5 rounded-lg transition-all no-underline whitespace-nowrap leading-none"
+                title="Awesomate Hub — manage your hosting"
+              >
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                Login
+              </a>
 
               <a href="#contact" className="ml-2 bg-gradient-to-br from-brand-accent to-brand-orange text-white px-5 py-2.5 rounded-lg text-[13px] font-800 uppercase tracking-wider shadow-lg shadow-brand-accent/20 hover:-translate-y-0.5 transition-all no-underline whitespace-nowrap">
                 Get Started

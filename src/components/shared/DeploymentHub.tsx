@@ -15,7 +15,7 @@ const pageBlockMap: Record<PageKey, PageBlocks> = {
   },
   'n8n-hosting': {
     label: 'n8n Hosting',
-    sections: ['Hero', 'BusinessBlueprintHero', 'N8nProblem', 'WhyAwesomate', 'Comparison', 'WhoItIsFor', 'Pricing', 'DiscountPricing', 'FAQ', 'N8nCTA'],
+    sections: ['Hero', 'BusinessBlueprintHero', 'N8nProblem', 'N8nVsZapier', 'WhyAwesomate', 'Comparison', 'WhoItIsFor', 'Pricing', 'DiscountPricing', 'FAQ', 'N8nCTA'],
   },
   'buddzee': {
     label: 'Buddzee',
